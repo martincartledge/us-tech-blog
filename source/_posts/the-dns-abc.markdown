@@ -77,7 +77,7 @@ I made a diagram that shows that.
 
 The mechanism explained above is great, but if applied in a real life application, it will lead to a bottleneck. Every lookup would involve root servers and authoritative servers, which would be hit by gazillions of queries every day, putting a huge burden on the system since the start.
 
-To solve this, of course a [**caching**](http://blog.catchpoint.com/2014/07/15/world-dns-cache-king/) system comes to help. Yes, DNS allows and encourages caching. This way another class of DNS servers comes into play, the **recursive name servers**. They can perform recursive lookups and cache results, returning them when queried even if they don't have the authority to generate the results themselves.
+To solve this, of course a [**caching**](https://www.catchpoint.com/blog/dns-cache) system comes to help. Yes, DNS allows and encourages caching. This way another class of DNS servers comes into play, the **recursive name servers**. They can perform recursive lookups and cache results, returning them when queried even if they don't have the authority to generate the results themselves.
 
 Caching recursive DNS server are usually managed by Internet Service Providers, and are able to resolve addresses without waiting for the "authorities". This means that a query will rarely have to hit the root name servers, since there is a very high likelihood that the hostname/IP request is already cached by one of the delegated DNS servers that are called by recursion.
 
