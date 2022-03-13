@@ -25,6 +25,11 @@ export default function Header() {
             <a>Authors</a>
           </Link>
         </li>
+        <li className={styles.link}>
+          <Link href="/categories">
+            <a>Categories</a>
+          </Link>
+        </li>
       </ul>
     </header>
   );
