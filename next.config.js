@@ -1,5 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
 
   async redirects() {
     return [
