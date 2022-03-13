@@ -1,7 +1,6 @@
 ---
-layout: post
-title: 'Meetup: Frontend Refactoring at Scale'
-date: 2017-09-04 15:20:03
+title: "Meetup: Frontend Refactoring at Scale"
+date: "2017-09-04"
 author: tmartin
 tags: [Meetup, Culture]
 ---
@@ -13,8 +12,9 @@ This month's WEBdeLDN talks will be about frontend refactoring at scale with two
 <!-- This is hack comment to ensure the post preview is shown on the homepage -->
 
 ## Schedule of the evening
+
 18:30 - Doors will open. Welcoming drinks and pizza
-19:00 - Dismantling the frontend monolith together - Nick Balestra 
+19:00 - Dismantling the frontend monolith together - Nick Balestra
 19:45 - More pizza and drinks
 20:00 - Lessons learned migrating complex JS applications - Jack Franklin
 20:45 - End of the meetup

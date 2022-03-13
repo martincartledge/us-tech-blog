@@ -1,7 +1,6 @@
 ---
-layout: post
-title: Structuring large ASP.NET Core projects for testing and readability
-date: 2019-02-26 12:00:00
+title: "Structuring large ASP.NET Core projects for testing and readability"
+date: "2019-02-26"
 author: dgiddins
 tags: [Testing, DotNetCore, ASP.Net, NUnit]
 ---
@@ -13,18 +12,20 @@ This is a continuation of the post [Testing an API In Memory in ASP.NET Core](/b
 Oh and there are lots of code samples again!
 
 ## Where we left off
+
 In my previous post I described how to get a truly isolated in-memory instance of a ASP.NET Core API configured in a test harness to perform repeatable tests. We created an InMemoryStartup class (for configuring the site for testing) and an InMemoryApi class (for encapsulating Test Doubles and setting up the API). I did not go into detail about the content of either of the Start up classes which is what I intend to address here.
 
-Much of the complexity from this kind of testing derives from having to maintain two configuration classes and keeping them in sync correctly. It is all too easy for strange bugs to creep in and go unnoticed when differences are not correctly replicated. 
+Much of the complexity from this kind of testing derives from having to maintain two configuration classes and keeping them in sync correctly. It is all too easy for strange bugs to creep in and go unnoticed when differences are not correctly replicated.
 
 The solution to this is actually quite straightforward which is to create shared configuration classes that can be specialised for your in-memory testing situation. My solution involves creating two configuration classes, one for each of the two methods that are implemented by convention in your regular Startup.cs and the two methods of the IStartup interface. These are:
 
-* WebAppConfigurator - for the Configure method of Startup
-* ServiceCollectionInstallerRunner - for the ConfigureServices method of Startup
+- WebAppConfigurator - for the Configure method of Startup
+- ServiceCollectionInstallerRunner - for the ConfigureServices method of Startup
 
-Both of these classes will have in-memory versions of themselves implemented as extension classes - we will come on to this later. 
+Both of these classes will have in-memory versions of themselves implemented as extension classes - we will come on to this later.
 
 ## WebAppConfigurator
+
 I know, not the best name but it describes what we are doing here and it's hard to name configuration and boot strapping classes properly. This class will look roughly as follows
 
 ```csharp
@@ -41,7 +42,7 @@ I know, not the best name but it describes what we are doing here and it's hard 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IApplicationLifetime appLifeTime, IServiceProvider serviceProvider)
         {
             //This is all just an example of the configuration steps you might need.
-            ConfigureLogger(app, loggerFactory, serviceProvider); 
+            ConfigureLogger(app, loggerFactory, serviceProvider);
             ConfigureSwagger(app);
 
             ConfigureShutdown(app, appLifeTime);
@@ -52,12 +53,12 @@ I know, not the best name but it describes what we are doing here and it's hard 
             app.UseMvc();
         }
 
-        protected virtual void ConfigureLogger((IApplicationBuilder app, ILoggerFactory loggerFactory, IServiceProvider serviceProvider) 
+        protected virtual void ConfigureLogger((IApplicationBuilder app, ILoggerFactory loggerFactory, IServiceProvider serviceProvider)
         {
             //configure the logger
         }
-        
-        protected virtual void ConfigureSwagger((IApplicationBuilder app) 
+
+        protected virtual void ConfigureSwagger((IApplicationBuilder app)
         {
             //configure swagger
         }
@@ -168,9 +169,10 @@ The final step is to now call this from our InMemoryStartup
 Notice in the Configure method that I have constructed a HostingEnvironment type and provided some dummy data as well as passing in a NullLoggerFactory and an ApplicationLifetime type. In my case I did not need to pass the IServiceProvider so I passed null, but you can pass it after it is constructed in your ConfigureServices method.
 
 ## ServiceCollectionInstallerRunner
-The next step is to configure all of your dependencies. In ASP.NET WebApi I tended to leverage 3rd party dependency injection containers such as Castle Windsor, but in ASP.NET Core I find the built-in resolver works perfectly well; at least with a few additions. 
 
-The first of these I would recommend you use is [Scrutor](https://github.com/khellang/Scrutor). This provides two extension methods to the IServiceCollection type; Scan and Decorate. Scan allows you to use convention-based registration, meaning you don't have to register each type individually. Decorate allows for type decoration. 
+The next step is to configure all of your dependencies. In ASP.NET WebApi I tended to leverage 3rd party dependency injection containers such as Castle Windsor, but in ASP.NET Core I find the built-in resolver works perfectly well; at least with a few additions.
+
+The first of these I would recommend you use is [Scrutor](https://github.com/khellang/Scrutor). This provides two extension methods to the IServiceCollection type; Scan and Decorate. Scan allows you to use convention-based registration, meaning you don't have to register each type individually. Decorate allows for type decoration.
 
 The second addition is actually something that you can easily add yourself by copying the code below.
 
@@ -224,12 +226,12 @@ The second addition is actually something that you can easily add yourself by co
 
 ```
 
-What this provides is very similar to Castle Windsor's IWindsorInstaller interface which lets you define type registration classes for different areas of your application. 
+What this provides is very similar to Castle Windsor's IWindsorInstaller interface which lets you define type registration classes for different areas of your application.
 
 The way I prefer to use this is to divide my API project into areas such as logging, monitoring and application-specific areas, and then in each folder have an implementation of IServiceCollectionInstaller that will take care of configuring all the types in that folder. This keeps the configuration as close as possible to the parts being configured. For example:
 
 ```csharp
- 
+
     public class MasstransitServiceInstaller : IServiceCollectionInstaller
     {
         public void ConfigureService(IServiceCollection services, IConfiguration configuration)
@@ -308,7 +310,7 @@ We can then complete our Startup class as follows
 The next step is to make it possible to override the services as configured for running normally to work for our in-memory tests. For this we need to create an in-memory version of the ServiceCollectionInstallerRunner and a new interface that defines overrides of the Service Collection Installer. The code is shared below.
 
 ```csharp
-    
+
     public interface IServiceCollectionInstallerOverride : IServiceCollectionInstaller
     {
         Type InstallerOverridden { get; }
@@ -343,7 +345,7 @@ The next step is to make it possible to override the services as configured for 
                     listWithOverrides.Add(defaultInstaller);
                 }
             }
-            
+
             return listWithOverrides;
         }
     }
@@ -386,7 +388,7 @@ This would be used as follows
 
 ```
 
-We create a list of the overrides, and the overrides know which installer they will replace. The InMemoryServiceCollectionRunner then matches up overrides with installers and then runs the override to configure dependencies instead of the normal installer. 
+We create a list of the overrides, and the overrides know which installer they will replace. The InMemoryServiceCollectionRunner then matches up overrides with installers and then runs the override to configure dependencies instead of the normal installer.
 
 This leads us to a version of the InMemoryApi that looks as follows
 

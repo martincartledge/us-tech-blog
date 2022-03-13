@@ -1,12 +1,11 @@
 ---
-layout: post
-title: 'Meetup: Design Systems in the Real World with React'
-date: 2019-06-11 09:59:11
+title: "Meetup: Design Systems in the Real World with React"
+date: "2019-06-11"
 author: jcatterfeld
 tags: [Meetup, Culture]
 ---
 
-This Thursday, June 13th, we are pleased to be able to partner with the *React GraphQL Academy* to host **Design Systems in the Real World with React** at our Finsbury Square office, London.
+This Thursday, June 13th, we are pleased to be able to partner with the _React GraphQL Academy_ to host **Design Systems in the Real World with React** at our Finsbury Square office, London.
 
 ## Agenda
 
@@ -27,7 +26,6 @@ Teaching is a real passion for Paul. Drawing on 10+ years of UX and UI design ex
 ### Alex Lobera &ndash; Tech Lead at LeanJS
 
 Alex is the Founder and Head Coach of ReactJS Academy, Europe’s first React training school. He is an authority on ReactJS, with over 15 years of experience as both a teacher and as Tech Lead. He has brought his real-world, project-based knowledge and Lean process advocacy to over 1,500 students.
-
 
 ## Register
 

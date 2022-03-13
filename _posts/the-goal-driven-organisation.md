@@ -1,9 +1,8 @@
 ---
-layout: post
 title: "The goal driven organisation"
-date: 2017-02-15 09:00:00
+date: "2017-02-15"
 author: jflowers
-tags: [Agile, Goals, Delivery, Culture] 
+tags: [Agile, Goals, Delivery, Culture]
 ---
 
 **Quarterly team goals are an effective way to establish organisational purpose, direction and alignment while supporting team agility. But be vigilant - they can be used inappropriately.**
@@ -20,16 +19,15 @@ In this post I will show how quarterly goal setting, using Agile principles and 
 
 Senior leaders in an organisation need confidence that the creativity, intelligence, skills and knowledge of their employees are directed most effectively towards delivering long term business objectives. Ensuring that teams are aligned around those business objectives is traditionally called governance.
 
-The top-down command-and-control connotations of that term do not sit comfortably in modern software development and rightly so. The responsibility for organisational alignment should rest with teams and individuals. 
+The top-down command-and-control connotations of that term do not sit comfortably in modern software development and rightly so. The responsibility for organisational alignment should rest with teams and individuals.
 
 A bottom-up approach to organisational alignment relies on transparency. Everyone in the business needs to know the business objectives and what all teams are doing to meet the objectives. Arguably the primary output of all product development and engineering teams is a statement of intent and a narrative of their progress.
 
-Put another way, the first output of all knowledge work is shared, actionable knowledge - we can then decide how best to utilise that knowledge. Teams need to know that the decisions that they are making right now are the right decisions for the business. Without full transparency this is not possible. 
+Put another way, the first output of all knowledge work is shared, actionable knowledge - we can then decide how best to utilise that knowledge. Teams need to know that the decisions that they are making right now are the right decisions for the business. Without full transparency this is not possible.
 
 In medium to large organisations dependencies between teams are inevitable and I would argue not undesirable. Efforts to structure an organisation and system architecture in such a way that teams are able to work in isolation can reduce friction and time to market.
 
 But at scale this becomes unrealistic without product, technology and knowledge fragmentation. Cross team collaboration can fail and cause unnecessary friction without organisational support and guidance. The ‘improvised collaboration’ that takes place daily and is essential for a business to innovate and succeed needs a framework of ‘scripted collaboration’ so that teams and individuals can assess the impact of requests from and to other teams, and avoid the false sense of urgency that arises without clear direction on the business priorities.
-
 
 Teams and individuals also need a sense of how their work contributes to the larger whole. A sense of purpose and direction is intrinsically motivating. Similarly team autonomy and the space to make your own decisions are important aspects of any company culture that values its employees and wants to make the most of their talents.
 
@@ -39,7 +37,7 @@ However, they come under threat when a business lacks clear vision and prioritie
 
 By holding regular retrospectives and fostering a spirit of experimentation and continuous improvement teams have become adept at locking in their learning through process and system improvements. But how does an organisation as a whole achieve this?
 
-If everything is experienced as change then nothing is. We’re just floundering in the zone of chaos. The organisation needs a lightweight means to capture its intent, key decisions, the evolution of plans and actual outcomes. Think of this as a thin slice or low-res snapshot of our current shared understanding. Once captured we can refer to it when evaluating the impact of change. Without this reference the organisation is reactive with little understanding of the impact of its decisions over the medium and long term. 
+If everything is experienced as change then nothing is. We’re just floundering in the zone of chaos. The organisation needs a lightweight means to capture its intent, key decisions, the evolution of plans and actual outcomes. Think of this as a thin slice or low-res snapshot of our current shared understanding. Once captured we can refer to it when evaluating the impact of change. Without this reference the organisation is reactive with little understanding of the impact of its decisions over the medium and long term.
 
 The tool that OpenTable has chosen to achieve organisational alignment, create a sense of purpose and direction and to act as a foundation to support learning is quarterly goals.
 
@@ -59,9 +57,9 @@ Avoid thinking of goals as a pipeline of fixed, engineering deliverables.
 
 ### The arbitrary deadline as a means to push teams to deliver
 
-The three month time horizon for goals is as good an arbitrary period of time as any other. It provides a constraint for thinking beyond the current sprint and considering the medium and longer terms. But we mustn’t lose sight of the fact that it is arbitrary. 
+The three month time horizon for goals is as good an arbitrary period of time as any other. It provides a constraint for thinking beyond the current sprint and considering the medium and longer terms. But we mustn’t lose sight of the fact that it is arbitrary.
 
-We should feel a sense of obligation to our colleagues to meet the commitments that we make to them. If we accept that all models and plans are wrong but are useful and allow us to move forward, then we should be rigorous in doing what we can to invalidate our plans as early as possible, adapt them and share this information with all stakeholders. 
+We should feel a sense of obligation to our colleagues to meet the commitments that we make to them. If we accept that all models and plans are wrong but are useful and allow us to move forward, then we should be rigorous in doing what we can to invalidate our plans as early as possible, adapt them and share this information with all stakeholders.
 
 Teams should not be pressured into meeting a goal at all costs simply because of the impending end of quarter. We should all agree that the level of effort and duration are important factors in determining business value and prioritisation but driving teams to meet arbitrary deadlines will not help them establish a regular, sustainable pace that is the foundation for reliable forecasting.
 
@@ -86,7 +84,6 @@ Once a team has agreed its goals for the quarter the temptation may be to push b
 A business that embraces change should allow for goals and business objectives to change as new information emerges. Requests that originate from outside the team should be considered in light of longer term business objectives and priorities. If this means adapting the team’s plans for the quarter then so be it if it is in the best interests of the business as a whole.
 
 Avoid a team-first mentality.
-
 
 ## A web of goals
 
@@ -121,7 +118,7 @@ Here is another example:
 			> AB test a language switcher on .com
 			> Allow users to receive emails in their selected language
 </pre>
-			
+
 The highlighted team goals are not dependent on each other but the connections established by the higher level business goals suggest that collaboration and coordination between the teams would be beneficial.
 
 ## Setting goals
@@ -142,15 +139,15 @@ As an example, here is a possible mission statement for a team responsible for t
 
 Quarterly goals can then map back to elements of the mission statement:
 
-1. Maintain transactional communications systems in production so that the business has a reliable and performant transactional communications system, and customers receive timely and relevant communications.  **Reduce the level of noise from alerts so that the team can more effectively respond to production incidents.**
+1. Maintain transactional communications systems in production so that the business has a reliable and performant transactional communications system, and customers receive timely and relevant communications. **Reduce the level of noise from alerts so that the team can more effectively respond to production incidents.**
 
-2. Build transactional communications capabilities that increase value for our customers and helps the business meet its objectives.  **Launch a thank you email to reinforce the benefits of booking with OpenTable.**
+2. Build transactional communications capabilities that increase value for our customers and helps the business meet its objectives. **Launch a thank you email to reinforce the benefits of booking with OpenTable.**
 
-3. Evolve transactional communications systems in line with the company’s technical vision for the platform to position the business to best meet the evolving needs of its customers.  **Migrate transactional communications systems to Apache Mesos.**
+3. Evolve transactional communications systems in line with the company’s technical vision for the platform to position the business to best meet the evolving needs of its customers. **Migrate transactional communications systems to Apache Mesos.**
 
-4. Foster a supportive and welcoming team culture that values innovation, collaboration and continuous learning.  **Create an engineer on-boarding playbook to ensure that new team members have a great first experience of the team and OpenTable.**
+4. Foster a supportive and welcoming team culture that values innovation, collaboration and continuous learning. **Create an engineer on-boarding playbook to ensure that new team members have a great first experience of the team and OpenTable.**
 
-Everything that a team does should relate to a team goal and the mission statement. 
+Everything that a team does should relate to a team goal and the mission statement.
 
 The thank you email goal example also sits within the web of goals as described above. An example of how it might relate to higher level business objectives is:
 
@@ -159,7 +156,6 @@ The thank you email goal example also sits within the web of goals as described 
 	> Improve the post dining experience
 		<span style="font-weight:bold;">> Launch a thank you email to reinforce the benefits of booking with OpenTable.</span>
 </pre>
-
 
 ### The anatomy of a goal
 
@@ -172,7 +168,7 @@ The thank you email goal example also sits within the web of goals as described 
 
 How should teams incorporate goals into their regular planning practices?
 
-Sprint reviews, demos, retrospectives and planning sessions give teams a chance to reflect on and share their progress and collectively agree their next steps. We want to aim to keep the goals process as lightweight as possible and incorporating a regular review of goals into existing agile rituals is preferable. 
+Sprint reviews, demos, retrospectives and planning sessions give teams a chance to reflect on and share their progress and collectively agree their next steps. We want to aim to keep the goals process as lightweight as possible and incorporating a regular review of goals into existing agile rituals is preferable.
 
 Fifteen minutes spent reviewing a team’s goals and agreeing changes when needed every other sprint planning session adds an extra dimension to planning, and gives a team more confidence that they are making the right decisions for the coming sprint.
 
@@ -190,7 +186,7 @@ In the same way that the team comes together to reflect and plan on a regular ca
 
 ### The roadmap
 
-So that everyone in the organisation understands the vision and business objectives the quarterly goal setting process should be kicked off with the business reiterating the medium and long term objectives. A review of progress towards those objectives and any changes that have been made since the last goal setting process should be highlighted and explained. This helps establish a consistent narrative that is essential when attempting to align an organisation towards a shared vision. 
+So that everyone in the organisation understands the vision and business objectives the quarterly goal setting process should be kicked off with the business reiterating the medium and long term objectives. A review of progress towards those objectives and any changes that have been made since the last goal setting process should be highlighted and explained. This helps establish a consistent narrative that is essential when attempting to align an organisation towards a shared vision.
 
 Too often a company roadmap is created and presented only to be discarded and forgotten within weeks. The same rigour combined with Agile principles applied to planning at the team level should be applied to the medium and long term business objectives.
 
@@ -208,7 +204,7 @@ Teams can then review all requests for collaboration, discuss with the relevant 
 
 It is unrealistic to expect members of a team to hold a complete model of the business in their heads which they can refer to when making decisions. Teams need the mental space to be able to focus on the domain and part of the system for which they have direct responsibility.
 
-The downside to this is known as the problem of local optimisations. Over time small decisions made without taking the whole business into account accumulate. We need a means to either anticipate them or to realign on a regular basis. 
+The downside to this is known as the problem of local optimisations. Over time small decisions made without taking the whole business into account accumulate. We need a means to either anticipate them or to realign on a regular basis.
 
 The quarterly goal setting cycle and the goal reviews give us a means to achieve this. They act as checkpoints to allow the organisation to realign.
 
@@ -216,7 +212,7 @@ The quarterly goal setting cycle and the goal reviews give us a means to achieve
 
 Following a final review with senior leadership to validate that the team’s interpretation of the business vision and objectives is aligned; and to make the difficult prioritisation decisions that it has not been possible to reconcile at the team level, the outcome of the goal setting process can be seen as the organisation’s statement of intent.
 
-The artifact that is produced as a result of this process is the sum total of all business objectives, team goals, team dependencies and connections. For full transparency and as a reference point for ongoing decision making and for understanding the impact of change this artifact should be made accessible to everyone in the organisation. 
+The artifact that is produced as a result of this process is the sum total of all business objectives, team goals, team dependencies and connections. For full transparency and as a reference point for ongoing decision making and for understanding the impact of change this artifact should be made accessible to everyone in the organisation.
 
 ## Conclusion
 
