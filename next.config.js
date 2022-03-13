@@ -1,6 +1,15 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
 
-module.exports = nextConfig
+  async redirects() {
+    return [
+      {
+        source: "/blog/:year/:month/:day/:title*",
+        destination: "/:title*",
+        permanent: true,
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
