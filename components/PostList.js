@@ -1,15 +1,18 @@
+import Link from "next/link";
 import { longDate } from "libs/date";
-import styles from "components/PostList.module.css";
 
 export default function PostList({ posts }) {
   return (
-    <>
+    <ul>
       {posts.map((post) => (
-        <a href={`/${post.slug}`} className={styles.card} key={post.slug}>
-          <h2>{post.title} &rarr;</h2>
-          <p>{longDate(post.date)}</p>
-        </a>
+        <li key={post.slug}>
+          <Link href={`/${post.slug}`}>
+            <a>
+              {post.title} ({longDate(post.date)}) &rarr;
+            </a>
+          </Link>
+        </li>
       ))}
-    </>
+    </ul>
   );
 }
