@@ -1,27 +1,20 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "tech-blog",
+  "version": "0.1.0",
   "private": true,
-  "hexo": {
-    "version": "3.7.1"
-  },
   "scripts": {
-    "start": "node index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "hexo": "^3.7.1",
-    "hexo-browsersync": "^0.3.0",
-    "hexo-excerpt": "^1.1.1",
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-generator-feed": "^1.2.0",
-    "hexo-generator-index": "^0.2.0",
-    "hexo-generator-sitemap": "^1.1.2",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.0",
-    "hexo-renderer-jade": "^0.3.0",
-    "hexo-renderer-marked": "^0.2.10",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
-    "node-static": "^0.7.9"
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0"
   }
 }
