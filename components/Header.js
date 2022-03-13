@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export default function NavigationSection() {
+export default function Header() {
   return (
     <>
+      <h1>OpenTable UK Tech Blog</h1>
       <h2>Navigation</h2>
       <ul>
         <li>

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { getPosts } from "libs/post";
+import Header from "components/Header";
 import PageContainer from "components/PageContainer";
-import NavigationSection from "components/NavigationSection";
-import RecentPostsSection from "components/RecentPostsSection";
+import PostListSection from "components/PostListSection";
 
 export default function HomePage({ posts }) {
   return (
@@ -11,9 +11,8 @@ export default function HomePage({ posts }) {
         <title>OpenTable UK Tech Blog</title>
       </Head>
       <PageContainer>
-        <h1>OpenTable UK Tech Blog</h1>
-        <NavigationSection />
-        <RecentPostsSection posts={posts} />
+        <Header />
+        <PostListSection title="Recent Posts" posts={posts} />
       </PageContainer>
     </>
   );

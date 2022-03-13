@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { getPosts } from "libs/post";
+import Header from "components/Header";
 import PageContainer from "components/PageContainer";
-import PostList from "components/PostList";
+import PostListSection from "components/PostListSection";
 
 export default function ArchivesPage({ posts }) {
   return (
@@ -10,7 +11,8 @@ export default function ArchivesPage({ posts }) {
         <title>Archives</title>
       </Head>
       <PageContainer>
-        <PostList posts={posts} />
+        <Header />
+        <PostListSection title="Archives" posts={posts} />
       </PageContainer>
     </>
   );

@@ -1,9 +1,9 @@
 import PostList from "./PostList";
 
-export default function RecentPostsSection({ posts }) {
+export default function PostListSection({ title, posts }) {
   return (
     <>
-      <h2>Recent posts</h2>
+      <h2>{title}</h2>
       <PostList posts={posts} />
     </>
   );
