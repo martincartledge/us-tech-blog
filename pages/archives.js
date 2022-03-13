@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { getPosts } from "libs/post";
-import MainContainer from "components/MainContainer";
+import PageContainer from "components/PageContainer";
 import PostList from "components/PostList";
 
 export default function ArchivesPage({ posts }) {
@@ -9,9 +9,9 @@ export default function ArchivesPage({ posts }) {
       <Head>
         <title>Archives</title>
       </Head>
-      <MainContainer>
+      <PageContainer>
         <PostList posts={posts} />
-      </MainContainer>
+      </PageContainer>
     </>
   );
 }

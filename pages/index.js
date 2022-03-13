@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { getPosts } from "libs/post";
-import MainContainer from "components/MainContainer";
+import PageContainer from "components/PageContainer";
 import NavigationSection from "components/NavigationSection";
 import RecentPostsSection from "components/RecentPostsSection";
 
@@ -10,11 +10,11 @@ export default function HomePage({ posts }) {
       <Head>
         <title>OpenTable UK Tech Blog</title>
       </Head>
-      <MainContainer>
+      <PageContainer>
         <h1>OpenTable UK Tech Blog</h1>
         <NavigationSection />
         <RecentPostsSection posts={posts} />
-      </MainContainer>
+      </PageContainer>
     </>
   );
 }
