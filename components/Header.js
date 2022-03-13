@@ -3,7 +3,11 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <h1>OpenTable UK Tech Blog</h1>
+      <Link href="/">
+        <a>
+          <h1>OpenTable UK Tech Blog</h1>
+        </a>
+      </Link>
       <h2>Navigation</h2>
       <ul>
         <li>
