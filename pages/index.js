@@ -10,8 +10,8 @@ export default function HomePage({ posts }) {
       <Head>
         <title>OpenTable UK Tech Blog</title>
       </Head>
+      <Header />
       <PageContainer>
-        <Header />
         <PostListSection title="Recent Posts" posts={posts} />
       </PageContainer>
     </>

@@ -1,4 +1,9 @@
+.header {
+  padding: 2rem 2rem 0 2rem;
+}
+
 .links {
+  margin: 0;
   padding: 0;
 }
 

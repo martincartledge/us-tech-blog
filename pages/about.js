@@ -9,8 +9,8 @@ export default function AboutPage() {
       <Head>
         <title>About</title>
       </Head>
+      <Header />
       <PageContainer>
-        <Header />
         <AboutSection />
       </PageContainer>
     </>

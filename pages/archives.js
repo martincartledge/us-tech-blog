@@ -10,8 +10,8 @@ export default function ArchivesPage({ posts }) {
       <Head>
         <title>Archives</title>
       </Head>
+      <Header />
       <PageContainer>
-        <Header />
         <PostListSection title="Archives" posts={posts} />
       </PageContainer>
     </>
