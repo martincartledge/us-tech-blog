@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
@@ -8,19 +9,18 @@ export default function Header() {
           <h1>OpenTable UK Tech Blog</h1>
         </a>
       </Link>
-      <h2>Navigation</h2>
-      <ul>
-        <li>
+      <ul className={styles.links}>
+        <li className={styles.link}>
           <Link href="/about">
             <a>About</a>
           </Link>
         </li>
-        <li>
+        <li className={styles.link}>
           <Link href="/archives">
             <a>Archives</a>
           </Link>
         </li>
-        <li>
+        <li className={styles.link}>
           <Link href="/authors">
             <a>Authors</a>
           </Link>
