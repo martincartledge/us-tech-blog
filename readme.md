@@ -20,4 +20,4 @@ npm run scaffold [layout] <title>
 npm run deploy
 ```
 
-Then, load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
+Then, load [http://localhost:4000/](http://localhost:4000/) in a browser to see the output.
