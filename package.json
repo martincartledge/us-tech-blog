@@ -6,9 +6,13 @@
     "version": "3.9.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "hexo server",
+    "build": "hexo generate",
+    "push": "gh-pages -b public -d public",
+    "deploy": "npm run build && npm run push"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "hexo": "^3.7.1",
     "hexo-browsersync": "^0.3.0",
     "hexo-excerpt": "^1.1.1",
@@ -21,7 +25,6 @@
     "hexo-renderer-jade": "^0.3.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
-    "node-static": "^0.7.9"
+    "hexo-server": "^0.2.0"
   }
 }
