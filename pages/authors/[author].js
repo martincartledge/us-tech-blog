@@ -20,7 +20,7 @@ export default function AuthorPage({ author }) {
   );
 }
 
-export async function getStaticProps(author) {
+export async function getStaticProps({ params: { author } }) {
   return {
     props: {
       author,
@@ -32,7 +32,11 @@ export async function getStaticPaths() {
   const authors = await getAuthors();
 
   return {
-    paths: authors.map(author),
+    paths: authors.map((author) => ({
+      params: {
+        author,
+      },
+    })),
     fallback: false,
   };
 }

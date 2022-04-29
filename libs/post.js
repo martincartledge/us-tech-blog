@@ -4,11 +4,11 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHTML from "remark-html";
 
-const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
+export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
 
 const slugify = (str) => str.replace(/\.md$/, "");
 
-const readFileNames = () => {
+export const readFileNames = () => {
   return fs
     .readdirSync(POSTS_DIRECTORY)
     .filter((fileName) => fileName.includes(".md"));
