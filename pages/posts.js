@@ -4,15 +4,15 @@ import Header from "components/Header";
 import PageContainer from "components/PageContainer";
 import PostListSection from "components/PostListSection";
 
-export default function ArchivesPage({ posts }) {
+export default function PostsPage({ posts }) {
   return (
     <>
       <Head>
-        <title>Archives</title>
+        <title>Posts</title>
       </Head>
       <Header />
       <PageContainer>
-        <PostListSection title="Archives" posts={posts} />
+        <PostListSection title="Posts" posts={posts} />
       </PageContainer>
     </>
   );
