@@ -6,7 +6,7 @@ export default function PostList({ posts }) {
     <ul>
       {posts.map((post) => (
         <li key={post.slug}>
-          <Link href={`/${post.slug}`}>
+          <Link href={`/posts/${encodeURIComponent(post.slug)}`}>
             <a>
               {post.title} ({longDate(post.date)}) &rarr;
             </a>
