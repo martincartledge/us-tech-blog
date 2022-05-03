@@ -1,9 +1,10 @@
 import Head from "next/head";
 import ErrorPage from "next/error";
 import PageContainer from "components/PageContainer";
-import { getCategories } from "libs/category";
+import { getCategories, getPostsByCategory } from "libs/category";
+import PostListSection from "components/PostListSection";
 
-export default function CategoryPage({ category }) {
+export default function CategoryPage({ category, posts }) {
   if (!category) {
     return <ErrorPage statusCode={404} />;
   }
@@ -14,16 +15,19 @@ export default function CategoryPage({ category }) {
         <title>{category}</title>
       </Head>
       <PageContainer>
-        <h3>{category}</h3>
+        <PostListSection title={category} posts={posts} />
       </PageContainer>
     </>
   );
 }
 
 export async function getStaticProps({ params: { category } }) {
+  const posts = await getPostsByCategory(category);
+
   return {
     props: {
       category,
+      posts,
     },
   };
 }

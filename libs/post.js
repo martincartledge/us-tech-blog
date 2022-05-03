@@ -6,7 +6,7 @@ import remarkHTML from "remark-html";
 
 export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
 
-const slugify = (str) => str.replace(/\.md$/, "");
+export const slugify = (str) => str.replace(/\.md$/, "");
 
 export const readFileNames = () => {
   return fs
@@ -18,7 +18,7 @@ const readFileNameForSlug = (slug) => {
   return readFileNames().find((fileName) => slugify(fileName) === slug);
 };
 
-const readMetadata = (fileName) => {
+export const readMetadata = (fileName) => {
   const filePath = path.join(POSTS_DIRECTORY, fileName);
   const file = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(file);

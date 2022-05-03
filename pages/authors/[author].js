@@ -1,9 +1,10 @@
 import Head from "next/head";
 import ErrorPage from "next/error";
 import PageContainer from "components/PageContainer";
-import { getAuthors } from "libs/author";
+import { getAuthors, getPostsByAuthor } from "libs/author";
+import PostListSection from "components/PostListSection";
 
-export default function AuthorPage({ author }) {
+export default function AuthorPage({ author, posts }) {
   if (!author) {
     return <ErrorPage statusCode={404} />;
   }
@@ -14,16 +15,19 @@ export default function AuthorPage({ author }) {
         <title>{author}</title>
       </Head>
       <PageContainer>
-        <h3>{author}</h3>
+        <PostListSection title={author} posts={posts} />
       </PageContainer>
     </>
   );
 }
 
 export async function getStaticProps({ params: { author } }) {
+  const posts = await getPostsByAuthor(author);
+
   return {
     props: {
       author,
+      posts,
     },
   };
 }
