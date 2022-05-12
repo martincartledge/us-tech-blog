@@ -1,7 +1,8 @@
 ---
 title: "Interacting with ElasticSearch using Hubot"
 date: "2014-11-08"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [Hubot, ElasticSearch, Chatops]
 ---
 

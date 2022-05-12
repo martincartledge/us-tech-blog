@@ -1,7 +1,8 @@
 ---
 title: "Hosting external events"
 date: "2017-07-18"
-author: tmartin
+author: Tom Martin
+twitter: tpgmartin
 tags: [Conferences, Culture, OpenTable]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Explaining Flux architecture with macgyver.js"
 date: "2015-01-01"
-author: rtomlinson
+author: Ryan Tomlinson
+twitter: ryantomlinson
 tags: [JavaScript, Macgyver, Flux]
 ---
 

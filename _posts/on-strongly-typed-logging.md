@@ -1,7 +1,8 @@
 ---
 title: "On Strongly Typed Logging"
 date: "2015-01-23"
-author: mbazydlo
+author: Marcin Bazydlo
+twitter: mbazydlo
 tags: [Logs, Kibana, ElasticSearch, Architecture]
 ---
 

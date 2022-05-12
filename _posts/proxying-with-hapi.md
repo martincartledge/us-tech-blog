@@ -1,7 +1,8 @@
 ---
 title: "Proxying Services With Hapi.js"
 date: "2014-11-28"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [Hapi.js, Microservices, Proxy]
 ---
 

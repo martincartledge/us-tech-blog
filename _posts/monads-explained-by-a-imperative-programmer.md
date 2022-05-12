@@ -1,7 +1,8 @@
 ---
 title: "Monads explained by a imperative programmer - with examples"
 date: "2018-05-10"
-author: dmistry
+author: Dipun Mistry
+twitter: dipunm
 tags: [Monads, Functional programming, Design patterns]
 ---
 

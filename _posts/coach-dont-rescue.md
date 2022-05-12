@@ -1,7 +1,8 @@
 ---
 title: "Coach don't rescue"
 date: "2014-10-31"
-author: mbarrett
+author: Mark Barrett
+twitter: barrettology
 tags: [Coaching, Leadership, Work smarter, Culture]
 ---
 

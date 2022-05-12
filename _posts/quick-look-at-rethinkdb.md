@@ -1,7 +1,8 @@
 ---
 title: "Quick look at RethinkDB"
 date: "2013-09-23"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [NoSQL, MongoDB, RethinkDB]
 ---
 

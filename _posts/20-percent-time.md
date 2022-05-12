@@ -1,7 +1,8 @@
 ---
 title: "20% time: Why, as a manager, you should love your engineers to be doing it"
 date: "2014-02-06"
-author: ametcalfe
+author: Andy Metcalfe
+twitter: ametcalfe
 tags: [Leadership]
 ---
 

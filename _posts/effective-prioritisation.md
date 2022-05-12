@@ -1,7 +1,8 @@
 ---
 title: "Effective prioritisation"
 date: "2014-04-28"
-author: mbarrett
+author: Mark Barrett
+twitter: barrettology
 tags: [Coaching, Leadership, Work smarter, Culture]
 ---
 

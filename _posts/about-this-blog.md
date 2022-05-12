@@ -1,7 +1,8 @@
 ---
 title: "Welcome to the OpenTable UK technology blog"
 date: "2013-06-01"
-author: pharrington
+author: Paul Harrington
+twitter: paulsharrington
 ---
 
 <p>Hi, my name is Paul Harrington and I'd like to welcome you to the <a href="http://www.opentable.co.uk">OpenTable UK</a> technology blog &ndash; a place where we'd like to share our passions and introduce you to a whole new world of fabulous dining and amazing technology.</p>

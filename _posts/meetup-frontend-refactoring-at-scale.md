@@ -1,7 +1,8 @@
 ---
 title: "Meetup: Frontend Refactoring at Scale"
 date: "2017-09-04"
-author: tmartin
+author: Tom Martin
+twitter: tpgmartin
 tags: [Meetup, Culture]
 ---
 

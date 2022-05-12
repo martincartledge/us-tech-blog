@@ -1,7 +1,8 @@
 ---
 title: "Remote Worker Notes &ndash; Tools and Setup"
 date: "2014-04-29"
-author: mbazydlo
+author: Marcin Bazydlo
+twitter: mbazydlo
 tags: [Culture, Work smarter, Agile, Remote working]
 ---
 

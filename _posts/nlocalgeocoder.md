@@ -1,7 +1,8 @@
 ---
 title: "nLocalGeoCoder"
 date: "2013-06-07"
-author: rhopton
+author: Richard Hopton
+twitter: RichardHopton
 tags: [OSS, .Net, C#, Ruby, Collaboration]
 ---
 

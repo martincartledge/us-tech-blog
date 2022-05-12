@@ -1,7 +1,8 @@
 ---
 title: "Meetup: Design Systems in the Real World with React"
 date: "2019-06-11"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [Meetup, Culture]
 ---
 

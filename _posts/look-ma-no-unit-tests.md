@@ -1,7 +1,8 @@
 ---
 title: "Look ma, no unit tests!"
 date: "2014-04-16"
-author: ssalisbury
+author: Sam Salisbury
+twitter: samsalisbury
 tags: [Testing, Engineering, Acceptance tests, Innovation]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Hobknob v2.0: A new dimension"
 date: "2014-11-26"
-author: criddle
+author: Chris Riddle
+twitter: christriddle
 tags: [Hobknob]
 ---
 

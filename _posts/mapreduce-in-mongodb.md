@@ -1,7 +1,8 @@
 ---
 title: "MapReduce in MongoDB"
 date: "2013-08-07"
-author: rhopton
+author: Richard Hopton
+twitter: RichardHopton
 tags: [MapReduce, MongoDB, JavaScript, Innovation]
 ---
 

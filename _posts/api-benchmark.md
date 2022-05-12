@@ -1,7 +1,8 @@
 ---
 title: "Benchmarking APIs - why it’s important, and how"
 date: "2014-02-28"
-author: mfigus
+author: Matteo Figus
+twitter: matteofigus
 tags: [Benchmarks, SOA, Node.js, API, REST, Performance, Continuous delivery]
 ---
 

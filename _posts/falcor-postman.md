@@ -1,7 +1,8 @@
 ---
 title: "falcor-postman"
 date: "2016-11-09"
-author: mrichetto
+author: Mattia Richetto
+twitter: mattiaerre
 tags: [Falcor, JavaScript, OSS]
 ---
 

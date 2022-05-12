@@ -1,7 +1,8 @@
 ---
 title: "Building a living styleguide at OpenTable"
 date: "2015-01-19"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [UI, Design, OpenTable, CSS, Styleguide]
 ---
 

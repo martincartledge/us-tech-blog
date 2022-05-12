@@ -1,7 +1,8 @@
 ---
 title: "Acceptance Now"
 date: "2014-05-20"
-author: ssalisbury
+author: Sam Salisbury
+twitter: samsalisbury
 tags: [Testing, Engineering, Acceptance tests, Innovation]
 ---
 

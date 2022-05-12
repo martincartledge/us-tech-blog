@@ -1,7 +1,8 @@
 ---
 title: "Dismantling the monolith - Microsites at Opentable"
 date: "2015-02-09"
-author: mfigus
+author: Matteo Figus
+twitter: matteofigus
 tags: [SOA, Microsites, Microservices, Monolith, OpenComponents]
 ---
 

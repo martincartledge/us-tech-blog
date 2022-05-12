@@ -1,7 +1,8 @@
 ---
 title: "Managing Windows Web Applications with Puppet"
 date: "2014-05-13"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [Puppet, PowerShell, Configuration Management, DevOps, Windows, IIS]
 ---
 

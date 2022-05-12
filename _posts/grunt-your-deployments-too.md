@@ -1,7 +1,8 @@
 ---
 title: "Grunt your deployments too"
 date: "2013-08-08"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [Deployment, JavaScript, Grunt]
 ---
 

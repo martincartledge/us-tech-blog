@@ -1,7 +1,8 @@
 ---
 title: "Managing Windows Certificates with PowerShell"
 date: "2013-07-08"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [PowerShell, Automation, DevOps]
 ---
 

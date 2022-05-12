@@ -1,7 +1,8 @@
 ---
 title: "Continuous Delivery: Automating Deployment Visibility"
 date: "2014-05-19"
-author: rtomlinson
+author: Ryan Tomlinson
+twitter: ryantomlinson
 tags: [Continuous delivery, Hubot, Hipchat, Chatops]
 ---
 

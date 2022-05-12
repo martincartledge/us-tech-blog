@@ -1,7 +1,8 @@
 ---
 title: "Beginning a journey to chatops with Hubot"
 date: "2013-11-22"
-author: rtomlinson
+author: Ryan Tomlinson
+twitter: ryantomlinson
 tags: [Hubot, Hipchat, Chatops]
 ---
 
