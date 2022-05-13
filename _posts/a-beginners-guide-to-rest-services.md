@@ -1,7 +1,8 @@
 ---
 title: "A Beginner's guide to REST services"
 date: "2015-02-02"
-author: fmaffei
+author: Federico Maffei
+twitter: federicom4ffei
 tags: [Architecture, Engineering, REST, API, Theory]
 ---
 

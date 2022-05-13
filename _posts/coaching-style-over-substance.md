@@ -1,7 +1,8 @@
 ---
 title: "Coaching style over substance"
 date: "2014-02-03"
-author: mbarrett
+author: Mark Barrett
+twitter: barrettology
 tags: [Coaching, Leadership]
 ---
 

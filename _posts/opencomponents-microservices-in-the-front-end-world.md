@@ -1,7 +1,8 @@
 ---
 title: "OpenComponents - microservices in the front-end world"
 date: "2016-04-27"
-author: mfigus
+author: Matteo Figus
+twitter: matteofigus
 tags: [SOA, Microsites, Microservices, OpenComponents, OC]
 ---
 

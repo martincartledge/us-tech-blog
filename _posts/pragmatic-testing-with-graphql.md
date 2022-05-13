@@ -1,7 +1,8 @@
 ---
 title: "Pragmatic Testing with GraphQL"
 date: "2017-06-16"
-author: rluong
+author: Robert Luong
+twitter: lobut
 tags: [Testing, Engineering, Acceptance tests, API, GraphQL]
 ---
 

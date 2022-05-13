@@ -1,7 +1,8 @@
 ---
 title: "NDC Oslo"
 date: "2013-06-18"
-author: ametcalfe
+author: Andy Metcalfe
+twitter: ametcalfe
 tags: [Conferences]
 ---
 

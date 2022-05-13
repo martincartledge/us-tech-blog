@@ -1,7 +1,8 @@
 ---
 title: "When to performance test in production"
 date: "2014-03-20"
-author: ametcalfe
+author: Andy Metcalfe
+twitter: ametcalfe
 tags: [Performance]
 ---
 

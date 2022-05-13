@@ -1,7 +1,8 @@
 ---
 title: "Using Vagrant to work with ElasticSearch on your local machine"
 date: "2013-08-05"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [Vagrant, ElasticSearch, DevOps]
 ---
 

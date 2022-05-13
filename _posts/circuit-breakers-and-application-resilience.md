@@ -1,7 +1,8 @@
 ---
 title: "Circuit Breakers and Application Resilience"
 date: "2017-11-02"
-author: dgiddins
+author: Dafydd Giddins
+twitter: twit_daffers
 tags: [Polly, Application Resilience, Microservices, Error Handling]
 ---
 

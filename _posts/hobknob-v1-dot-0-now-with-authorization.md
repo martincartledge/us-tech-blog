@@ -1,7 +1,8 @@
 ---
 title: "Hobknob v1.0: Now with authorization"
 date: "2014-10-22"
-author: criddle
+author: Chris Riddle
+twitter: christriddle
 tags: [Hobknob]
 ---
 

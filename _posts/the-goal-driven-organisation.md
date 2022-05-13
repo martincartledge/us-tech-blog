@@ -1,7 +1,8 @@
 ---
 title: "The goal driven organisation"
 date: "2017-02-15"
-author: jflowers
+author: Jonathan Flowers
+twitter: jonflowers
 tags: [Agile, Goals, Delivery, Culture]
 ---
 

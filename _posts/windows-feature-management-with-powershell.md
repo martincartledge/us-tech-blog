@@ -1,7 +1,8 @@
 ---
 title: "Windows Feature Management with PowerShell"
 date: "2013-06-14"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [PowerShell, Automation, DevOps]
 ---
 

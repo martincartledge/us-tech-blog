@@ -1,7 +1,7 @@
 ---
 title: "Testing Puppet with Beaker pt.3 - Testing Roles"
 date: "2014-09-01"
-author: lbennett
+author: Liam Bennett
 categories: [Puppet, Acceptance tests, Beaker, Vagrant]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Internationalisation in a RESTful world"
 date: "2014-04-02"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [i18n, Internationalisation, REST, http, API]
 ---
 

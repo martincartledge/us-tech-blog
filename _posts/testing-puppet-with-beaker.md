@@ -1,7 +1,8 @@
 ---
 title: "Testing Puppet with Beaker"
 date: "2014-04-04"
-author: lbennett
+author: Liam Bennett
+twitter: liamjbennett
 categories: [Puppet, Acceptance tests, Beaker, Vagrant]
 ---
 

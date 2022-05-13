@@ -1,7 +1,8 @@
 ---
 title: "ForgeFriday - our commitment to the Puppet Forge"
 date: "2014-04-04"
-author: lbennett
+author: Liam Bennett
+twitter: liamjbennett
 tags: [Puppet, Open souce, OSS]
 ---
 

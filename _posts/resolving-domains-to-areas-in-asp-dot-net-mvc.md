@@ -1,7 +1,8 @@
 ---
 title: "Resolving domains to areas in ASP.NET MVC"
 date: "2013-09-25"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [ASP.NET MVC, Routing, Hackiness]
 ---
 

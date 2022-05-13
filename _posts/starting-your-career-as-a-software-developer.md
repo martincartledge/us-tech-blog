@@ -1,7 +1,8 @@
 ---
 title: "Starting your career as a software developer"
 date: "2018-10-08"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [Coaching, Career progression, Culture, OpenTable]
 ---
 

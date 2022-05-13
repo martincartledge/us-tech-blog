@@ -1,7 +1,8 @@
 ---
 title: "Upgrading Puppet with Puppet"
 date: "2014-04-07"
-author: lbennett
+author: Liam Bennett
+twitter: liamjbennett
 tags: [Puppet, Maintenance, Windows, Puppetversion]
 ---
 

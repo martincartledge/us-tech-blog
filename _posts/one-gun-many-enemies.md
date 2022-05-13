@@ -1,7 +1,8 @@
 ---
 title: "One Gun - Many Enemies"
 date: "2013-07-24"
-author: mbazydlo
+author: Marcin Bazydlo
+twitter: mbazydlo
 tags: [JavaScript, Jasmine, Testing]
 ---
 

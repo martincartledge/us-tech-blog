@@ -1,7 +1,8 @@
 ---
 title: "The adoption of Configuration Management"
 date: "2014-02-10"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags: [DevOps, Configuration management, Puppet]
 ---
 

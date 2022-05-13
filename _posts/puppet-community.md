@@ -1,7 +1,8 @@
 ---
 title: "Puppet-Community"
 date: "2015-05-06"
-author: lbennett
+author: Liam Bennett
+twitter: liamjbennett
 tags: [Puppet, Puppet-community]
 ---
 

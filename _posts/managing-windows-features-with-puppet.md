@@ -1,7 +1,8 @@
 ---
 title: "Managing Windows Features with Puppet"
 date: "2014-05-15"
-author: pstack
+author: Paul Stack
+twitter: stack72
 tags:
   [
     Configuration Management,

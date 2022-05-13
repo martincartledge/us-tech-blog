@@ -1,7 +1,8 @@
 ---
 title: "Testing Puppet with Beaker pt.2 - The Windows story"
 date: "2014-09-01"
-author: lbennett
+author: Liam Bennett
+twitter: liamjbennett
 tags: [Puppet, Acceptance tests, Beaker, Vagrant, Windows]
 ---
 

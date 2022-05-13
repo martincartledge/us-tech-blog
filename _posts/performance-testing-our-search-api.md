@@ -1,7 +1,8 @@
 ---
 title: "Performance testing our Search API"
 date: "2014-03-19"
-author: ametcalfe
+author: Andy Metcalfe
+twitter: ametcalfe
 tags: [Benchmarks, API, REST, Performance]
 ---
 

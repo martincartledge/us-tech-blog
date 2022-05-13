@@ -1,7 +1,8 @@
 ---
 title: "OpenTable's Global Hackathon 2017"
 date: "2017-06-01"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [OpenTable, Culture, Innovation]
 ---
 

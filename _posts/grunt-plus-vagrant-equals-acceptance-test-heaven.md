@@ -1,7 +1,8 @@
 ---
 title: "Grunt + Vagrant = Acceptance Test Heaven"
 date: "2013-08-16"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [Grunt, Vagrant, Acceptance tests, Automation]
 ---
 

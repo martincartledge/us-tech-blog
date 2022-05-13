@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { POSTS_DIRECTORY, readFileNames, readMetadata, slugify } from "./post";
+import { POSTS_DIRECTORY, readFileNames, readMetadata } from "./post";
 
 const readCategory = (fileName) => {
   const filePath = path.join(POSTS_DIRECTORY, fileName);
   const file = fs.readFileSync(filePath, "utf8");
   const { data } = matter(file);
 
-  return data.tags ?? [];
+  return data.tags?.map((t) => t.toLowerCase()) ?? [];
 };
 
 export const getCategories = async () => {

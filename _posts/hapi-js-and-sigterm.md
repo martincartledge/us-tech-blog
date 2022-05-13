@@ -1,7 +1,8 @@
 ---
 title: "Hapi.js and SIGTERM"
 date: "2015-02-16"
-author: aroyle
+author: Andy Royle
+twitter: aroyle
 tags: [Hapi.js, Microservices, SIGTERM]
 ---
 

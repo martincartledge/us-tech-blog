@@ -1,7 +1,8 @@
 ---
 title: "The DNS ABC"
 date: "2015-03-05"
-author: fmaffei
+author: Federico Maffei
+twitter: federicom4ffei
 tags: [Engineering, DNS, Theory]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "What can I do?"
 date: "2014-08-08"
-author: mbarrett
+author: Mark Barrett
+twitter: barrettology
 tags: [Coaching, Leadership, Work smarter, Culture]
 ---
 

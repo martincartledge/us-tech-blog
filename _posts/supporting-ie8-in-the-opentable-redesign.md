@@ -1,7 +1,8 @@
 ---
 title: "Supporting IE8 in the OpenTable redesign"
 date: "2014-12-08"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [CSS, Sass, Design, "Internet Explorer", OpenTable, Grunt]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Introducing Hobknob: Feature toggling with etcd"
 date: "2014-09-04"
-author: rtomlinson
+author: Ryan Tomlinson
+twitter: ryantomlinson
 tags: [Hobknob]
 ---
 

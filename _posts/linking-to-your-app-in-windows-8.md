@@ -1,7 +1,8 @@
 ---
 title: "Linking to your app in Windows 8"
 date: "2013-10-21"
-author: jcatterfeld
+author: John Catterfeld
+twitter: jcatterfeld
 tags: [OpenTable, Windows8]
 ---
 

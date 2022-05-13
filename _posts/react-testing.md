@@ -1,7 +1,8 @@
 ---
 title: "Testing React Components"
 date: "2016-01-07"
-author: ccartlidge
+author: Chris Cartlidge
+twitter: F1Cartlidge
 tags: [React, JavaScript, Testing]
 ---
 

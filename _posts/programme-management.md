@@ -1,7 +1,8 @@
 ---
 title: "Programme Management, making Agile scale"
 date: "2014-02-12"
-author: ametcalfe
+author: Andy Metcalfe
+twitter: ametcalfe
 tags: [Agile, Leadership, Conferences]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Structuring large ASP.NET Core projects for testing and readability"
 date: "2019-02-26"
-author: dgiddins
+author: Dafydd Giddins
+twitter: twit_daffers
 tags: [Testing, DotNetCore, ASP.Net, NUnit]
 ---
 
