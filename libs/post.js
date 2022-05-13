@@ -26,8 +26,8 @@ export const readMetadata = (fileName) => {
   return {
     title: data.title,
     date: data.date,
-    author: data.author,
-    tags: data.tags ?? [],
+    author: data.author?.toLowerCase(),
+    tags: data.tags?.map((t) => t.toLowerCase()) ?? [],
     slug: slugify(fileName),
     content,
   };
