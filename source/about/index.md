@@ -41,5 +41,4 @@ date: 2013-10-21 15:42:25
 
 <p>I hope you've enjoyed this introduction and we're always on the look-out for exceptional people so if you think you've got what it takes to be a part of this phenomenal team then let us know on Twitter - <a href="https://twitter.com/opentabletechuk">@OpenTableTechUK</a>.</p>
 
-
-<p>Paul Harrington</p>
+<p>John Catterfeld</p>
