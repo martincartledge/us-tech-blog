@@ -8,7 +8,7 @@
   "scripts": {
     "start": "hexo server",
     "scaffold": "hexo new",
-    "cname": "echo tech.opentable.co.uk' > public/CNAME",
+    "cname": "echo tech.opentable.co.uk > public/CNAME",
     "build": "hexo generate && npm run cname",
     "push": "gh-pages -b public -d public",
     "deploy": "npm run build && npm run push"
