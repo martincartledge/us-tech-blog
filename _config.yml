@@ -72,10 +72,3 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: beautiful-hexo
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: heroku
-  repo: it@heroku.com:uk-tech-blog.git
-  message: [message]
