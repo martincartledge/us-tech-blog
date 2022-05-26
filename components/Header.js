@@ -11,11 +11,6 @@ export default function Header() {
       </Link>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li className={styles.link}>
           <Link href="/posts">
             <a>Posts</a>
           </Link>
