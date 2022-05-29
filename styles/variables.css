@@ -48,6 +48,7 @@
   --width-tablet: 769px;
   --width-desktop: calc(960px + 2 * var(--width-gap));
   --width-widescreen: calc(1152px + 2 * var(--width-gap));
+  --width-fullhd: calc(1344px + 2 * var(--width-gap));
   --base-font-size: 16px;
   --base-min-width: 300px;
   --base-background-color: var(--color-white);

@@ -3,7 +3,6 @@ import ErrorPage from "next/error";
 import { getPosts, getPost } from "libs/post";
 import PostHead from "components/PostHead";
 import PostBody from "components/PostBody";
-import PageContainer from "components/PageContainer";
 
 export default function PostPage({ post }) {
   if (!post) {
@@ -15,10 +14,10 @@ export default function PostPage({ post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <PageContainer>
+      <div className="container">
         <PostHead title={post.title} date={post.date} />
         <PostBody html={post.html} />
-      </PageContainer>
+      </div>
     </>
   );
 }

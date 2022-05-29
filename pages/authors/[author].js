@@ -1,6 +1,5 @@
 import Head from "next/head";
 import ErrorPage from "next/error";
-import PageContainer from "components/PageContainer";
 import { getAuthors, getPostsByAuthor } from "libs/author";
 import PostListSection from "components/PostListSection";
 
@@ -14,9 +13,9 @@ export default function AuthorPage({ author, posts }) {
       <Head>
         <title>{author}</title>
       </Head>
-      <PageContainer>
+      <div className="container">
         <PostListSection title={author} posts={posts} />
-      </PageContainer>
+      </div>
     </>
   );
 }

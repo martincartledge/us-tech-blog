@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "components/Header";
-import PageContainer from "components/PageContainer";
 import { getAuthors } from "libs/author";
 import Link from "next/link";
 
@@ -11,7 +10,7 @@ export default function AuthorsPage({ authors }) {
         <title>Authors</title>
       </Head>
       <Header />
-      <PageContainer>
+      <div className="container">
         <h2>Authors</h2>
 
         <ul>
@@ -23,7 +22,7 @@ export default function AuthorsPage({ authors }) {
             </li>
           ))}
         </ul>
-      </PageContainer>
+      </div>
     </>
   );
 }

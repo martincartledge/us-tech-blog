@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "components/Header";
-import PageContainer from "components/PageContainer";
 import { getCategories } from "libs/category";
 import Link from "next/link";
 
@@ -11,7 +10,7 @@ export default function CategoriesPage({ categories }) {
         <title>Categories</title>
       </Head>
       <Header />
-      <PageContainer>
+      <div className="container">
         <h2>Categories</h2>
         <ul>
           {categories.map((category) => (
@@ -22,7 +21,7 @@ export default function CategoriesPage({ categories }) {
             </li>
           ))}
         </ul>
-      </PageContainer>
+      </div>
     </>
   );
 }
