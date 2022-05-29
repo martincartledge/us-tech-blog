@@ -37,10 +37,10 @@
   --weight-normal: 400;
   --weight-medium: 500;
   --weight-bold: 700;
-  --spacing-gap: 32px;
-  --spacing-tablet: 769px;
-  --spacing-desktop: calc(960px + 2 * var(--spacing-gap));
-  --spacing-widescreen: calc(1152px + 2 * var(--spacing-gap));
+  --width-gap: 32px;
+  --width-tablet: 769px;
+  --width-desktop: calc(960px + 2 * var(--width-gap));
+  --width-widescreen: calc(1152px + 2 * var(--width-gap));
   --base-font-size: 16px;
   --base-min-width: 300px;
   --base-background-color: var(--color-white);
