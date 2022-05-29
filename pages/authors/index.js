@@ -1,16 +1,11 @@
-import Head from "next/head";
 import Header from "components/Header";
 import { getAuthors } from "libs/author";
-import Link from "next/link";
 import AuthorListSection from "components/AuthorListSection";
 
 export default function AuthorsPage({ authors }) {
   return (
     <>
-      <Head>
-        <title>Authors</title>
-      </Head>
-      <Header />
+      <Header pageTitle="Authors" />
       <div className="container">
         <AuthorListSection title="Authors" authors={authors} />
       </div>

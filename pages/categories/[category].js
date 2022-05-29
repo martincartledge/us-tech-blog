@@ -1,4 +1,3 @@
-import Head from "next/head";
 import ErrorPage from "next/error";
 import { getCategories, getPostsByCategory } from "libs/category";
 import Header from "components/Header";
@@ -11,10 +10,7 @@ export default function CategoryPage({ category, posts }) {
 
   return (
     <>
-      <Head>
-        <title>{category}</title>
-      </Head>
-      <Header />
+      <Header pageTitle={`Posts in ${category}`} />
       <div className="container">
         <PostListSection title={category} posts={posts} />
       </div>
