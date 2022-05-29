@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 export default function Header() {
   return (
     <div className="container">
-      <header>
+      <header className={styles.header}>
         <Link href="/">
           <a>
             <h1>OpenTable UK Tech Blog</h1>

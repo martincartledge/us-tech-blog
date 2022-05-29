@@ -5,23 +5,34 @@
   width: auto;
 }
 
-/* --width-desktop + 2 * --width-gap */
+/* desktop */
 @media screen and (min-width: 1024px) {
   .container {
     max-width: calc(var(--width-desktop) - 2 * var(--width-gap));
   }
 }
 
-/* --width-widescreen + 2 * --width-gap */
+/* widescreen */
 @media screen and (min-width: 1216px) {
   .container {
     max-width: calc(var(--width-widescreen) - 2 * var(--width-gap));
   }
 }
 
-/* --width-fullhd + 2 * --width-gap */
+/* fullhd */
 @media screen and (min-width: 1408px) {
   .container {
     max-width: calc(var(--width-fullhd) - 2 * var(--width-gap));
+  }
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 3rem 3rem;
   }
 }

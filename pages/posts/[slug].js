@@ -1,8 +1,8 @@
 import Head from "next/head";
 import ErrorPage from "next/error";
 import { getPosts, getPost } from "libs/post";
-import PostHead from "components/PostHead";
-import PostBody from "components/PostBody";
+import Header from "components/Header";
+import PostContentSection from "components/PostContentSection";
 
 export default function PostPage({ post }) {
   if (!post) {
@@ -14,9 +14,9 @@ export default function PostPage({ post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
+      <Header />
       <div className="container">
-        <PostHead title={post.title} date={post.date} />
-        <PostBody html={post.html} />
+        <PostContentSection post={post} />
       </div>
     </>
   );

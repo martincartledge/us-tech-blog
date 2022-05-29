@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ErrorPage from "next/error";
 import { getCategories, getPostsByCategory } from "libs/category";
+import Header from "components/Header";
 import PostListSection from "components/PostListSection";
 
 export default function CategoryPage({ category, posts }) {
@@ -13,6 +14,7 @@ export default function CategoryPage({ category, posts }) {
       <Head>
         <title>{category}</title>
       </Head>
+      <Header />
       <div className="container">
         <PostListSection title={category} posts={posts} />
       </div>

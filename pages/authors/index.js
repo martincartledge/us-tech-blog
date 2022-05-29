@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "components/Header";
 import { getAuthors } from "libs/author";
 import Link from "next/link";
+import AuthorListSection from "components/AuthorListSection";
 
 export default function AuthorsPage({ authors }) {
   return (
@@ -11,17 +12,7 @@ export default function AuthorsPage({ authors }) {
       </Head>
       <Header />
       <div className="container">
-        <h2>Authors</h2>
-
-        <ul>
-          {authors.map((author) => (
-            <li key={author}>
-              <Link href={`/authors/${encodeURIComponent(author)}`}>
-                <a>{author}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <AuthorListSection title="Authors" authors={authors} />
       </div>
     </>
   );
