@@ -19,9 +19,9 @@
   --color-blue: hsl(229, 53%, 53%);
   --color-purple: hsl(271, 100%, 71%);
   --color-red: hsl(348, 86%, 61%);
-  --font-primary: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
+  --font-primary: "BrandonText", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --font-secondary: var(--font-primary);
   --font-code: monospace;
   --radius: 4px;
@@ -34,10 +34,8 @@
   --size-6: 1rem;
   --size-7: 0.75rem;
   --small-font-size: 0.875em;
-  --weight-light: 300;
   --weight-normal: 400;
   --weight-medium: 500;
-  --weight-semibold: 600;
   --weight-bold: 700;
   --spacing-gap: 32px;
   --spacing-tablet: 769px;
