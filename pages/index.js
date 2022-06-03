@@ -1,18 +1,15 @@
-import Head from "next/head";
 import { getPosts } from "libs/post";
 import Header from "components/Header";
+import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 
 export default function HomePage({ posts }) {
   return (
     <>
-      <Head>
-        <title>OpenTable UK Tech Blog</title>
-      </Head>
       <Header />
-      <div className="container">
+      <Container>
         <PostListSection title="Recent Posts" posts={posts} />
-      </div>
+      </Container>
     </>
   );
 }

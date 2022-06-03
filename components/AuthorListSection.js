@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Section from "components/Section";
 
 export default function AuthorListSection({ title, authors }) {
   return (
-    <section className="section">
+    <Section>
       <h2>{title}</h2>
       <ul>
         {authors.map((author) => (
@@ -13,6 +14,6 @@ export default function AuthorListSection({ title, authors }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }

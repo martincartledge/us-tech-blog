@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Section from "components/Section";
 
 export default function CategoryListSection({ title, categories }) {
   return (
-    <section className="section">
+    <Section>
       <h2>{title}</h2>
       <ul>
         {categories.map((category) => (
@@ -13,6 +14,6 @@ export default function CategoryListSection({ title, categories }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }

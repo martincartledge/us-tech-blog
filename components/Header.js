@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./Header.module.css";
+import Container from "components/Container";
+import styles from "components/Header.module.css";
 
 export default function Header({ pageTitle }) {
   const BLOG_TITLE = "OpenTable Tech UK";
@@ -11,7 +12,7 @@ export default function Header({ pageTitle }) {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="container">
+      <Container>
         <header className={styles.header}>
           <Link href="/">
             <a>
@@ -36,7 +37,7 @@ export default function Header({ pageTitle }) {
             </li>
           </ul>
         </header>
-      </div>
+      </Container>
     </>
   );
 }

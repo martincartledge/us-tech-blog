@@ -1,7 +1,8 @@
 import ErrorPage from "next/error";
 import { getAuthors, getPostsByAuthor } from "libs/author";
-import PostListSection from "components/PostListSection";
 import Header from "components/Header";
+import Container from "components/Container";
+import PostListSection from "components/PostListSection";
 
 export default function AuthorPage({ author, posts }) {
   if (!author) {
@@ -11,9 +12,9 @@ export default function AuthorPage({ author, posts }) {
   return (
     <>
       <Header pageTitle={`Posts by ${author}`} />
-      <div className="container">
+      <Container>
         <PostListSection title={author} posts={posts} />
-      </div>
+      </Container>
     </>
   );
 }

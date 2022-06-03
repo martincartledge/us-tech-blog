@@ -1,14 +1,15 @@
-import Header from "components/Header";
-import CategoryListSection from "components/CategoryListSection";
 import { getCategories } from "libs/category";
+import Header from "components/Header";
+import Container from "components/Container";
+import CategoryListSection from "components/CategoryListSection";
 
 export default function CategoriesPage({ categories }) {
   return (
     <>
       <Header pageTitle="Categories" />
-      <div className="container">
+      <Container>
         <CategoryListSection title="Categories" categories={categories} />
-      </div>
+      </Container>
     </>
   );
 }

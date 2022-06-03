@@ -1,14 +1,15 @@
-import Header from "components/Header";
 import { getAuthors } from "libs/author";
+import Header from "components/Header";
+import Container from "components/Container";
 import AuthorListSection from "components/AuthorListSection";
 
 export default function AuthorsPage({ authors }) {
   return (
     <>
       <Header pageTitle="Authors" />
-      <div className="container">
+      <Container>
         <AuthorListSection title="Authors" authors={authors} />
-      </div>
+      </Container>
     </>
   );
 }

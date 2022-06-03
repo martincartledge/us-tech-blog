@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { longDate } from "libs/date";
+import Section from "components/Section";
 
 export default function PostListSection({ title, posts }) {
   return (
-    <section className="section">
+    <Section>
       <h2>{title}</h2>
       <ul>
         {posts.map((post) => (
@@ -16,6 +17,6 @@ export default function PostListSection({ title, posts }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }

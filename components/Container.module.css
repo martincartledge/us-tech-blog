@@ -25,14 +25,3 @@
     max-width: calc(var(--width-fullhd) - 2 * var(--width-gap));
   }
 }
-
-.section {
-  padding: 3rem 1.5rem;
-}
-
-/* desktop */
-@media screen and (min-width: 1024px) {
-  .section {
-    padding: 3rem 3rem;
-  }
-}

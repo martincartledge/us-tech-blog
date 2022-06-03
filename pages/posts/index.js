@@ -1,14 +1,15 @@
 import { getPosts } from "libs/post";
 import Header from "components/Header";
+import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 
 export default function PostsPage({ posts }) {
   return (
     <>
       <Header pageTitle="Posts" />
-      <div className="container">
+      <Container>
         <PostListSection title="Posts" posts={posts} />
-      </div>
+      </Container>
     </>
   );
 }
