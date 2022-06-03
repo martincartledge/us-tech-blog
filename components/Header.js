@@ -1,43 +1,35 @@
-import Head from "next/head";
 import Link from "next/link";
 import Container from "components/Container";
+import { BLOG_TITLE } from "constants/app";
 import styles from "components/Header.module.css";
 
-export default function Header({ pageTitle }) {
-  const BLOG_TITLE = "OpenTable Tech UK";
-  const title = pageTitle ? pageTitle + " | " + BLOG_TITLE : BLOG_TITLE;
-
+export default function Header() {
   return (
-    <>
-      <Head>
-        <title>{title}</title>
-      </Head>
-      <Container>
-        <header className={styles.header}>
-          <Link href="/">
-            <a>
-              <h1>{BLOG_TITLE}</h1>
-            </a>
-          </Link>
-          <ul className={styles.links}>
-            <li className={styles.link}>
-              <Link href="/posts">
-                <a>Posts</a>
-              </Link>
-            </li>
-            <li className={styles.link}>
-              <Link href="/authors">
-                <a>Authors</a>
-              </Link>
-            </li>
-            <li className={styles.link}>
-              <Link href="/categories">
-                <a>Categories</a>
-              </Link>
-            </li>
-          </ul>
-        </header>
-      </Container>
-    </>
+    <Container>
+      <header className={styles.header}>
+        <Link href="/">
+          <a>
+            <h1>{BLOG_TITLE}</h1>
+          </a>
+        </Link>
+        <ul className={styles.links}>
+          <li className={styles.link}>
+            <Link href="/posts">
+              <a>Posts</a>
+            </Link>
+          </li>
+          <li className={styles.link}>
+            <Link href="/authors">
+              <a>Authors</a>
+            </Link>
+          </li>
+          <li className={styles.link}>
+            <Link href="/categories">
+              <a>Categories</a>
+            </Link>
+          </li>
+        </ul>
+      </header>
+    </Container>
   );
 }

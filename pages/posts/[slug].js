@@ -1,5 +1,6 @@
 import ErrorPage from "next/error";
 import { getPosts, getPost } from "libs/post";
+import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostContentSection from "components/PostContentSection";
@@ -11,7 +12,8 @@ export default function PostPage({ post }) {
 
   return (
     <>
-      <Header pageTitle={post.title} />
+      <DocumentHead title={post.title} />
+      <Header />
       <Container>
         <PostContentSection post={post} />
       </Container>

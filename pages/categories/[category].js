@@ -1,5 +1,6 @@
 import ErrorPage from "next/error";
 import { getCategories, getPostsByCategory } from "libs/category";
+import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
@@ -11,7 +12,8 @@ export default function CategoryPage({ category, posts }) {
 
   return (
     <>
-      <Header pageTitle={`Posts in ${category}`} />
+      <DocumentHead title={`Posts in ${category}`} />
+      <Header />
       <Container>
         <PostListSection title={category} posts={posts} />
       </Container>

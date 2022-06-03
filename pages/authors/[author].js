@@ -1,5 +1,6 @@
 import ErrorPage from "next/error";
 import { getAuthors, getPostsByAuthor } from "libs/author";
+import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
@@ -11,7 +12,8 @@ export default function AuthorPage({ author, posts }) {
 
   return (
     <>
-      <Header pageTitle={`Posts by ${author}`} />
+      <DocumentHead title={`Posts by ${author}`} />
+      <Header />
       <Container>
         <PostListSection title={author} posts={posts} />
       </Container>

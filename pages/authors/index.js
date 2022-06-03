@@ -1,4 +1,5 @@
 import { getAuthors } from "libs/author";
+import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import AuthorListSection from "components/AuthorListSection";
@@ -6,7 +7,8 @@ import AuthorListSection from "components/AuthorListSection";
 export default function AuthorsPage({ authors }) {
   return (
     <>
-      <Header pageTitle="Authors" />
+      <DocumentHead title="Authors" />
+      <Header />
       <Container>
         <AuthorListSection title="Authors" authors={authors} />
       </Container>

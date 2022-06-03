@@ -1,12 +1,10 @@
-import Head from "next/head";
+import DocumentHead from "components/DocumentHead";
 import ErrorMessage from "components/ErrorMessage";
 
 export default function NotFoundErrorPage() {
   return (
     <>
-      <Head>
-        <title>Page not found</title>
-      </Head>
+      <DocumentHead title="Page not found" />
       <ErrorMessage message="Page not found" />
     </>
   );
