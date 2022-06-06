@@ -1,9 +1,9 @@
-import Head from "next/head";
 import ErrorPage from "next/error";
 import { getPosts, getPost } from "libs/post";
-import PostHead from "components/PostHead";
-import PostBody from "components/PostBody";
-import PageContainer from "components/PageContainer";
+import DocumentHead from "components/DocumentHead";
+import Header from "components/Header";
+import Container from "components/Container";
+import PostContentSection from "components/PostContentSection";
 
 export default function PostPage({ post }) {
   if (!post) {
@@ -12,13 +12,11 @@ export default function PostPage({ post }) {
 
   return (
     <>
-      <Head>
-        <title>{post.title}</title>
-      </Head>
-      <PageContainer>
-        <PostHead title={post.title} date={post.date} />
-        <PostBody html={post.html} />
-      </PageContainer>
+      <DocumentHead title={post.title} />
+      <Header />
+      <Container>
+        <PostContentSection post={post} />
+      </Container>
     </>
   );
 }

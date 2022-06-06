@@ -1,29 +1,17 @@
-import Head from "next/head";
-import Header from "components/Header";
-import PageContainer from "components/PageContainer";
 import { getAuthors } from "libs/author";
-import Link from "next/link";
+import DocumentHead from "components/DocumentHead";
+import Header from "components/Header";
+import Container from "components/Container";
+import AuthorListSection from "components/AuthorListSection";
 
 export default function AuthorsPage({ authors }) {
   return (
     <>
-      <Head>
-        <title>Authors</title>
-      </Head>
+      <DocumentHead title="Authors" />
       <Header />
-      <PageContainer>
-        <h2>Authors</h2>
-
-        <ul>
-          {authors.map((author) => (
-            <li key={author}>
-              <Link href={`/authors/${encodeURIComponent(author)}`}>
-                <a>{author}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </PageContainer>
+      <Container>
+        <AuthorListSection title="Authors" authors={authors} />
+      </Container>
     </>
   );
 }

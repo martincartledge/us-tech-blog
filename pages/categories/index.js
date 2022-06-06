@@ -1,28 +1,17 @@
-import Head from "next/head";
-import Header from "components/Header";
-import PageContainer from "components/PageContainer";
 import { getCategories } from "libs/category";
-import Link from "next/link";
+import DocumentHead from "components/DocumentHead";
+import Header from "components/Header";
+import Container from "components/Container";
+import CategoryListSection from "components/CategoryListSection";
 
 export default function CategoriesPage({ categories }) {
   return (
     <>
-      <Head>
-        <title>Categories</title>
-      </Head>
+      <DocumentHead title="Categories" />
       <Header />
-      <PageContainer>
-        <h2>Categories</h2>
-        <ul>
-          {categories.map((category) => (
-            <li key={category}>
-              <Link href={`/categories/${encodeURIComponent(category)}`}>
-                <a>{category}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </PageContainer>
+      <Container>
+        <CategoryListSection title="Categories" categories={categories} />
+      </Container>
     </>
   );
 }
