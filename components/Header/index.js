@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "components/Container";
 import { BLOG_TITLE } from "constants/app";
-import styles from "components/Header.module.css";
+import styles from "components/Header/styles.module.css";
 
 export default function Header() {
   return (

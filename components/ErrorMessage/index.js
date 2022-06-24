@@ -1,4 +1,4 @@
-import styles from "components/ErrorMessage.module.css";
+import styles from "components/ErrorMessage/styles.module.css";
 
 export default function ErrorMessage() {
   return (
