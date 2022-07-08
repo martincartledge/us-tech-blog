@@ -4,6 +4,7 @@ import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
+import Footer from "components/Footer";
 
 export default function CategoryPage({ category, posts }) {
   if (!category) {
@@ -17,6 +18,7 @@ export default function CategoryPage({ category, posts }) {
       <Container>
         <PostListSection title={category} posts={posts} />
       </Container>
+      <Footer />
     </>
   );
 }

@@ -3,6 +3,7 @@ import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
+import Footer from "components/Footer";
 
 export default function PostsPage({ posts }) {
   return (
@@ -12,6 +13,7 @@ export default function PostsPage({ posts }) {
       <Container>
         <PostListSection title="Posts" posts={posts} />
       </Container>
+      <Footer />
     </>
   );
 }
