@@ -48,7 +48,7 @@ const Footer = () => (
         <span className={styles.moreLinksHeader}>STAY CONNECTED</span>
         <Link href="https://www.opentable.co.uk">
           <a className={styles.moreLink}>
-            <span>Opentable.co.uk</span>
+            <span>OpenTable.co.uk</span>
           </a>
         </Link>
         <Link href="https://www.opentable.com/careers/technology/">
