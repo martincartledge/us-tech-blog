@@ -4,6 +4,7 @@ import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostContentSection from "components/PostContentSection";
+import Footer from "components/Footer";
 
 export default function PostPage({ post }) {
   if (!post) {
@@ -17,6 +18,7 @@ export default function PostPage({ post }) {
       <Container>
         <PostContentSection post={post} />
       </Container>
+      <Footer />
     </>
   );
 }

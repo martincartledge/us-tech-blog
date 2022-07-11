@@ -1,0 +1,57 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--color-ash-darker);
+  padding: 40px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.OTLogo {
+  max-width: 64px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreLinksHeader {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.moreLink {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.socialLogos {
+  padding: 40px 0;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 60px 140px;
+    flex-direction: row;
+  }
+
+  .socials{
+    padding-top: 6px;
+    flex-direction: row;
+  }
+
+  .socialLogos {
+    padding: 0 80px;
+  }
+}

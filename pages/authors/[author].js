@@ -4,6 +4,7 @@ import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
+import Footer from "components/Footer";
 
 export default function AuthorPage({ author, posts }) {
   if (!author) {
@@ -17,6 +18,7 @@ export default function AuthorPage({ author, posts }) {
       <Container>
         <PostListSection title={author} posts={posts} />
       </Container>
+      <Footer />
     </>
   );
 }
