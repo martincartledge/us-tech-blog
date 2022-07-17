@@ -3,7 +3,7 @@ title: "Managing Windows Web Applications with Puppet"
 date: "2014-05-13"
 author: Paul Stack
 twitter: stack72
-tags: [Puppet, PowerShell, Configuration Management, DevOps, Windows, IIS]
+category: infrastructure
 ---
 
 As part of our move towards a configuration management tool, we really wanted to start automating as much of our infrastructure as possible. This included our application configuration stack. IIS management is pretty easy with PowerShell. It would look something like this

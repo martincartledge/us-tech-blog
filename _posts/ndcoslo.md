@@ -3,7 +3,7 @@ title: "NDC Oslo"
 date: "2013-06-18"
 author: Andy Metcalfe
 twitter: ametcalfe
-tags: [Conferences]
+category: events
 ---
 
 Three OpenTable heroes took to Norway last week to attend NDC Oslo. For two of us it was our first major conference and for one, Paul Stack, he had to speak.

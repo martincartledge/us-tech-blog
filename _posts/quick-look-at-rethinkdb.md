@@ -3,7 +3,7 @@ title: "Quick look at RethinkDB"
 date: "2013-09-23"
 author: Andy Royle
 twitter: aroyle
-tags: [NoSQL, MongoDB, RethinkDB]
+category: infrastructure
 ---
 
 Someone in the office mentioned [RethinkDb][1] and I was impressed by the rhetoric on the site, so I decided to spend a couple of hours spiking one of our existing nodejs apps with RethinkDb. The app currently uses MongoDb so inevitably I'm comparing the two.

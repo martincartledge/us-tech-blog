@@ -3,7 +3,7 @@ title: "nLocalGeoCoder"
 date: "2013-06-07"
 author: Richard Hopton
 twitter: RichardHopton
-tags: [OSS, .Net, C#, Ruby, Collaboration]
+category: backend
 ---
 
 ## History

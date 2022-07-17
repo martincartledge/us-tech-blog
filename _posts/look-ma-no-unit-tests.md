@@ -3,7 +3,7 @@ title: "Look ma, no unit tests!"
 date: "2014-04-16"
 author: Sam Salisbury
 twitter: samsalisbury
-tags: [Testing, Engineering, Acceptance tests, Innovation]
+category: engineering
 ---
 
 _**UPDATE:** I've written a [follow-up to this post](/blog/2014/05/19/acceptance-now) with a bit more detail into how we made acceptance-only testing work in practice._

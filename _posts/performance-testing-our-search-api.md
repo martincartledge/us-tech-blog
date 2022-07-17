@@ -3,7 +3,7 @@ title: "Performance testing our Search API"
 date: "2014-03-19"
 author: Andy Metcalfe
 twitter: ametcalfe
-tags: [Benchmarks, API, REST, Performance]
+category: backend
 ---
 
 It was midnight on the Friday before Christmas, my seven-week old child was tucked up asleep and I was pretty chilled. All was calm and it was time for bed. Two minutes later I had a phone call, followed by a series of Nagios email alerts, and a need to put my work hat on quickly. The search API was having trouble; as the manager of the team who developed it, I was not looking forward to this. We were having a real slowdown at one of our busiest times of the year &ndash; this was going to be fun.

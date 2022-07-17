@@ -3,7 +3,7 @@ title: "Grunt your deployments too"
 date: "2013-08-08"
 author: Andy Royle
 twitter: aroyle
-tags: [Deployment, JavaScript, Grunt]
+category: engineering
 ---
 
 We've been using [Grunt][1] as a build tool for our nodejs apps, and it's brilliant. It lints, it configures, it minifies, it tests and it packages.

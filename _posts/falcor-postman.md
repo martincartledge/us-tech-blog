@@ -3,7 +3,7 @@ title: "falcor-postman"
 date: "2016-11-09"
 author: Mattia Richetto
 twitter: mattiaerre
-tags: [Falcor, JavaScript, OSS]
+category: engineering
 ---
 
 At OpenTable, we have an engineering culture that empowers us to research, experiment and learn.

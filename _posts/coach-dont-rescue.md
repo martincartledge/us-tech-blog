@@ -3,7 +3,7 @@ title: "Coach don't rescue"
 date: "2014-10-31"
 author: Mark Barrett
 twitter: barrettology
-tags: [Coaching, Leadership, Work smarter, Culture]
+category: culture
 ---
 
 I recently attended a fascinating and emotionally-charged talk by [Samantha Soma](https://twitter.com/sisoma) at [DareConf 2014](https://2014.dareconf.com), ['How to stop rescuing people'](http://vimeo.com/108047198). It strongly mirrored my experience of moving into a leadership role and I'd recommend anyone with a spare 30mins to watch it.

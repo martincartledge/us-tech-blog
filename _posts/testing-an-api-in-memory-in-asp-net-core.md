@@ -3,7 +3,7 @@ title: "Testing an API In Memory in ASP.NET Core"
 date: "2019-01-28"
 author: Dafydd Giddins
 twitter: twit_daffers
-tags: [Testing, DotNetCore, ASP.Net, NUnit]
+category: backend
 ---
 
 ## TL;DR

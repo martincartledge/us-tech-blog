@@ -3,7 +3,7 @@ title: "Pragmatic Testing with GraphQL"
 date: "2017-06-16"
 author: Robert Luong
 twitter: lobut
-tags: [Testing, Engineering, Acceptance tests, API, GraphQL]
+category: frontend
 ---
 
 We’ve been using GraphQL at OpenTable for a little over half a year now. I won’t go into detail as to why we started using it, but suffice to say, we really enjoyed creating our very first GraphQL endpoint. It eased a lot of the inconsistencies that we were experiencing with some of our REST-ful services.

@@ -3,7 +3,7 @@ title: "Dismantling the monolith - Microsites at Opentable"
 date: "2015-02-09"
 author: Matteo Figus
 twitter: matteofigus
-tags: [SOA, Microsites, Microservices, Monolith, OpenComponents]
+category: engineering
 ---
 
 A couple of years ago we started to break-up the code-base behind our consumer site [opentable.com][1], to smaller units of code, in order to improve our productivity. New teams were created with the goal of splitting up the logic that was powering the back-end and then bring to life new small services. Then, we started working on what we call _Microsites_.

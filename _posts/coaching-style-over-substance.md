@@ -3,7 +3,7 @@ title: "Coaching style over substance"
 date: "2014-02-03"
 author: Mark Barrett
 twitter: barrettology
-tags: [Coaching, Leadership]
+category: culture
 ---
 
 Have you ever been lucky enough to mentor someone who really got it? Maybe you've had the opposite experience and the session ended up being a failure for both of you?

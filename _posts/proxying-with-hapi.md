@@ -3,7 +3,7 @@ title: "Proxying Services With Hapi.js"
 date: "2014-11-28"
 author: Andy Royle
 twitter: aroyle
-tags: [Hapi.js, Microservices, Proxy]
+category: backend
 ---
 
 I've raved in the past about how awesome [hapi.js](http://hapijs.com) is, but I'm going to talk about just a specific case today.

@@ -3,7 +3,7 @@ title: "Remote Worker Notes &ndash; Tools and Setup"
 date: "2014-04-29"
 author: Marcin Bazydlo
 twitter: mbazydlo
-tags: [Culture, Work smarter, Agile, Remote working]
+category: culture
 ---
 
 For the last couple months I've been working remotely with our search team at OpenTable. Let me share our remote working setup and some rationale for our choices. I will shy away from judging how it's all worked out and leave that for subsequent blog posts.

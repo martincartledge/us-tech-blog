@@ -3,7 +3,7 @@ title: "One Gun - Many Enemies"
 date: "2013-07-24"
 author: Marcin Bazydlo
 twitter: mbazydlo
-tags: [JavaScript, Jasmine, Testing]
+category: frontend
 ---
 
 I spent some time, re-investigating Javascript. After a few months of intensive TDD and SOLID training at OpenTable I was curious how those principles apply in a slightly different environment. Guess what, they do not differ that much... I planned to write about all this sometime in the future after gaining more experience from real battles ahead, however [Watirmelon post](http://watirmelon.com/2013/02/09/why-i-dont-like-Jasmine/) invited me to attack this subject immediately.

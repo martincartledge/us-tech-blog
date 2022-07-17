@@ -3,7 +3,7 @@ title: "Testing React Components"
 date: "2016-01-07"
 author: Chris Cartlidge
 twitter: F1Cartlidge
-tags: [React, JavaScript, Testing]
+category: frontend
 ---
 
 At OpenTable it’s becoming an increasingly popular trend to use _[React](https://facebook.github.io/react/)_.

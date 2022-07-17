@@ -3,7 +3,7 @@ title: "OpenTable's Global Hackathon 2017"
 date: "2017-06-01"
 author: John Catterfeld
 twitter: jcatterfeld
-tags: [OpenTable, Culture, Innovation]
+category: culture
 ---
 
 Last week we were excited to kick-off our first OpenTable Global Hackathon, underway simultaneously in San Francisco, Los Angeles, Mumbai, Melbourne, and right here in London. Having personally never attended a hackathon before let alone helped organise one I was initially daunted, but with some careful planning, good suggestions from the team and a fair amount of making it up as we went along, the end result was quite a success.

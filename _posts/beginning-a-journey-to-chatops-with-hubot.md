@@ -3,7 +3,7 @@ title: "Beginning a journey to chatops with Hubot"
 date: "2013-11-22"
 author: Ryan Tomlinson
 twitter: ryantomlinson
-tags: [Hubot, Hipchat, Chatops]
+category: culture
 ---
 
 {% img center /images/posts/hubot_pug_me.png %}

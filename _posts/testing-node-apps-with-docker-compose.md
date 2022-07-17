@@ -3,7 +3,7 @@ title: "testing-node-apps-with-docker-compose (and some Soul)"
 date: "2016-11-18"
 author: Federico Maffei
 twitter: federicom4ffei
-tags: [Docker, Node-js, TDD, Compose]
+category: backend
 ---
 
 ## Contents of this post

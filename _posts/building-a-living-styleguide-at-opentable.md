@@ -3,7 +3,7 @@ title: "Building a living styleguide at OpenTable"
 date: "2015-01-19"
 author: John Catterfeld
 twitter: jcatterfeld
-tags: [UI, Design, OpenTable, CSS, Styleguide]
+category: frontend
 ---
 
 If you're reading this you've probably built yourself a website. A site - large or small - that's thrown together or crafted over many months. And if you have, you’ve probably kept all your CSS class names in your head, or at least been able to go straight to the relevant stylesheets to retrieve them.

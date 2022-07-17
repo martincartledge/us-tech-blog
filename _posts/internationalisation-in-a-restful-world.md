@@ -3,7 +3,7 @@ title: "Internationalisation in a RESTful world"
 date: "2014-04-02"
 author: Andy Royle
 twitter: aroyle
-tags: [i18n, Internationalisation, REST, http, API]
+category: backend
 ---
 
 I18n is often a painful afterthought when serving content from a http-api. It can be taken for granted and tacked on using nasty query string values. But thankfully HTTP provides us with a solid gold opportunity. If you can look past the mire of content negotiation you can see the nuggets that lie inside.

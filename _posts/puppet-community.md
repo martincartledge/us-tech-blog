@@ -3,7 +3,7 @@ title: "Puppet-Community"
 date: "2015-05-06"
 author: Liam Bennett
 twitter: liamjbennett
-tags: [Puppet, Puppet-community]
+category: culture
 ---
 
 Puppet is an important tool to us at OpenTable; we couldn’t operate as efficiently without it but Puppet is more than a tool or a vendor, it is a community of people trying to help
