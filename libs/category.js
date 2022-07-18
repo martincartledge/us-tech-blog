@@ -8,7 +8,7 @@ const readCategory = (fileName) => {
   const file = fs.readFileSync(filePath, "utf8");
   const { data } = matter(file);
 
-  return data.tags?.map((t) => t.toLowerCase()) ?? [];
+  return data.category.toLowerCase();
 };
 
 export const getCategories = async () => {
@@ -19,6 +19,6 @@ export const getCategories = async () => {
 export const getPostsByCategory = async (category) => {
   return readFileNames()
     .map(readMetadata)
-    .filter((post) => post.tags.includes(category))
+    .filter((post) => post.category === category)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 };
