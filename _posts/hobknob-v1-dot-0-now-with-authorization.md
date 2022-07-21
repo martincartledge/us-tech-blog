@@ -3,7 +3,7 @@ title: "Hobknob v1.0: Now with authorization"
 date: "2014-10-22"
 author: Chris Riddle
 twitter: christriddle
-tags: [Hobknob]
+category: engineering
 ---
 
 We are pleased to announce the version 1.0 release of [Hobknob](https://github.com/opentable/hobknob), our open-source feature toggle management system. With it comes a few additions and several improvements.

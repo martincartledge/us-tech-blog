@@ -3,7 +3,7 @@ title: "Continuous Delivery: Automating Deployment Visibility"
 date: "2014-05-19"
 author: Ryan Tomlinson
 twitter: ryantomlinson
-tags: [Continuous delivery, Hubot, Hipchat, Chatops]
+category: infrastructure
 ---
 
 In our continued effort to drive towards a service oriented architecture each of our teams are continuously improving their deployment processes. Recently our team has focussed on automating as much as possible, putting as much into chat as we can and improving our logging/metrics.

@@ -3,7 +3,7 @@ title: "Interacting with ElasticSearch using Hubot"
 date: "2014-11-08"
 author: Paul Stack
 twitter: stack72
-tags: [Hubot, ElasticSearch, Chatops]
+category: infrastructure
 ---
 
 At OpenTable, we use a few [ElasticSearch]() clusters. Our aim was to be able to interact with our ElasticSearch clusters via [HipChat](http://www.hipchat.com) so that we could troubleshoot easily and without having to log into our VPN. We already use [Hubot](http://hubot.github.com) as part of our systems workflow, so it made sense to be able to interact with ElasticSearch with it.

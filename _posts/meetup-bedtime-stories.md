@@ -2,7 +2,7 @@
 title: "Meetup: Bedtime stories"
 date: "2017-11-14"
 author: nbalestra
-tags: [Meetup, Culture]
+category: events
 ---
 
 Wednesday the 22nd of November, OpenTable is delighted to host the twelfth appointment with the WEBdeLDN meetup, featuring talks by [Tammie Lister](https://twitter.com/karmatosed) (Experience Designer at Automattic) and [Cristiano Rastelli](https://twitter.com/areaweb) (Front-End Engineer at Badoo).

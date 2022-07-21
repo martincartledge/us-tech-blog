@@ -3,7 +3,7 @@ title: "PuppetConf 2014 - Part 2"
 date: "2014-10-06"
 author: Liam Bennett
 twitter: liamjbennett
-tags: [Puppet, PuppetConf 2014, Conferences]
+category: events
 ---
 
 ## Day 1

@@ -3,15 +3,7 @@ title: "Managing Windows Features with Puppet"
 date: "2014-05-15"
 author: Paul Stack
 twitter: stack72
-tags:
-  [
-    Configuration Management,
-    DevOps,
-    PowerShell,
-    Puppet,
-    Windows,
-    WindowsFeature,
-  ]
+category: infrastructure
 ---
 
 Back in June 2013, I wrote about [Windows Feature Management with PowerShell](/blog/2013/06/14/windows-feature-management-with-powershell/). We have since released a Puppet module that will do this for us. We originally wrote PowerShell:

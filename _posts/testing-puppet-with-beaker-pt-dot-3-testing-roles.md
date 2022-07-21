@@ -2,7 +2,7 @@
 title: "Testing Puppet with Beaker pt.3 - Testing Roles"
 date: "2014-09-01"
 author: Liam Bennett
-categories: [Puppet, Acceptance tests, Beaker, Vagrant]
+category: infrastructure
 ---
 
 In the first two parts of this blog series we have focusing on testing puppet _modules_ with beaker. As an open source contributor there is always

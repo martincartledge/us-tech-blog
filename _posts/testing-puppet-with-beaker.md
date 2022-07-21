@@ -3,7 +3,7 @@ title: "Testing Puppet with Beaker"
 date: "2014-04-04"
 author: Liam Bennett
 twitter: liamjbennett
-categories: [Puppet, Acceptance tests, Beaker, Vagrant]
+category: infrastructure
 ---
 
 One afternoon I got asked to write a new Puppet module to manage local users on our Linux boxes. Not a contrived example but a real-world need as we begin to move our infrastructure from Windows to Linux. Managing users is one of those tasks that is at the core of the Puppet ecosystem and I thought this would be pretty easy as I had done this sort of thing many times before. What added to the complexity was that we needed to support Ubuntu, Centos and FreeBSD machines that we had in our stack and we wanted to make it something that was open source and on the Forge - so lots of testing was required.

@@ -3,7 +3,7 @@ title: "Meetup: Design Systems in the Real World with React"
 date: "2019-06-11"
 author: John Catterfeld
 twitter: jcatterfeld
-tags: [Meetup, Culture]
+category: events
 ---
 
 This Thursday, June 13th, we are pleased to be able to partner with the _React GraphQL Academy_ to host **Design Systems in the Real World with React** at our Finsbury Square office, London.

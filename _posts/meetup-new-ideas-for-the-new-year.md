@@ -2,7 +2,7 @@
 title: "Meetup: New Ideas for the New Year"
 date: "2017-12-07"
 author: nbalestra
-tags: [Meetup, Culture]
+category: events
 ---
 
 Tuesday the 12th of December, OpenTable is delighted to host the thirteenth appointment with the [WEBdeLDN](https://twitter.com/webdeldn) meetup.

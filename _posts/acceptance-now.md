@@ -3,7 +3,7 @@ title: "Acceptance Now"
 date: "2014-05-20"
 author: Sam Salisbury
 twitter: samsalisbury
-tags: [Testing, Engineering, Acceptance tests, Innovation]
+category: engineering
 ---
 
 _When is acceptance-only testing a good idea, and how can its problems be overcome?_

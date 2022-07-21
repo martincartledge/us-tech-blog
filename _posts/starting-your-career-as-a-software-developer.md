@@ -3,7 +3,7 @@ title: "Starting your career as a software developer"
 date: "2018-10-08"
 author: John Catterfeld
 twitter: jcatterfeld
-tags: [Coaching, Career progression, Culture, OpenTable]
+category: culture
 ---
 
 A couple of years ago I was asked to give a talk to programming undergraduates at Kings College, London. I wrote up the session as a blog post and added it to my personal website, where it has received ~~thousands~~ one or two hits since.

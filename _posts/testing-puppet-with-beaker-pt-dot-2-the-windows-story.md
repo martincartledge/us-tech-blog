@@ -3,7 +3,7 @@ title: "Testing Puppet with Beaker pt.2 - The Windows story"
 date: "2014-09-01"
 author: Liam Bennett
 twitter: liamjbennett
-tags: [Puppet, Acceptance tests, Beaker, Vagrant, Windows]
+category: infrastructure
 ---
 
 In [part one](/blog/2014/04/04/testing-puppet-with-beaker/) we discussed our first steps into the world of acceptance testing our Puppet manifests.

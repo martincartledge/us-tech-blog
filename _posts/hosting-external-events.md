@@ -3,7 +3,7 @@ title: "Hosting external events"
 date: "2017-07-18"
 author: Tom Martin
 twitter: tpgmartin
-tags: [Conferences, Culture, OpenTable]
+category: events
 ---
 
 This June, OpenTable hosted the [London Machine Learning Study Group](https://www.meetup.com/London-Machine-Learning-Study-Group/) to great success. We provided the food, drinks, and space for an extremely talented speaker and over 100 RSVPs. It was also my first experience hosting an external meetup at OpenTable - and I learned a lot!

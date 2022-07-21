@@ -23,7 +23,7 @@ try {
     `title: "${title}"`,
     `date: "${date}"`,
     `author: opentable`,
-    `tags: []`,
+    `category: engineering`,
     "---",
   ].join("\n");
 

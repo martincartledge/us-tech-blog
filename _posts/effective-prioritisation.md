@@ -3,7 +3,7 @@ title: "Effective prioritisation"
 date: "2014-04-28"
 author: Mark Barrett
 twitter: barrettology
-tags: [Coaching, Leadership, Work smarter, Culture]
+category: culture
 ---
 
 Prioritisation is a huge part of modern life.

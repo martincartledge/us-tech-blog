@@ -3,7 +3,7 @@ title: "Getting Started With SpecRun"
 date: "2013-06-07"
 author: Mark Barrett
 twitter: barrettology
-tags: [SpecRun, Acceptance tests, Automation, CI]
+category: backend
 ---
 
 ## First some background

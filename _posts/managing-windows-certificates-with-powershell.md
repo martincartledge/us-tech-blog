@@ -3,7 +3,7 @@ title: "Managing Windows Certificates with PowerShell"
 date: "2013-07-08"
 author: Paul Stack
 twitter: stack72
-tags: [PowerShell, Automation, DevOps]
+category: infrastructure
 ---
 
 Managing certificates on Windows is _really_ painful. There is no easy way to do it. The general way to install a certificate to a Windows Server 2008 machine is as follows:

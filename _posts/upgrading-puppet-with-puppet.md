@@ -3,7 +3,7 @@ title: "Upgrading Puppet with Puppet"
 date: "2014-04-07"
 author: Liam Bennett
 twitter: liamjbennett
-tags: [Puppet, Maintenance, Windows, Puppetversion]
+category: infrastructure
 ---
 
 As part of one of our recent [ForgeFriday](/blog/2014/04/04/forgefriday-our-commitment-to-the-puppet-forge/) efforts we released a new module puppetversion with the purpose of managing the installation and upgrade of Puppet in a platform agnostic way.

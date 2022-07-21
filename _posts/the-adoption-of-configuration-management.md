@@ -3,7 +3,7 @@ title: "The adoption of Configuration Management"
 date: "2014-02-10"
 author: Paul Stack
 twitter: stack72
-tags: [DevOps, Configuration management, Puppet]
+category: infrastructure
 ---
 
 In years gone by, we were a traditional IT company. We had teams of developers and operations. They rarely mixed. Around nine months ago we started to really try and get these teams working together. We introduced a configuration management tool, [Puppet](http://puppetlabs.com/puppet/what-is-puppet), into our ecosystem.
