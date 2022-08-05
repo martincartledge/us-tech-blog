@@ -5,6 +5,7 @@ import Header from "components/Header";
 import Container from "components/Container";
 import PostContentSection from "components/PostContentSection";
 import Footer from "components/Footer";
+import Main from "components/Main";
 
 export default function PostPage({ post }) {
   if (!post) {
@@ -12,14 +13,14 @@ export default function PostPage({ post }) {
   }
 
   return (
-    <>
+    <Main>
       <DocumentHead title={post.title} />
       <Header />
       <Container>
         <PostContentSection post={post} />
       </Container>
       <Footer />
-    </>
+    </Main>
   );
 }
 
