@@ -1,0 +1,37 @@
+.gridContainer {
+    display: grid;
+    gap: 1em;
+}
+
+.gridItem {
+    cursor: pointer;
+}
+
+.postCategory {
+  color: var(--color-red);
+  font-weight: var(--weight-medium);
+}
+
+.postTitle {
+    font-size: var(--size-4);
+    font-weight: var(--weight-bold);
+    margin-bottom: 15px;
+}
+
+.postDateAndReadingTime { 
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-medium);
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.postDate {
+    margin-right: 20px;
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
