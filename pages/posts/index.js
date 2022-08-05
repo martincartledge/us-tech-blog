@@ -6,7 +6,6 @@ import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
-import Header from "../../components/Header";
 
 
 export default function PostsPage({ posts }) {
