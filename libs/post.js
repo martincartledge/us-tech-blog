@@ -3,10 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHTML from "remark-html";
+import { slugify } from "libs/string";
 
 export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
-
-export const slugify = (str) => str.replace(/\.md$/, "");
 
 export const readFileNames = () => {
   return fs
