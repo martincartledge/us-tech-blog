@@ -1,7 +1,7 @@
 ---
 title: "Meetup: Bedtime stories"
 date: "2017-11-14"
-author: nbalestra
+author: Nick Balestra
 category: events
 ---
 
