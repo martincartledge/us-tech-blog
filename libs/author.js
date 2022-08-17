@@ -8,7 +8,7 @@ const readAuthor = (fileName) => {
   const file = fs.readFileSync(filePath, "utf8");
   const { data } = matter(file);
 
-  return data.author?.toLowerCase();
+  return data.author.toLowerCase();
 };
 
 export const getAuthors = async () => {
