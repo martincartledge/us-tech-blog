@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Section from "components/Section";
+import { slugify } from "libs/string";
 
 export default function AuthorListSection({ title, authors }) {
   return (
@@ -8,7 +9,7 @@ export default function AuthorListSection({ title, authors }) {
       <ul>
         {authors.map((author) => (
           <li key={author}>
-            <Link href={`/authors/${encodeURIComponent(author)}`}>
+            <Link href={`/authors/${slugify(author)}`}>
               <a>{author}</a>
             </Link>
           </li>

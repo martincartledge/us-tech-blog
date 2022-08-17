@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Section from "components/Section";
+import { slugify } from "libs/string";
 
 export default function CategoryListSection({ title, categories }) {
   return (
@@ -8,7 +9,7 @@ export default function CategoryListSection({ title, categories }) {
       <ul>
         {categories.map((category) => (
           <li key={category}>
-            <Link href={`/categories/${encodeURIComponent(category)}`}>
+            <Link href={`/categories/${slugify(category)}`}>
               <a>{category}</a>
             </Link>
           </li>

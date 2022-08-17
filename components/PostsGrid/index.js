@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { longDate } from "libs/date";
 import { getCategoryImage, readingTime } from "components/PostsGrid/utils";
+import { slugify } from "libs/string";
 import styles from "components/PostsGrid/styles.module.css";
 
 const PostsGrid = ({ posts }) => {
@@ -9,7 +10,7 @@ const PostsGrid = ({ posts }) => {
     <div className={styles.gridContainer}>
       {posts.map((post) => (
         <Link
-          href={`/posts/${encodeURIComponent(post.slug)}`}
+          href={`/posts/${slugify(post.slug)}`}
           key={posts.indexOf(post)}
           passHref
         >
