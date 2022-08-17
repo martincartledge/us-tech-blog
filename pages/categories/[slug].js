@@ -1,47 +1,49 @@
 import ErrorPage from "next/error";
-import { getAuthors, getPostsByAuthor } from "libs/author";
+import { getCategory, getPostsByCategory, getSlugs } from "libs/category";
 import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
+import { capitalize } from "libs/string";
 
-export default function AuthorPage({ author, posts }) {
-  if (!author) {
+export default function CategoryPage({ category, posts }) {
+  if (!category) {
     return <ErrorPage statusCode={404} />;
   }
 
   return (
     <Main>
-      <DocumentHead title={`Posts by ${author}`} />
+      <DocumentHead title={`Posts in ${category}`} />
       <Header />
       <Container>
-        <PostListSection title={author} posts={posts} />
+        <PostListSection title={capitalize(category)} posts={posts} />
       </Container>
       <Footer />
     </Main>
   );
 }
 
-export async function getStaticProps({ params: { author } }) {
-  const posts = await getPostsByAuthor(author);
+export async function getStaticProps({ params: { slug } }) {
+  const category = await getCategory(slug);
+  const posts = await getPostsByCategory(category);
 
   return {
     props: {
-      author,
+      category,
       posts,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const authors = await getAuthors();
+  const slugs = await getSlugs();
 
   return {
-    paths: authors.map((author) => ({
+    paths: slugs.map((slug) => ({
       params: {
-        author,
+        slug,
       },
     })),
     fallback: false,
