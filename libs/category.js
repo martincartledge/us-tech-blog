@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { POSTS_DIRECTORY, readFileNames, readMetadata } from "./post";
+import { POSTS_DIRECTORY, readFileNames, readMetadata } from "libs/post";
 
 const readCategory = (fileName) => {
   const filePath = path.join(POSTS_DIRECTORY, fileName);

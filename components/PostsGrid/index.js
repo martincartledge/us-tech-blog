@@ -1,8 +1,8 @@
-import styles from "components/PostsGrid/styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { longDate } from "libs/date";
-import { getCategoryImage, readingTime } from "./utils";
+import { getCategoryImage, readingTime } from "components/PostsGrid/utils";
+import styles from "components/PostsGrid/styles.module.css";
 
 const PostsGrid = ({ posts }) => {
   return (

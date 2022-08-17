@@ -1,10 +1,10 @@
-import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import OTLogo from "statics/OT_logo.png";
 import GitHubLogo from "statics/github.png";
 import LinkedInLogo from "statics/linkedin.png";
 import TwitterLogo from "statics/twitter.png";
+import styles from "components/Footer/styles.module.css";
 
 const Footer = () => (
   <footer className={styles.footer}>
