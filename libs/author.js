@@ -9,16 +9,36 @@ export const getAuthors = async () => {
   return uniqueAuthors;
 };
 
+const legacySlugify = (author) => {
+  const components = slugify(author).split("-");
+  const firstNameFirstLetter = components[0].charAt(0);
+  const remainingNames = components.slice(1).join("");
+
+  return `${firstNameFirstLetter}${remainingNames}`;
+};
+
 export const getSlugs = async () => {
   const authors = await getAuthors();
-  const slugs = authors.map(slugify);
+  const newSlugs = authors.map(slugify);
+  const legacySlugs = authors.map(legacySlugify);
+  const slugs = [...newSlugs, ...legacySlugs];
 
   return slugs;
 };
 
-export const getAuthor = async (slug) => {
+export const getLegacySlugRedirects = async () => {
   const authors = await getAuthors();
-  const author = authors.find((author) => slugify(author) == slug);
+
+  return authors.reduce((redirects, author) => {
+    redirects[legacySlugify(author)] = slugify(author);
+    return redirects;
+  }, {});
+};
+
+export const getAuthor = async (slug) => {
+  const posts = await getPosts();
+  const postByAuthor = posts.find((post) => slugify(post.author) === slug);
+  const author = postByAuthor?.author;
 
   return author;
 };
