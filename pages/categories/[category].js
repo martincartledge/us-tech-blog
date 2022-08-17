@@ -6,6 +6,7 @@ import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
+import { capitalize } from "libs/string";
 
 export default function CategoryPage({ category, posts }) {
   if (!category) {
@@ -17,7 +18,7 @@ export default function CategoryPage({ category, posts }) {
       <DocumentHead title={`Posts in ${category}`} />
       <Header />
       <Container>
-        <PostListSection title={category} posts={posts} />
+        <PostListSection title={capitalize(category)} posts={posts} />
       </Container>
       <Footer />
     </Main>

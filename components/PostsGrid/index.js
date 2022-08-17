@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { longDate } from "libs/date";
 import { getCategoryImage, readingTime } from "components/PostsGrid/utils";
-import { slugify } from "libs/string";
+import { slugify, capitalize } from "libs/string";
 import styles from "components/PostsGrid/styles.module.css";
 
 const PostsGrid = ({ posts }) => {
@@ -16,7 +16,9 @@ const PostsGrid = ({ posts }) => {
         >
           <div className={styles.gridItem}>
             <Image src={getCategoryImage(post.category)} alt="Frontend" />
-            <span className={styles.postCategory}>{post.category}</span>
+            <span className={styles.postCategory}>
+              {capitalize(post.category)}
+            </span>
             <h1 className={styles.postTitle}>{post.title}</h1>
             <span className={styles.postDateAndReadingTime}>
               <div className={styles.postDate}>{longDate(post.date)}</div>

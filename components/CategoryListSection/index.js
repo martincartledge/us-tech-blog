@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Section from "components/Section";
-import { slugify } from "libs/string";
+import { slugify, capitalize } from "libs/string";
 
 export default function CategoryListSection({ title, categories }) {
   return (
@@ -10,7 +10,7 @@ export default function CategoryListSection({ title, categories }) {
         {categories.map((category) => (
           <li key={category}>
             <Link href={`/categories/${slugify(category)}`}>
-              <a>{category}</a>
+              <a>{capitalize(category)}</a>
             </Link>
           </li>
         ))}
