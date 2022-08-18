@@ -38,6 +38,13 @@ export const getPosts = async () => {
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 };
 
+export const getSlugs = async () => {
+  const posts = await getPosts();
+  const slugs = posts.map((post) => post.slug);
+
+  return slugs;
+};
+
 export const getPost = async (slug) => {
   const fileName = readFileNameForSlug(slug);
   const post = readMetadata(fileName);
