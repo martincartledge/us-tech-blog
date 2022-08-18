@@ -6,9 +6,9 @@ twitter: ryantomlinson
 category: culture
 ---
 
-![](/images/posts/hubot_pug_me.png)
-
 As a part of our 30% time a few of our team, [@ajroyle](https://twitter.com/ajroyle), [@stack72](https://twitter.com/stack72) and I ([@ryantomlinson](https://twitter.com/ryantomlinson)) decided to get together and look at [Hubot](http://hubot.github.com/) with [Hipchat](https://www.hipchat.com/) integration. There are several weird and wonderful scripts that ship with Hubot (see above) but the core concept of driving tooling via chat is one that we see value in.
+
+![](/images/posts/hubot_pug_me.png)
 
 ## What is Chatops?
 
