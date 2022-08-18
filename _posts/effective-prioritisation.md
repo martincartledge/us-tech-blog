@@ -6,13 +6,7 @@ twitter: barrettology
 category: culture
 ---
 
-Prioritisation is a huge part of modern life.
-
-No.
-
-Prioritisation is an ESSENTIAL part of modern life.
-
-I'm not talking solely about Agile here either. Yes we plan stories, yes we prioritise them to get them into the backlog but I'm aiming at a higher level. Life lessons that are useful to all of us.
+Prioritisation is a huge part of modern life. No. Prioritisation is an ESSENTIAL part of modern life. I'm not talking solely about Agile here either. Yes we plan stories, yes we prioritise them to get them into the backlog but I'm aiming at a higher level. Life lessons that are useful to all of us.
 
 How do we know what to do next? Perhaps you lean on your gut feeling to order your to-do list. Maybe it is real-time cost and budget implications that influence your priorities or does it come down to who shouts loudest?
 
