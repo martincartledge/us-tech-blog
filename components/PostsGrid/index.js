@@ -25,7 +25,7 @@ const PostsGrid = ({ posts }) => {
               <div>{`${post.readingTime} min read`}</div>
             </span>
 
-            <p>{post.content.substring(0, 100)}</p>
+            <p>{post.html.substring(0, 100)}</p>
           </div>
         </Link>
       ))}
