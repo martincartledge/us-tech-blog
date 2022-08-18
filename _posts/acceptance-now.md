@@ -6,7 +6,7 @@ twitter: samsalisbury
 category: engineering
 ---
 
-_When is acceptance-only testing a good idea, and how can its problems be overcome?_
+When is acceptance-only testing a good idea, and how can its problems be overcome?
 
 In [a recent post], I espoused some of the benefits my team enjoyed by reducing our test-base to a single layer of acceptance tests, with no separate unit or integration tests. It caused [some minor controversy], which was not to be unexpected. At the time, I knew I had left out some details for brevity's sake. In this post—spurred on by some interesting [questions] and [commentary]—I'd like to offer a more constructive view on the subject, and dig a little deeper into the nitty gritty of how we made it work.
 

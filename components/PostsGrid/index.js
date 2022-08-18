@@ -25,7 +25,10 @@ const PostsGrid = ({ posts }) => {
               <div>{`${post.readingTime} min read`}</div>
             </span>
 
-            <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+            <p
+              className={styles.postExcerpt}
+              dangerouslySetInnerHTML={{ __html: post.excerpt }}
+            />
           </div>
         </Link>
       ))}
