@@ -6,7 +6,7 @@ twitter: aroyle
 category: infrastructure
 ---
 
-Someone in the office mentioned [RethinkDb][1] and I was impressed by the rhetoric on the site, so I decided to spend a couple of hours spiking one of our existing nodejs apps with RethinkDb. The app currently uses MongoDb so inevitably I'm comparing the two.
+Someone in the office mentioned [RethinkDb](http://www.rethinkdb.com) and I was impressed by the rhetoric on the site, so I decided to spend a couple of hours spiking one of our existing nodejs apps with RethinkDb. The app currently uses MongoDb so inevitably I'm comparing the two.
 
 # Things I liked:
 
@@ -37,7 +37,7 @@ It's all there, up front in the web UI, written in plain English and with friend
 
 **Writes are non-locking operations**
 
-A major bugbear for us with mongoDb is that writes require a database-level lock. RethinkDb allows block-level locks for write operations, and furthermore, reads can still proceed while write locks are in effect. [MVCC ftw!][2]
+A major bugbear for us with mongoDb is that writes require a database-level lock. RethinkDb allows block-level locks for write operations, and furthermore, reads can still proceed while write locks are in effect. [MVCC ftw!](http://en.wikipedia.org/wiki/Multiversion_concurrency_control)
 
 # Things I didn't like:
 
@@ -56,6 +56,3 @@ Don't get me wrong, it's a nice feature, it just makes me feel dirty to do joins
 # Conclusion
 
 RethinkDb is a good looking database. It's feature-full and dead simple to use. Would I use it in production? Not yet. The performance issues are still a sticking point for me, but I have no doubt that once these are fixed RethinkDb will be a big contender.
-
-[1]: http://www.rethinkdb.com
-[2]: http://en.wikipedia.org/wiki/Multiversion_concurrency_control

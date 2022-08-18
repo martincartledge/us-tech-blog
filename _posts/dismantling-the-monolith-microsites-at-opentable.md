@@ -6,7 +6,7 @@ twitter: matteofigus
 category: engineering
 ---
 
-A couple of years ago we started to break-up the code-base behind our consumer site [opentable.com][1], to smaller units of code, in order to improve our productivity. New teams were created with the goal of splitting up the logic that was powering the back-end and then bring to life new small services. Then, we started working on what we call _Microsites_.
+A couple of years ago we started to break-up the code-base behind our consumer site [opentable.com](http://www.opentable.com), to smaller units of code, in order to improve our productivity. New teams were created with the goal of splitting up the logic that was powering the back-end and then bring to life new small services. Then, we started working on what we call _Microsites_.
 
 ### Microsites
 
@@ -57,7 +57,4 @@ When we tried the microsite approach we “traded” some of our code problems w
 
 One year later, with the front-end (almost completely) living on micro-sites, and with the help of SRS, we are experimenting more effective ways to be resilient and robust, with the specific goal to allow teams to create their own components and share them with other teams in order to be independent, and use them to easily approach to A/B experiments.
 
-In the next post I'll write about [OpenComponents][2], an experimental framework we just open-sourced that is trying to address some of this needs.
-
-[1]: http://www.opentable.com
-[2]: https://github.com/opentable/oc
+In the next post I'll write about [OpenComponents](https://github.com/opentable/oc), an experimental framework we just open-sourced that is trying to address some of this needs.

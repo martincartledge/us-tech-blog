@@ -41,7 +41,7 @@ The accept-language header gives you that flexibility. In my opinon, if your htt
 
 Well, the specification is (intentionally) vague. In other words, it is up to the server to decide. I myself always prefer to be explicit. Thankfully the HTTP specification provides for just such an eventuality.
 
-[HTTP 406 Not Acceptable][1] _"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request."_
+[HTTP 406 Not Acceptable](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) _"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request."_
 
 The 406 response _should_ contain a list of characteristics which the resource does support. In this case, a list of available languages. The specification does allow the server to automatically select a representation to return, however in my opinion, the server should be explicit, rather than implicit.
 
@@ -49,7 +49,7 @@ If the client has a use case where it _always_ requires some sort of response (i
 
 **Parsing the Accept-Language header**
 
-I wrote a little npm module to help us in [parsing the accept-language header][2]. Once you get past the (somewhat hairy) regex, it's a simple little bit of code. (Disclaimer, I'm not a regex god, so there are a couple of little bugs in it).
+I wrote a little npm module to help us in [parsing the accept-language header](https://github.com/andyroyle/accept-language-parser). Once you get past the (somewhat hairy) regex, it's a simple little bit of code. (Disclaimer, I'm not a regex god, so there are a couple of little bugs in it).
 
 Parsing an accept-language string such as `en-US,en;q=0.8` gives an object looking like this:
 
@@ -74,7 +74,7 @@ We can pass this around our application and use it to select the representation 
 
 **Using it**
 
-We use [hapi.js][3] for some of our api's (and I'm very much in love), we use this module in a pre-requisite handler in our route:
+We use [hapi.js](http://hapijs.com) for some of our api's (and I'm very much in love), we use this module in a pre-requisite handler in our route:
 
 ```
 var alparser = require('accept-language-parser');
@@ -119,7 +119,3 @@ Vary: Accept-Language
 ```
 
 This instructs the cache that the response will vary with the value of Accept-Language, so when this changes it should be cached as a separate resource. Vary headers **should** be applied by the client to the request, however the server can apply them to the response if necessary.
-
-[1]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
-[2]: https://github.com/andyroyle/accept-language-parser
-[3]: http://hapijs.com

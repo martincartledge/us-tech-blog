@@ -16,7 +16,7 @@ We like to be proactive at OpenTable, so during innovation time (yes! we get tim
 
 ## The solution
 
-MongoDB supports [MapReduce][1] which allows processing large volumes of data (Map), running arbitrary logic to summarise (Reduce) and producing some results. In MongoDB the MapReduce functionality uses JavaScript functions to perform the map and reduce steps and the syntax is relatively simple to understand:-
+MongoDB supports [MapReduce](http://en.wikipedia.org/wiki/MapReduce) which allows processing large volumes of data (Map), running arbitrary logic to summarise (Reduce) and producing some results. In MongoDB the MapReduce functionality uses JavaScript functions to perform the map and reduce steps and the syntax is relatively simple to understand:-
 
     db.largeDataset.mapReduce(mapFunction,
                               reduceFunction,
@@ -54,17 +54,8 @@ The results from this function would be stored in the collection defined in the 
 
 The following are a list of projects/resources to look at if you want to implement Mongo MapReduce in your scenario with emphasis on C#:-
 
-- [Mongo Map-Reduce Examples][2] is a useful primer document.
-- [Mongo Cookbook][3] has a number of "real world" examples of MapReduce
-- [Mongo C# driver][4] has some logic to perform MapReduce however it is only a thin layer over the underlying syntax and uses JavaScript functions passed as strings.
-- [Fluent-Mongo][5] provides a linq syntax over simple map reduce functions. Interestingly it can perform multiple calculations on a set of data although at present it doesn't support more complex logic.
-- [K.Scott Allen][8] has written two articles on MapReduce, [A Simple MapReduce...][6] and [A Simpler MapReduce...][7]
-
-[1]: http://en.wikipedia.org/wiki/MapReduce
-[2]: http://docs.mongodb.org/manual/tutorial/map-reduce-examples
-[3]: http://cookbook.mongodb.org
-[4]: http://docs.mongodb.org/ecosystem/drivers/csharp
-[5]: http://github.com/craiggwilson/fluent-mongo/wiki/Map-Reduce
-[6]: http://odetocode.com/blogs/scott/archive/2012/03/19/a-simple-mapreduce-with-mongodb-and-c.aspx
-[7]: http://odetocode.com/blogs/scott/archive/2012/03/29/a-simpler-mapreduce-with-mongodb-and-c.aspx
-[8]: http://twitter.com/odetocode
+- [Mongo Map-Reduce Examples](http://docs.mongodb.org/manual/tutorial/map-reduce-examples) is a useful primer document.
+- [Mongo Cookbook](http://cookbook.mongodb.org) has a number of "real world" examples of MapReduce
+- [Mongo C# driver](http://docs.mongodb.org/ecosystem/drivers/csharp) has some logic to perform MapReduce however it is only a thin layer over the underlying syntax and uses JavaScript functions passed as strings.
+- [Fluent-Mongo](http://github.com/craiggwilson/fluent-mongo/wiki/Map-Reduce) provides a linq syntax over simple map reduce functions. Interestingly it can perform multiple calculations on a set of data although at present it doesn't support more complex logic.
+- [K.Scott Allen](http://twitter.com/odetocode) has written two articles on MapReduce, [A Simple MapReduce...](http://odetocode.com/blogs/scott/archive/2012/03/19/a-simple-mapreduce-with-mongodb-and-c.aspx) and [A Simpler MapReduce...](http://odetocode.com/blogs/scott/archive/2012/03/29/a-simpler-mapreduce-with-mongodb-and-c.aspx)

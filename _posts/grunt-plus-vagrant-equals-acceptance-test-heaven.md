@@ -6,7 +6,7 @@ twitter: aroyle
 category: engineering
 ---
 
-My continued love affair with Grunt reached a new high the other day, when I combined [Vagrant][2] with my [Grunt deployment tasks][1] and test runners.
+My continued love affair with Grunt reached a new high the other day, when I combined [Vagrant](http://www.vagrantup.com) with my [Grunt deployment tasks](/blog/2013/08/08/grunt-your-deployments-too/) and test runners.
 
 I'm not going to bang on about how great Vagrant is, because better people than me have already soliloquised at length on that subject. Let's just take it as writ that **Vagrant is awesome**.
 
@@ -73,7 +73,7 @@ Now that we've got our Vagrant config sorted, we can hook this into Grunt, using
     	shell.exec('vagrant destroy -f');
     });
 
-So now that we've got our machine provisioned and booted, we can use Grunt to [deploy our code and start our service][1].
+So now that we've got our machine provisioned and booted, we can use Grunt to [deploy our code and start our service](/blog/2013/08/08/grunt-your-deployments-too/).
 
 Assuming that we've got all that going on, we can move on to the next step, getting Grunt to deploy the code to the Vagrant box.
 
@@ -149,6 +149,3 @@ The machine is brand-new every time, with its own spangly MongoDB instance ready
 What's that I hear you whine? "_My application depends on shared data, I can't use an empty database_". Not true. If you need it, set it up or mock it out. The acceptance tests should set-up and tear-down all their own data, if you rely on shared data sources for acceptance tests then you're going to have a painful time. Script it once and it'll forever be your friend. It's time to enter the dynamic era, no more false failures on your CI build because a shared datasource is missing and/or has been changed.
 
 What's more you can now run `grunt acceptance` from anywhere and **_know_** that it'll be the same. No more environment pains!
-
-[1]: /blog/2013/08/08/grunt-your-deployments-too/
-[2]: http://www.vagrantup.com
