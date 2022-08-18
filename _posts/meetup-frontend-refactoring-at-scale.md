@@ -6,7 +6,7 @@ twitter: tpgmartin
 category: events
 ---
 
-OpenTable is delighted to host the tenth WEBdeLDN monthly meetup with talks by [Jack Franklin](https://twitter.com/Jack_Franklin) (Frontend Engineer at Thread) and [Nick Balestra](https://twitter.com/nickbalestra) (Senior Engineer at OpenTable - Delivery Tools Team at OpenTable).
+OpenTable is delighted to host the tenth WEBdeLDN monthly meetup with talks by [Jack Franklin](https://twitter.com/Jack_Franklin) and [Nick Balestra](https://twitter.com/nickbalestra).
 
 This month's WEBdeLDN talks will be about frontend refactoring at scale with two real use cases: refactoring a monolith frontend application, as well as migrating a large, business critical application from Angular 1 to React.
 

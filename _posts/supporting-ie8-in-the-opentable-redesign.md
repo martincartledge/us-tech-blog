@@ -6,7 +6,7 @@ twitter: jcatterfeld
 category: frontend
 ---
 
-We're really [proud to have released](http://blog.opentable.com/2014/opentables-website-re-designed-re-architected-re-imagined/) last week our redesigned [OpenTable](http://www.opentable.co.uk) site, the culmination of months of hard work from many talented people here in London and in San Francisco.
+We're really [proud to have released](http://blog.opentable.com/2014/opentables-website-re-designed-re-architected-re-imagined/) last week our redesigned website, the culmination of months of hard work from many talented people here in London and in San Francisco.
 
 However despite killing off our old site and its 2004 design, 2.8% of our visitors could have been crying into their keyboard as a far worse opentable.co.uk filled their screen.
 

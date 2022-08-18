@@ -6,7 +6,7 @@ twitter: barrettology
 category: culture
 ---
 
-I recently attended a fascinating and emotionally-charged talk by [Samantha Soma](https://twitter.com/sisoma) at [DareConf 2014](https://2014.dareconf.com), ['How to stop rescuing people'](http://vimeo.com/108047198). It strongly mirrored my experience of moving into a leadership role and I'd recommend anyone with a spare 30mins to watch it.
+I recently attended a fascinating and emotionally-charged talk by [Samantha Soma](https://twitter.com/sisoma) at [DareConf 2014](https://2014.dareconf.com) titled 'How to stop rescuing people'. It strongly mirrored my experience of moving into a leadership role and I'd recommend anyone with a spare 30mins to watch it.
 
 Samantha's talk made me reflect on how I struggle to coach talented individuals; how I can identify when it's going wrong and what steps I can take to remedy the situation.
 
