@@ -6,7 +6,7 @@ twitter: jonflowers
 category: culture
 ---
 
-**Quarterly team goals are an effective way to establish organisational purpose, direction and alignment while supporting team agility. But be vigilant - they can be used inappropriately.**
+Quarterly team goals are an effective way to establish organisational purpose, direction and alignment while supporting team agility. But be vigilant - they can be used inappropriately.
 
 ## Overview
 
