@@ -34,7 +34,7 @@ Steve initially swapped out Grunt for Gulp, updated hapi and React and fixed som
 
 The demo is a very simple quiz. In true Macgyver style he is faced with abnormally unrealistic situations armed with impossibly useless "every-day" items to escape the situation. If you select the correct tool, you proceed to the next situation.
 
-{% img left /images/posts/structure.png 200 %}
+![](/images/posts/structure.png)
 
 Let's start by going through the uni-directional flow above and at the same time look at the code and its structure.
 

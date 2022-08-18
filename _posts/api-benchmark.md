@@ -49,7 +49,7 @@ So after some refactoring I started working on [api-benchmark][2] and its grunt 
 
 In case of RESTful services, it is possible to make series of requests to test response times, find peaks and classify errors; it is possible to perform concurrent calls to see how many parallel requests your service can handle (when deployed in single boxes, or when load balanced and globalised); and every time grunt runs everything is saved and plotted to readable and shareable graphs, so the knowledge can be shared between people that belong to different backgrounds.
 
-{% img center /images/posts/api_benchmark.png %}
+![](/images/posts/api_benchmark.png)
 
 A lot of other features are still under development, including support for SOAP services and historical analysis (compare results from previous benchmarks and create historical graphs to represent the evolution of your software).
 

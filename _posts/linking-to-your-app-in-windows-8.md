@@ -15,7 +15,7 @@ The meta data that we added to the site are an _application ID_, and what Micros
     <meta name="msApplication-ID" content="OpenTable.OpenTable"/>
     <meta name="msApplication-PackageFamilyName" content="OpenTable.OpenTable_r44en0zefym0a"/>
 
-{% img right /images/posts/get-app-for-this-site.png %}
+![](/images/posts/get-app-for-this-site.png)
 
 This will enable the **"Get app for this site"** link when you are viewing your page in the full-screen Metro version of Internet Explorer (i.e. launched from the start screen); the desktop version of IE doesn't have this capability.
 
@@ -25,7 +25,7 @@ There are [three other optional meta values][2] that can also be used to control
 
 There are at least two ways of finding the values. If you have your application code and Visual Studio 2012 (or later) then the values can be found in the **package.appxmanifest** file &ndash; open this in VS and it automatically launches the manifest designer view. Select the Packaging tab and the "Package name" is the _ID_, and the _Package family name_ is at the bottom of this screen.
 
-{% img center /images/posts/vs-screenshot.png %}
+![](/images/posts/vs-screenshot.png)
 
 If you don't have the local code with Visual Studio you can still find out these values by other means.
 

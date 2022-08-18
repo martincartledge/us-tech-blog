@@ -21,7 +21,7 @@ To contribute to the project, as an engineer, you need to:
 
 We have just merged our #847 pull request. The stats of the repository look as follows:
 
-{% img center /images/posts/puppet-adoption.png %}
+![](/images/posts/puppet-adoption.png)
 
 Our puppet repository has had contributions from over 40% of our engineering / operations teams. We use Puppet to manage our application servers, DHCP servers, provisioning systems and even our MS Sql Server continuous integration infrastructure. The adoption has been fantastic. We started by running our internal QA infrastructure and then scaled it out to our production infrastructure. We now manage 548 nodes (a combination of internal and production) via Puppet.
 

@@ -10,19 +10,19 @@ In our continued effort to drive towards a service oriented architecture each of
 
 The image below shows at a high level what our teams current deployment pipeline looks like and this post will attempt to summarise some recent changes that have allowed us to automate visibility.
 
-{% img /images/posts/release-pipeline.png 900 350 'image' 'images' %}
+![](/images/posts/release-pipeline.png)
 
 ## Kicking off a deployment
 
 I wrote previously that we started [using chatops](/blog/2013/11/22/beginning-a-journey-to-chatops-with-hubot/) to increase visibility operationally. Hubot is central to this and we wrote a small script to kick off deployments within [Hipchat](https://www.hipchat.com/)
 
-{% img /images/posts/hubot-deploy-restaurant.png 350 350 'image' 'images' %}
+![](/images/posts/hubot-deploy-restaurant.png)
 
 We have two TeamCity instances. The first is used as a build and deployment system to our pre-production servers. The second is used as a deployment system to our production servers. Artifacts from our non-production instance are stored in [Artifactory](http://www.jfrog.com/home/v_artifactory_opensource_overview) and our production deployment makes an API call to non-production TeamCity to ask for the last successfully pinned build. Pinning a build only occurs when we're happy that the build is ready to be shipped (passing unit and acceptance tests). The above Hubot command will pin the non-production build, given that the build succeeded, and add a build to the queue in production.
 
 To configure Hubot to do this we wrote a command to setup aliases providing the build id of the build to pin (non-production) and the build id of the build to kick off (production).
 
-{% img /images/posts/hubot-deploy-alias.png 350 350 'image' 'images' %}
+![](/images/posts/hubot-deploy-alias.png)
 
 ## Deployment visibility
 
@@ -38,17 +38,17 @@ In the past these tickets were manually created for each release. We soon realis
 
 Once we have a CCB we fire a start and end event from TeamCity containing the build number to Redis which is then piped into [Logstash](http://logstash.net/). An event is sent before and after deploying the code to all nodes. This is hugely beneficial because it allows us to plot releases against our graphs in [Kibana](http://www.elasticsearch.org/overview/kibana/). Kibana recently added a new feature called Markers. Essentially these are tags that display at the bottom of a graph.
 
-{% img /images/posts/kibana-tags.png 350 350 'image' 'images' %}
+![](/images/posts/kibana-tags.png)
 
 You can find information on this Markers module on github - [https://github.com/opentable/grunt-deployment-logger](https://github.com/opentable/grunt-deployment-logger)
 
 This has already proved incredibly useful for the team and has allowed us to visually correlate issues or changes in key metrics (response times/requests per second) to releases. The following image shows how these look over several graphs.
 
-{% img /images/posts/kibana-dashboard.png 900 900 'image' 'images' %}
+![](/images/posts/kibana-dashboard.png)
 
 ##Hipchat build complete notification
 
-{% img /images/posts/hubot-notification.png 350 200 'image' 'images' %}
+![](/images/posts/hubot-notification.png)
 
 Once our deployment pipeline has completed we send a notification to our teams room in Hipchat (as a final step in TeamCity) to inform the team that the release has completed. It's great to see a deployment start and end in chat. Having a central log of key operations in our team means that we don't have to go and find information when it's baked into chat.
 

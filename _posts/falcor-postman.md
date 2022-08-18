@@ -34,7 +34,7 @@ When plugged into an existing Express.js application it will be possible to acce
 
 It will be also possible to resend previous queries and modify them, as they will be saved for you into your browser's local storage.
 
-{% img center /images/posts/falcor-postman.png %}
+![](/images/posts/falcor-postman.png)
 
 ## Under the hood
 
