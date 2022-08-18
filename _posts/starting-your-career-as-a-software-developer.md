@@ -6,7 +6,7 @@ twitter: jcatterfeld
 category: culture
 ---
 
-A couple of years ago I was asked to give a talk to programming undergraduates at Kings College, London. I wrote up the session as a blog post and added it to my personal website, where it has received ~~thousands~~ one or two hits since.
+A couple of years ago I was asked to give a talk to programming undergraduates at Kings College, London. I wrote up the session as a blog post and added it to my personal website, where it has received _thousands of hits since_ (one or two hits).
 
 Reading it back this week I was pleasantly surprised how relevant and useful it still is, and as [we are currently hiring engineers](http://bit.ly/2IZpIRr) at the start of their career it is worth resharing here.
 
