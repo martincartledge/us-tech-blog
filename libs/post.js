@@ -16,6 +16,13 @@ const findFileNameForSlug = (slug) => {
   return readFileNames().find((fileName) => slugify(fileName) === slug);
 };
 
+const generateExcerpt = (html) => {
+  const matchResult = html.match(/<p>(.+)<\/p>/);
+  const captureGroup = matchResult ? matchResult[1] : null;
+
+  return captureGroup;
+};
+
 export const getPost = async (slug) => {
   const fileName = findFileNameForSlug(slug);
   const filePath = path.join(POSTS_DIRECTORY, fileName);
@@ -29,6 +36,7 @@ export const getPost = async (slug) => {
     category: metadata.category.toLowerCase(), // case insensitive
     slug: slugify(fileName),
     readingTime: readingTime(markdown),
+    excerpt: generateExcerpt(html),
     html,
   };
 };

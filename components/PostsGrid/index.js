@@ -25,7 +25,7 @@ const PostsGrid = ({ posts }) => {
               <div>{`${post.readingTime} min read`}</div>
             </span>
 
-            <p>{post.html.substring(0, 100)}</p>
+            <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
           </div>
         </Link>
       ))}
