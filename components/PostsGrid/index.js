@@ -22,7 +22,7 @@ const PostsGrid = ({ posts }) => {
             <h1 className={styles.postTitle}>{post.title}</h1>
             <span className={styles.postDateAndReadingTime}>
               <div className={styles.postDate}>{longDate(post.date)}</div>
-              <div>{`${readingTime(post.content)} min read`}</div>
+              <div>{`${post.readingTime} min read`}</div>
             </span>
 
             <p>{post.content.substring(0, 100)}</p>

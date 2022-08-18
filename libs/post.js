@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHTML from "remark-html";
 import { slugify } from "libs/string";
+import { readingTime } from "libs/time";
 
 export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
 
@@ -30,6 +31,7 @@ export const readMetadata = (fileName) => {
     author: data.author, // case sensitive
     category: data.category.toLowerCase(), // case insensitive
     slug: slugify(fileName),
+    readingTime: readingTime(content),
     content,
   };
 };
