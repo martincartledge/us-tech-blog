@@ -17,10 +17,15 @@ const findFileNameForSlug = (slug) => {
 };
 
 const generateExcerpt = (html) => {
+  const maxExcerptLength = 200;
   const matchResult = html.match(/<p>(.+)<\/p>/);
-  const captureGroup = matchResult ? matchResult[1] : null;
+  const textContent = matchResult ? matchResult[1] : null;
+  const trimmedTextContent =
+    textContent?.length > maxExcerptLength
+      ? `${textContent.substring(0, maxExcerptLength)}...`
+      : textContent;
 
-  return captureGroup;
+  return trimmedTextContent;
 };
 
 export const getPost = async (slug) => {
