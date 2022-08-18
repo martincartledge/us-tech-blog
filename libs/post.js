@@ -13,8 +13,10 @@ export const readFileNames = () => {
     .filter((fileName) => fileName.includes(".md"));
 };
 
-const readFileNameForSlug = (slug) => {
-  return readFileNames().find((fileName) => slugify(fileName) === slug);
+const generateHtml = async (content) => {
+  const file = await remark().use(remarkHTML).process(post.content);
+
+  return file.toString();
 };
 
 export const readMetadata = (fileName) => {
@@ -45,11 +47,14 @@ export const getSlugs = async () => {
   return slugs;
 };
 
+const readFileNameForSlug = (slug) => {
+  return readFileNames().find((fileName) => slugify(fileName) === slug);
+};
+
 export const getPost = async (slug) => {
   const fileName = readFileNameForSlug(slug);
   const post = readMetadata(fileName);
-  const file = await remark().use(remarkHTML).process(post.content);
-  post.html = file.toString();
+  post.html = generateHtml(post.content);
 
   return post;
 };
