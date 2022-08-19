@@ -28,7 +28,9 @@
 }
 
 .moreLinksHeader {
+  font-size: var(--size-6);
   font-weight: var(--weight-bold);
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
