@@ -2,11 +2,8 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import OTLogo from "statics/OT_logo.png";
-import GitHubLogo from "statics/github.png";
-import LinkedInLogo from "statics/linkedin.png";
-import TwitterLogo from "statics/twitter.png";
 import Container from "components/Container";
-import { FOOTER_LINKS } from "constants/app";
+import { SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -20,44 +17,23 @@ const Footer = () => (
       </div>
       <div className={styles.socials}>
         <div className={styles.socialLogos}>
-          <Link href="https://github.com/opentable">
-            <a>
-              <Image
-                className={styles.socialLogo}
-                src={GitHubLogo}
-                alt="GitHub logo"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
-          <Link href="https://linkedin.com/company/opentable">
-            <a>
-              <Image
-                className={styles.socialLogo}
-                src={LinkedInLogo}
-                alt="LinkedIn logo"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
-          <Link href="https://twitter.com/opentabletechuk">
-            <a>
-              <Image
-                className={styles.socialLogo}
-                src={TwitterLogo}
-                alt="Twitter logo"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
+          {SOCIAL_LINKS.map(({ name, href, image }) => (
+            <Link href={href} key={href}>
+              <a>
+                <Image
+                  className={styles.socialLogo}
+                  src={image}
+                  alt={`${name} logo`}
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
+          ))}
         </div>
-
         <div className={styles.moreLinks}>
           <span className={styles.moreLinksHeader}>Learn more</span>
-          {FOOTER_LINKS.map(({ href, text }) => (
+          {LEARN_MORE_LINKS.map(({ href, text }) => (
             <Link href={href} key={href}>
               <a className={styles.moreLink}>
                 <span>{text}</span>
