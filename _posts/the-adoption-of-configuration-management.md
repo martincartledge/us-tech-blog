@@ -27,7 +27,7 @@ Our puppet repository has had contributions from over 40% of our engineering / o
 
 Using a project called [Gource](www.fullybaked.co.uk/articles/getting-gource-running-on-osx), one of our engineering leads, [Ryan Tomlinson](http://twitter.com/ryantomlinson), created a video of the repository vizualization. It's just over two minutes long and shows the activity the repository has taken.
 
-{% vimeo 86201508 %}
+You can watch the video on Vimeo at https://vimeo.com/86201508.
 
 Each branch in the tree relates to a directory inside our repository. Green zaps are additions, orange are updates and red deletions. The important thing to take from the video is the evolution of the repository, the amount of changes and the number of people pushing those changes.
 
