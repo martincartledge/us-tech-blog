@@ -8,6 +8,17 @@ export const TEAM_NAME = "Tech UK";
 
 export const SITE_TITLE = `${COMPANY_NAME} ${TEAM_NAME}`;
 
+export const NAVBAR_LINKS = [
+  {
+    href: "/posts",
+    text: "All posts",
+  },
+  {
+    href: "/#careers",
+    text: "Careers",
+  },
+];
+
 export const SOCIAL_LINKS = [
   {
     name: "GitHub",
