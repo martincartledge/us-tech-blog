@@ -6,6 +6,7 @@ import GitHubLogo from "statics/github.png";
 import LinkedInLogo from "statics/linkedin.png";
 import TwitterLogo from "statics/twitter.png";
 import Container from "components/Container";
+import { FOOTER_LINKS } from "constants/app";
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -52,17 +53,14 @@ const Footer = () => (
         </div>
 
         <div className={styles.moreLinks}>
-          <span className={styles.moreLinksHeader}>STAY CONNECTED</span>
-          <Link href="https://www.opentable.co.uk">
-            <a className={styles.moreLink}>
-              <span>OpenTable.co.uk</span>
-            </a>
-          </Link>
-          <Link href="https://www.opentable.com/careers/technology/">
-            <a className={styles.moreLink}>
-              <span>Technology careers at OpenTable</span>
-            </a>
-          </Link>
+          <span className={styles.moreLinksHeader}>Learn more</span>
+          {FOOTER_LINKS.map(({ href, text }) => (
+            <Link href={href} key={href}>
+              <a className={styles.moreLink}>
+                <span>{text}</span>
+              </a>
+            </Link>
+          ))}
         </div>
       </div>
     </Container>
