@@ -59,32 +59,13 @@ $ oc init my-component
 
 Components are folders containing the following files:
 
-<table style="margin-bottom:16px;">
-    <tr>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">File</th>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Description</th>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">package.json</td>
-        <td style="padding:5px 10px;font-weight: inherit;">A common <a href="https://docs.npmjs.com/files/package.json" target="_blank">node's package.json</a>. An "oc" property contains some additional configuration.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">view.html</td>
-        <td style="padding:5px 10px;font-weight: inherit;">The view containing the markup. Currently Handlebars and Jade view engines are supported. It can contain some CSS under the &lt;style&gt; tag and client-side Javascript under the &lt;script&gt; tag.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">server.js (optional)</td>
-        <td style="padding:5px 10px;font-weight: inherit;">If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">static files (optional)</td>
-        <td style="padding:5px 10px;font-weight: inherit;">Images, Javascript, and files that will be referenced in the HTML markup.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">*</td>
-        <td style="padding:5px 10px;font-weight: inherit;">Any other files that will be useful for the development such as tests, docs, etc.</td>
-    </tr>
-</table>
+| File                    | Description                                                                                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| package.json            | A common node's package.json. An "oc" property contains some additional configuration.                                                                                                                 |
+| view.html               | The view containing the markup. Currently Handlebars and Jade view engines are supported. It can contain some CSS under the &lt;style&gt; tag and client-side Javascript under the &lt;script&gt; tag. |
+| server.js (optional)    | If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.                                                                |
+| static files (optional) | Images, Javascript, and files that will be referenced in the HTML markup.                                                                                                                              |
+| \*                      | Any other files that will be useful for the development such as tests, docs, etc.                                                                                                                      |
 
 ## Editing, debugging, testing
 

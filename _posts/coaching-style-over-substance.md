@@ -20,38 +20,7 @@ In recent times his research has proved to be inaccurate - yes people have diffe
 
 Enter [Honey and Mumford and their 1999 adaptation on Kolb's model](http://en.wikipedia.org/wiki/Learning_styles#Peter_Honey_and_Alan_Mumford.27s_model). They identified four distinct learning styles which have since grown to be the preferred assessment of human learning styles.
 
-<table style="font-size: 80%;margin-bottom:20px;">
-    <tr>
-        <th style="padding:3px;"></th>
-        <th style="padding:3px;"><b>Description</b></th>
-        <th style="padding:3px;"><b>Learn best</b></th>
-        <th style="padding:3px;"><b>Learn worst</b></th>
-    </tr>
-    <tr style="background-color: #E5E5E5">
-    	<td style="padding:3px;vertical-align:top;"><b>Activists</b></td>
-    	<td style="padding:3px;vertical-align:top;">Enjoy doing, tend to act first and think later. They like working with others but often hog the limelight.</td>
-    	<td style="padding:3px;vertical-align:top;">When involved in new experiences, being thrown in the deep end and leading discussions.</td>
-    	<td style="padding:3px;vertical-align:top;">Listening to long lectures, reading or writing on their own. Following precise information to the letter.</td>
-    </tr>
-    <tr>
-    	<td style="padding:3px;vertical-align:top;"><b>Reflectors</b></td>
-    	<td style="padding:3px;vertical-align:top;">Like to stand back, listen to others, look at the situation, gather data and carefully come to a conclusion.</td>
-    	<td style="padding:3px;vertical-align:top;">Observing individuals or teams at work,  reviewing what has happened and what they have learned from it.</td>
-    	<td style="padding:3px;vertical-align:top;">Acting as a leader in front of others, doing things without preparation, being rushed by deadlines.</td>
-    </tr>
-    <tr style="background-color: #E5E5E5">
-    	<td style="padding:3px;vertical-align:top;"><b>Theorists</b></td>
-    	<td style="padding:3px;vertical-align:top;">Able to adapt and integrate observations into complex theories. Tend to be perfectionists. Detached and analytical rather than emotive.</td>
-    	<td style="padding:3px;vertical-align:top;">When put into complex and structured situations having to apply their skill and knowledge. Have the chance to question and probe ideas.</td>
-    	<td style="padding:3px;vertical-align:top;">With unstructured or poorly briefed activities. Will struggle in situations where emphasise is put on emotion or feelings.</td>
-    </tr>
-    <tr>
-    	<td style="padding:3px;vertical-align:top;"><b>Pragmatists</b></td>
-    	<td style="padding:3px;vertical-align:top;">Practical and down to earth. Keen to try things out they can be impatient especially with long discussions.</td>
-    	<td style="padding:3px;vertical-align:top;">Respond well to demonstrations of techniques that show an obvious advantage.</td>
-    	<td style="padding:3px;vertical-align:top;">Learning is all theory. No guidelines on how to accomplish activity. No apparent pay back.</td>
-    </tr>
-</table>
+![Learning styles table](/images/posts/learning-styles.png)
 
 The important thing to remember is not all individuals can be pigeon-holed into one group. These characteristics are evident across all industries and teams; I can certainly see myself and others in this list. Can you?
 

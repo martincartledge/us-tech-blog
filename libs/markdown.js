@@ -1,9 +1,17 @@
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkHTML from "remark-html";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import remarkGfm from "remark-gfm";
+import rehypeStringify from "rehype-stringify";
 
 const generateHtml = async (content) => {
-  const file = await remark().use(remarkHTML).process(content);
+  const file = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(content);
 
   return file.toString();
 };

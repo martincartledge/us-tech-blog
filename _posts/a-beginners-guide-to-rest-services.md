@@ -95,43 +95,14 @@ Ok, so now that a client knows where a resource is reachable, how is it going to
 
 HTTP provides a set of methods that allow the client to perform standard operations on the service:
 
-<table style="margin-bottom:16px;">
-    <tr>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Method</th>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Operation performed</th> 
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Quality</th>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">GET</td>
-        <td style="padding:5px 10px;">Read a resource</td> 
-        <td style="padding:5px 10px;">Safe</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">POST</td>
-        <td style="padding:5px 10px;">Insert a new resource, or update an existing one</td> 
-        <td style="padding:5px 10px;">Not idempotent</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">PUT</td>
-        <td style="padding:5px 10px;">Insert a new resource, or update an existing one</td> 
-        <td style="padding:5px 10px;">Idempotent (see below)</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">DELETE</td>
-        <td style="padding:5px 10px;">Delete a resource</td> 
-        <td style="padding:5px 10px;">Idempotent</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">OPTIONS</td>
-        <td style="padding:5px 10px;">List allowed operations on a resource</td> 
-        <td style="padding:5px 10px;">Safe</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">HEAD</td>
-        <td style="padding:5px 10px;">Return only the response header, no body</td> 
-        <td style="padding:5px 10px;">Safe</td>
-    </tr>
-</table>
+| Method  | Operation performed                              | Quality                |
+| ------- | ------------------------------------------------ | ---------------------- |
+| GET     | Read a resource                                  | Safe                   |
+| POST    | Insert a new resource, or update an existing one | Not idempotent         |
+| PUT     | Insert a new resource, or update an existing one | Idempotent (see below) |
+| DELETE  | Delete a resource                                | Idempotent             |
+| OPTIONS | List allowed operations on a resource            | Safe                   |
+| HEAD    | Return only the response header, no body         | Safe                   |
 
 The key difference between _POST_ and _PUT_ is that no matter how many times a _PUT_ operation is performed, the result will be the same (this is what _idempotent_ means), whereas with a _POST_ operation a resource will be added or updated multiple times.
 
@@ -155,32 +126,13 @@ In the case of a resource that contains a list of resources, REST suggests to in
 
 Allows to store responses and return them if the same request is performed again. It has to be handled carefully to avoid returning stale results. The headers that allow us to perform controls over caching are:
 
-<table style="margin-bottom:16px;">
-    <tr>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Header</th>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Application</th>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">Date</td>
-        <td style="padding:5px 10px;">Finding out when this representation was generated</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">Last Modified</td>
-        <td style="padding:5px 10px;">Date and time when the server modified the representation</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">Cache-Control</td>
-        <td style="padding:5px 10px;">HTTP 1.1 header used to control caching, can contain directives</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">Expires</td>
-        <td style="padding:5px 10px;">Expiration date (supports HTTP 1.0)</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">Age</td>
-        <td style="padding:5px 10px;">Duration since the resource was fetched from server</td>
-    </tr>
-</table>
+| Header        | Application                                                     |
+| ------------- | --------------------------------------------------------------- |
+| Date          | Finding out when this representation was generated              |
+| Last Modified | Date and time when the server modified the representation       |
+| Cache-Control | HTTP 1.1 header used to control caching, can contain directives |
+| Expires       | Expiration date (supports HTTP 1.0)                             |
+| Age           | Duration since the resource was fetched from server             |
 
 Cache-Control values can be tweaked to control if a cached result is still valid or stale. For example, the _max-age_ value indicates for how many seconds from the moment expressed by the Date header a cached result will be valid.
 
