@@ -1,10 +1,13 @@
 .footer {
-  left: 0;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
   width: 100%;
+  padding: 1rem 1.5rem;
   color: var(--color-white);
   background-color: var(--color-ash-darker);
-  padding: 40px;
+}
+
+.container {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -41,11 +44,14 @@
 /* desktop */
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 60px 140px;
+    padding: 2rem 3rem;
+  }
+
+  .container {
     flex-direction: row;
   }
 
-  .socials{
+  .socials {
     padding-top: 6px;
     flex-direction: row;
   }
