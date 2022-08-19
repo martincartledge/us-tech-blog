@@ -45,7 +45,7 @@
 }
 
 .socialLogos {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 .socialLogo {
@@ -73,11 +73,11 @@
   }
 
   .socials {
-    padding-top: 6px;
+    margin-top: 6px;
     flex-direction: row;
   }
 
   .socialLogos {
-    padding: 0 80px;
+    margin: 0 80px;
   }
 }
