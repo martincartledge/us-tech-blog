@@ -7,10 +7,15 @@
   background-color: var(--color-ash-darker);
 }
 
-.container {
+.top {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 40px;
 }
 
 .OTLogo {
@@ -58,8 +63,13 @@
     padding: 2rem 3rem;
   }
 
-  .container {
+  .top {
     flex-direction: row;
+  }
+
+  .bottom {
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .socials {
