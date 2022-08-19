@@ -83,14 +83,10 @@ $ oc preview http://localhost:3030/hello-world
 
 As soon as you make changes on the component, you will be able to refresh this page and see how it looks. This an example for a component that handles some minimal logic:
 
-{% raw %}
-
 ```
 <!-- view.html -->
 <div>Hello {{ name }}</div>
 ```
-
-{% endraw %}
 
 ```js
 // server.js
