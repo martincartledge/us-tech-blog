@@ -18,6 +18,10 @@
   margin-top: 40px;
 }
 
+.copyright {
+  color: var(--color-grey-lighter);
+}
+
 .OTLogo {
   max-width: 64px;
 }
@@ -40,7 +44,11 @@
 }
 
 .moreLink {
-  text-decoration: none;
+  color: var(--color-grey-lighter);
+}
+
+.moreLink:hover,
+.moreLink:active {
   color: var(--color-white);
 }
 
