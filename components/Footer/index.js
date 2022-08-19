@@ -23,6 +23,7 @@ const Footer = () => (
           <Link href="https://github.com/opentable">
             <a>
               <Image
+                className={styles.socialLogo}
                 src={GitHubLogo}
                 alt="GitHub logo"
                 width={40}
@@ -33,6 +34,7 @@ const Footer = () => (
           <Link href="https://linkedin.com/company/opentable">
             <a>
               <Image
+                className={styles.socialLogo}
                 src={LinkedInLogo}
                 alt="LinkedIn logo"
                 width={40}
@@ -43,6 +45,7 @@ const Footer = () => (
           <Link href="https://twitter.com/opentabletechuk">
             <a>
               <Image
+                className={styles.socialLogo}
                 src={TwitterLogo}
                 alt="Twitter logo"
                 width={40}

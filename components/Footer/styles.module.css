@@ -43,6 +43,15 @@
   padding: 40px 0;
 }
 
+.socialLogo {
+  opacity: 0.5;
+}
+
+.socialLogo:hover,
+.socialLogo:active {
+  opacity: 1;
+}
+
 /* desktop */
 @media screen and (min-width: 1024px) {
   .footer {
