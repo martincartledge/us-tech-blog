@@ -24,7 +24,7 @@
   color: var(--color-white);
 }
 
-.logoText {
+.logotype {
   display: none;
 }
 
@@ -65,7 +65,7 @@
 
 /* tablet */
 @media screen and (min-width: 769px) {
-  .logoText {
+  .logotype {
     display: block;
     margin-left: 10px;
   }

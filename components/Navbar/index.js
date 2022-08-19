@@ -18,7 +18,7 @@ export default function Navbar() {
               width="50"
               height="50"
             />
-            <div className={styles.logoText}>
+            <div className={styles.logotype}>
               <span className={styles.companyName}>{COMPANY_NAME}&nbsp;</span>
               <span className={styles.teamName}>{TEAM_NAME}</span>
             </div>
