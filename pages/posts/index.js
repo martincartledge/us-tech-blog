@@ -1,4 +1,4 @@
-import { getPosts } from "libs/post";
+import { getPublicPosts } from "libs/post";
 import DocumentHead from "components/DocumentHead";
 import Header from "components/Header";
 import Container from "components/Container";
@@ -20,7 +20,7 @@ export default function PostsPage({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = await getPosts();
+  const posts = await getPublicPosts();
 
   return {
     props: {

@@ -35,6 +35,7 @@ export const getPost = async (slug) => {
     date: metadata.date,
     author: metadata.author, // case sensitive
     category: metadata.category.toLowerCase(), // case insensitive
+    draft: metadata.draft ?? false,
     slug: slugify(fileName),
     readingTime: readingTime(markdown),
     excerpt: generateExcerpt(html),
@@ -49,6 +50,13 @@ export const getPosts = async () => {
   const sortedPosts = posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 
   return sortedPosts;
+};
+
+export const getPublicPosts = async () => {
+  const posts = await getPosts();
+  const publicPosts = posts.filter((post) => !post.draft);
+
+  return publicPosts;
 };
 
 export const getSlugs = async () => {

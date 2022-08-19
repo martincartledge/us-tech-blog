@@ -1,4 +1,4 @@
-import { getPosts } from "libs/post";
+import { getPublicPosts } from "libs/post";
 import Header from "components/Header";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
@@ -18,7 +18,7 @@ export default function HomePage({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = await getPosts();
+  const posts = await getPublicPosts();
   posts.splice(3, posts.length - 1);
 
   return {
