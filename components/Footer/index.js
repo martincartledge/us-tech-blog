@@ -20,7 +20,7 @@ const Footer = () => (
           <div className={styles.socialLogos}>
             {SOCIAL_LINKS.map(({ name, href, image }) => (
               <Link href={href} key={href}>
-                <a>
+                <a target="_blank" rel="noreferrer noopener">
                   <Image
                     className={styles.socialLogo}
                     src={image}
@@ -36,7 +36,7 @@ const Footer = () => (
             <span className={styles.moreLinksHeader}>Learn more</span>
             {LEARN_MORE_LINKS.map(({ href, text }) => (
               <Link href={href} key={href}>
-                <a className={styles.moreLink}>
+                <a className={styles.moreLink} target="_blank">
                   <span>{text}</span>
                 </a>
               </Link>
