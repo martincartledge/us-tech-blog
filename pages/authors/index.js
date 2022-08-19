@@ -1,6 +1,6 @@
 import { getAuthors } from "libs/author";
 import DocumentHead from "components/DocumentHead";
-import Header from "components/Header";
+import Navbar from "components/Navbar";
 import Container from "components/Container";
 import AuthorListSection from "components/AuthorListSection";
 import Footer from "components/Footer";
@@ -10,7 +10,7 @@ export default function AuthorsPage({ authors }) {
   return (
     <Main>
       <DocumentHead title="Authors" />
-      <Header />
+      <Navbar />
       <Container>
         <AuthorListSection title="Authors" authors={authors} />
       </Container>

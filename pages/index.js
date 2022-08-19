@@ -1,5 +1,5 @@
 import { getPosts } from "libs/post";
-import Header from "components/Header";
+import Navbar from "components/Navbar";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
@@ -8,7 +8,7 @@ import Main from "components/Main";
 export default function HomePage({ posts }) {
   return (
     <Main>
-      <Header />
+      <Navbar />
       <Container>
         <PostListSection title="Recent Posts" posts={posts} />
       </Container>

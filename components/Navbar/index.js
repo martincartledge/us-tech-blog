@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { BLOG_TITLE } from "constants/app";
-import styles from "components/Header/styles.module.css";
+import styles from "components/Navbar/styles.module.css";
 
-export default function Header() {
+export default function Navbar() {
   return (
     <header className={styles.header}>
       <Link href="/">
