@@ -39,11 +39,11 @@ export const SOCIAL_LINKS = [
 
 export const LEARN_MORE_LINKS = [
   {
-    href: "https://www.opentable.co.uk/about",
+    href: "https://www.opentable.co.uk/about/",
     text: "About OpenTable",
   },
   {
-    href: "https://www.opentable.com/careers/technology",
+    href: "https://www.opentable.com/careers/technology/",
     text: "Technology careers",
   },
   {
