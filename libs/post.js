@@ -16,6 +16,16 @@ const findFileNameForSlug = (slug) => {
   return readFileNames().find((fileName) => slugify(fileName) === slug);
 };
 
+const validateMetadata = (fileName, metadata) => {
+  const requiredFields = ["title", "date", "author", "category"];
+
+  requiredFields.forEach((field) => {
+    if (metadata[field] == null) {
+      throw new Error(`${field} is required ${fileName}`);
+    }
+  });
+};
+
 const generateExcerpt = (html) => {
   const matchResult = html.match(/<p>(.+)<\/p>/);
   const textContent = matchResult ? matchResult[1] : null;
@@ -29,6 +39,8 @@ export const getPost = async (slug) => {
   const filePath = path.join(POSTS_DIRECTORY, fileName);
   const file = fs.readFileSync(filePath, "utf8");
   const { metadata, markdown, html } = await parseMarkdownFile(file);
+
+  validateMetadata(fileName, metadata);
 
   return {
     title: metadata.title,
