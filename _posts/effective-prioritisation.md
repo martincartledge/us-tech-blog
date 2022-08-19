@@ -28,8 +28,6 @@ I've been introduced to a framework that helped me to grab this idea of effectiv
 
 Stephen Covey, a sadly deceased educator, author and businessman, designed a matrix called The Focus Quadrant that categorises activities and helps us deal with the struggle of prioritisation by clearly outlining the conflicts involved.
 
-![image](http://www.chowamigo.co.uk/images/focus.jpg)
-
 <table style="font-size: 80%;margin-bottom:20px;">
     <tr>
         <th style="padding:3px;"></th>

@@ -63,8 +63,6 @@ Let me introduce you to [Bernice McCarthy](http://www.linkedin.com/pub/bernice-m
 
 Research suggests that this framework ([4MAT](http://www.4mat.eu/)) is proven to be successful as it follows the thought processes of individuals when they try to learn. It works by explaining not just the WHY? but also the WHAT?, the HOW? and the WHAT IF?
 
-![image](http://www.chowamigo.co.uk/images/4mat.png)
-
 1. WHY? => Convey the meaning and purpose of the change in order to engage people. **Engage the why**.
 
 2. WHAT? => Once it's made relevant provide facts, structure or theory to explain what is going to happen. **Inform the what**.

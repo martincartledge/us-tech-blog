@@ -12,9 +12,7 @@ Whenever I see such content from a friend or follower, I'm reminded of Stephen C
 
 Covey says that in order to remain truly effective, we should focus our time and energy on situations we can influence. Don't worry about things we cannot control, such as the weather, the economy or indeed foreign conflicts.
 
-Covey's work implies that if we identify the areas that are inside our Circle of Influence we will be more productive and make more of an impact;
-
-![image](http://www.chowamigo.co.uk/images/what_can_i_do.png)
+Covey's work implies that if we identify the areas that are inside our Circle of Influence we will be more productive and make more of an impact.
 
 If I'm honest I find this work quite harsh in its approach. Indeed it might not sit well with everyone. However, I personally found myself much less burdened once I could identify which problems I had control over.
 
