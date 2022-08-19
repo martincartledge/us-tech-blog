@@ -17,30 +17,36 @@ const Footer = () => (
           </Link>
         </div>
         <div className={styles.socials}>
-          <div className={styles.socialLogos}>
+          <ul className={styles.socialLogos}>
             {SOCIAL_LINKS.map(({ name, href, image }) => (
-              <Link href={href} key={href}>
-                <a target="_blank" rel="noreferrer noopener">
-                  <Image
-                    className={styles.socialLogo}
-                    src={image}
-                    alt={`${name} logo`}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </Link>
+              <li className={styles.socialLogoLinkItem} key={href}>
+                <Link href={href}>
+                  <a target="_blank" rel="noreferrer noopener">
+                    <Image
+                      className={styles.socialLogo}
+                      src={image}
+                      alt={`${name} logo`}
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
           <div className={styles.moreLinks}>
             <span className={styles.moreLinksHeader}>Learn more</span>
-            {LEARN_MORE_LINKS.map(({ href, text }) => (
-              <Link href={href} key={href}>
-                <a className={styles.moreLink} target="_blank">
-                  <span>{text}</span>
-                </a>
-              </Link>
-            ))}
+            <ul>
+              {LEARN_MORE_LINKS.map(({ href, text }) => (
+                <li key={href}>
+                  <Link href={href} key={href}>
+                    <a className={styles.moreLink} target="_blank">
+                      <span>{text}</span>
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

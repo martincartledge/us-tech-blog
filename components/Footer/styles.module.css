@@ -56,6 +56,15 @@
   margin: 40px 0;
 }
 
+.socialLogoLinkItem {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialLogoLinkItem:first-child {
+  margin-left: 0;
+}
+
 .socialLogo {
   opacity: 0.5;
 }
