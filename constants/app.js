@@ -11,7 +11,7 @@ export const SITE_TITLE = `${COMPANY_NAME} ${TEAM_NAME}`;
 export const NAVBAR_LINKS = [
   {
     href: "/posts",
-    text: "All posts",
+    text: "Posts",
   },
   {
     href: "/#careers",
