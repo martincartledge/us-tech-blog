@@ -1,6 +1,6 @@
 import { getCategories } from "libs/category";
 import DocumentHead from "components/DocumentHead";
-import Header from "components/Header";
+import Navbar from "components/Navbar";
 import Container from "components/Container";
 import CategoryListSection from "components/CategoryListSection";
 import Footer from "components/Footer";
@@ -10,7 +10,7 @@ export default function CategoriesPage({ categories }) {
   return (
     <Main>
       <DocumentHead title="Categories" />
-      <Header />
+      <Navbar />
       <Container>
         <CategoryListSection title="Categories" categories={categories} />
       </Container>

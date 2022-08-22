@@ -1,7 +1,7 @@
 import ErrorPage from "next/error";
 import { getPost, getSlugs } from "libs/post";
 import DocumentHead from "components/DocumentHead";
-import Header from "components/Header";
+import Navbar from "components/Navbar";
 import Container from "components/Container";
 import PostContentSection from "components/PostContentSection";
 import Footer from "components/Footer";
@@ -15,7 +15,7 @@ export default function PostPage({ post }) {
   return (
     <Main>
       <DocumentHead title={post.title} />
-      <Header />
+      <Navbar />
       <Container>
         <PostContentSection post={post} />
       </Container>

@@ -1,10 +1,10 @@
 import Head from "next/head";
-import { BLOG_TITLE } from "constants/app";
+import { SITE_TITLE } from "constants/app";
 
 export default function DocumentHead({ title }) {
   return (
     <Head>
-      <title>{title ? title + " | " + BLOG_TITLE : BLOG_TITLE}</title>
+      <title>{title ? title + " | " + SITE_TITLE : SITE_TITLE}</title>
     </Head>
   );
 }
