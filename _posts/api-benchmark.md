@@ -10,7 +10,7 @@ Since I joined OpenTable I’ve been experimenting with performance monitoring, 
 
 ## The why
 
-A couple of weeks after joining the company I decided, as part of my [innovation time][6], to rebuild the core of a .NET WebApi project in node.js in order to have a working prototype that could do exactly the same job as the original one, and could help me to observe how the two applications could react with similar volumes of traffic. After managing to make the two apis run on two clean VMs with the same configuration, I wrote a little node.js script to start performing some requests and test the response times. After seeing the results I thought that something was going wrong:
+A couple of weeks after joining the company I decided, as part of my [innovation time](/blog/2014/02/06/20-percent-time/), to rebuild the core of a .NET WebApi project in node.js in order to have a working prototype that could do exactly the same job as the original one, and could help me to observe how the two applications could react with similar volumes of traffic. After managing to make the two apis run on two clean VMs with the same configuration, I wrote a little node.js script to start performing some requests and test the response times. After seeing the results I thought that something was going wrong:
 
 ```sh
 .NET/route1 x 9.16 ops/sec ±12.71% (17 runs sampled)
@@ -43,13 +43,13 @@ The last step is simple: react and persist. If you discover something relevant, 
 
 ## The how, for me
 
-When I found that little bug in the application (and it wasn’t actually a bug in the way we usually define them, as it wasn’t breaking any test or any software’s feature), I decided to spend some time to make my benchmark script better, in order to support different HTTP verbs, HTTPS, and a few things I needed to test all the routes of the API in a easy way. The goal was to wrap my little script as a [grunt.js][1] module, (we use Teamcity as a CI platform and we already use grunt to run various tasks during our release process). I wanted to run this benchmarks externally to avoid interfering with the performance of the application, and to have a configuration-based simple-to-use tool.
+When I found that little bug in the application (and it wasn’t actually a bug in the way we usually define them, as it wasn’t breaking any test or any software’s feature), I decided to spend some time to make my benchmark script better, in order to support different HTTP verbs, HTTPS, and a few things I needed to test all the routes of the API in a easy way. The goal was to wrap my little script as a [grunt.js](http://www.gruntjs.com) module, (we use Teamcity as a CI platform and we already use grunt to run various tasks during our release process). I wanted to run this benchmarks externally to avoid interfering with the performance of the application, and to have a configuration-based simple-to-use tool.
 
-So after some refactoring I started working on [api-benchmark][2] and its grunt wrapper [grunt-api-benchmark][3], in order to make performance testing part of our continuous delivery process. A couple of days later my team was using it to run benchmark tests on our pre-prod environments against our APIs, running some hundreds of requests on each route every time we made a single commit to Github. What I managed to do was to break the build if response times were not good enough (stopping the production deployment), and producing a tiny report with some graphs, in order to have something useful to observe and eventually collect. Now, a couple of months later, a lot of functionality has been added and other teams are using it with success.
+So after some refactoring I started working on [api-benchmark](https://github.com/matteofigus/api-benchmark) and its grunt wrapper [grunt-api-benchmark](https://github.com/matteofigus/grunt-api-benchmark), in order to make performance testing part of our continuous delivery process. A couple of days later my team was using it to run benchmark tests on our pre-prod environments against our APIs, running some hundreds of requests on each route every time we made a single commit to Github. What I managed to do was to break the build if response times were not good enough (stopping the production deployment), and producing a tiny report with some graphs, in order to have something useful to observe and eventually collect. Now, a couple of months later, a lot of functionality has been added and other teams are using it with success.
 
 In case of RESTful services, it is possible to make series of requests to test response times, find peaks and classify errors; it is possible to perform concurrent calls to see how many parallel requests your service can handle (when deployed in single boxes, or when load balanced and globalised); and every time grunt runs everything is saved and plotted to readable and shareable graphs, so the knowledge can be shared between people that belong to different backgrounds.
 
-{% img center /images/posts/api_benchmark.png %}
+![](/images/posts/api_benchmark.png)
 
 A lot of other features are still under development, including support for SOAP services and historical analysis (compare results from previous benchmarks and create historical graphs to represent the evolution of your software).
 
@@ -90,7 +90,7 @@ The way it works is simple. A configuration file contains the list of all the ro
 }
 ```
 
-Then it is possible to include the script in a project that is written in any language and runs on any platform. The only requirement is to [install node.js][4] on that machine. If the project doesn’t have a package.json file in the root of your project, it’s as easy as doing:
+Then it is possible to include the script in a project that is written in any language and runs on any platform. The only requirement is to [install node.js](http://www.nodejs.org) on that machine. If the project doesn’t have a package.json file in the root of your project, it’s as easy as doing:
 
 ```sh
 $ npm init
@@ -174,11 +174,4 @@ Benchmarking doesn’t equal and doesn’t replace monitoring. Once you start ha
 
 ## Conclusions
 
-I believe that taking care of performance is our responsibility, as developers. We can and should do more, and I hope this subject will gain more interest. In the meanwhile, if [api-benchmark][2] sounds interesting for you and you are interested in trying it or contributing (it is totally open-source), don’t hesitate to [get in touch with me][5].
-
-[1]: http://www.gruntjs.com
-[2]: https://github.com/matteofigus/api-benchmark
-[3]: https://github.com/matteofigus/grunt-api-benchmark
-[4]: http://www.nodejs.org
-[5]: http://www.twitter.com/matteofigus
-[6]: /blog/2014/02/06/20-percent-time/
+I believe that taking care of performance is our responsibility, as developers. We can and should do more, and I hope this subject will gain more interest. In the meanwhile, if [api-benchmark](https://github.com/matteofigus/api-benchmark) sounds interesting for you and you are interested in trying it or contributing (it is totally open-source), don’t hesitate to [get in touch with me](http://www.twitter.com/matteofigus).

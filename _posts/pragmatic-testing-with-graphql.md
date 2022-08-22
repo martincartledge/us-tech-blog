@@ -22,7 +22,7 @@ So we took a step back and looked at the code we were writing. Most of the conne
 
 So where did we start? I personally enjoy the outside-in approach and started writing a few acceptance tests. So, we wrote a test for each query in the schema that we had. It would fire an HTTP request and expect a 200 status code and have no errors in the resulting JSON body. Thanks to GraphQL most errors are handily reported using this mechanism so we would be able to make a decent impact using little work.
 
-{% img left /images/posts/graphql-base-tests.gif %}
+![](/images/posts/graphql-base-tests.gif)
 
 As you can see, we found that this would be good enough at the time but eventually found that it would not scale very well. If you forget to update one of these queries, you could leave out a major section out accidentally. Being a big fan of automation, we wondered how we could scale this out.
 

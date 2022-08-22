@@ -1,11 +1,12 @@
 import ErrorPage from "next/error";
-import { getCategories, getPostsByCategory } from "libs/category";
+import { getCategory, getPostsByCategory, getSlugs } from "libs/category";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import Container from "components/Container";
 import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
+import { capitalize } from "libs/string";
 
 export default function CategoryPage({ category, posts }) {
   if (!category) {
@@ -17,14 +18,15 @@ export default function CategoryPage({ category, posts }) {
       <DocumentHead title={`Posts in ${category}`} />
       <Navbar />
       <Container>
-        <PostListSection title={category} posts={posts} />
+        <PostListSection title={capitalize(category)} posts={posts} />
       </Container>
       <Footer />
     </Main>
   );
 }
 
-export async function getStaticProps({ params: { category } }) {
+export async function getStaticProps({ params: { slug } }) {
+  const category = await getCategory(slug);
   const posts = await getPostsByCategory(category);
 
   return {
@@ -36,12 +38,12 @@ export async function getStaticProps({ params: { category } }) {
 }
 
 export async function getStaticPaths() {
-  const categories = await getCategories();
+  const slugs = await getSlugs();
 
   return {
-    paths: categories.map((category) => ({
+    paths: slugs.map((slug) => ({
       params: {
-        category,
+        slug,
       },
     })),
     fallback: false,

@@ -6,13 +6,6 @@ import EventsImg from "statics/events.png";
 import InfrastructureImg from "statics/infrastructure.png";
 import DefaultImg from "statics/defaultCategory.png";
 
-export const readingTime = (postContent) => {
-  const wpm = 225;
-  const words = postContent.trim().split(/\s+/).length;
-  const time = Math.ceil(words / wpm);
-  return time;
-};
-
 export const getCategoryImage = (category) => {
   switch (category) {
     case "backend":

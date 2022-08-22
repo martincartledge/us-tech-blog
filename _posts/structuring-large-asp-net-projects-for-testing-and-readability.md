@@ -8,7 +8,7 @@ category: backend
 
 ## TL;DR
 
-This is a continuation of the post [Testing an API In Memory in ASP.NET Core](/blog/2019/01/28/testing-an-api-in-memory-in-asp-net-core/) where I described in detail how to test an ASP.NET Core API end-to-end in an isolated, repeatable fashion. This is a shorter post that discusses an approach to structuring your project that should make it easier to test and develop.
+This is a continuation of a [previous post](/blog/2019/01/28/testing-an-api-in-memory-in-asp-net-core/) where I described in detail how to test an ASP.NET Core API end-to-end in an isolated, repeatable fashion. This is a shorter post that discusses an approach to structuring your project that should make it easier to test and develop.
 
 Oh and there are lots of code samples again!
 

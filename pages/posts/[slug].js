@@ -1,5 +1,5 @@
 import ErrorPage from "next/error";
-import { getPosts, getPost } from "libs/post";
+import { getPost, getSlugs } from "libs/post";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import Container from "components/Container";
@@ -35,13 +35,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
+  const slugs = await getSlugs();
 
   return {
-    paths: posts.map((post) => {
+    paths: slugs.map((slug) => {
       return {
         params: {
-          slug: post.slug,
+          slug,
         },
       };
     }),

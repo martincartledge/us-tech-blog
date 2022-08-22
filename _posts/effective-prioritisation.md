@@ -6,13 +6,7 @@ twitter: barrettology
 category: culture
 ---
 
-Prioritisation is a huge part of modern life.
-
-No.
-
-Prioritisation is an ESSENTIAL part of modern life.
-
-I'm not talking solely about Agile here either. Yes we plan stories, yes we prioritise them to get them into the backlog but I'm aiming at a higher level. Life lessons that are useful to all of us.
+Prioritisation is a huge part of modern life. No. Prioritisation is an ESSENTIAL part of modern life. I'm not talking solely about Agile here either. Yes we plan stories, yes we prioritise them to get them into the backlog but I'm aiming at a higher level. Life lessons that are useful to all of us.
 
 How do we know what to do next? Perhaps you lean on your gut feeling to order your to-do list. Maybe it is real-time cost and budget implications that influence your priorities or does it come down to who shouts loudest?
 
@@ -34,35 +28,12 @@ I've been introduced to a framework that helped me to grab this idea of effectiv
 
 Stephen Covey, a sadly deceased educator, author and businessman, designed a matrix called The Focus Quadrant that categorises activities and helps us deal with the struggle of prioritisation by clearly outlining the conflicts involved.
 
-![image](http://www.chowamigo.co.uk/images/focus.jpg)
-
-<table style="font-size: 80%;margin-bottom:20px;">
-    <tr>
-        <th style="padding:3px;"></th>
-        <th style="padding:3px;"><b>Description</b></th>
-        <th style="padding:3px;"><b>Examples</b></th>
-    </tr>
-<tr style="background-color: #E5E5E5">
-	<td style="white-space:nowrap;padding:3px;vertical-align:top;">A. Important/Urgent</td>
-	<td style="padding:3px;vertical-align:top;">Tasks that are necessary usually deadline driven or time sensitive. This usually this means panic and problems.</td>
-	<td style="padding:3px;vertical-align:top;">Fixing the server crash, firefighting a site outage, entering expenses before a deadline</td>
-</tr>
-<tr>
-	<td style="white-space:nowrap;padding:3px;vertical-align:top;">B. Important/Not urgent</td>
-	<td style="padding:3px;vertical-align:top;">Activities in direct alignment to your goals. Typically these tasks involve planning ahead. Prevention rather than cure.</td>
-	<td style="padding:3px;vertical-align:top;">Relationship building, researching your next API, learning a new coding language, taking time out to exercise</td>
-</tr>
-<tr style="background-color: #E5E5E5">
-	<td style="white-space:nowrap;padding:3px;vertical-align:top;">C. Not important/Urgent</td>
-	<td style="padding:3px;vertical-align:top;">Activities that seem important but in reality are not. It's thought these tasks will make you popular as you are responding to requests for your time.</td>
-	<td style="padding:3px;vertical-align:top;">Going to a meeting, answering the phone, replying instantly on IMs or email</td>
-</tr>
-<tr>
-	<td style="white-space:nowrap;padding:3px;vertical-align:top;">D. Not important/Not urgent</td>
-	<td style="padding:3px;vertical-align:top;">While it would seem pleasant enough to live here permentantly, in reality these activities are time wasters that should be eliminated as much as possible.</td>
-	<td style="padding:3px;vertical-align:top;">Playing video games, surfing the net, getting a tea or coffee, flicking through the magazine on your desk</td>
-</tr>
-</table>
+| Name                        | Description                                                                                                                                                | Examples                                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| A. Important/Urgent         | Tasks that are necessary usually deadline driven or time sensitive. This usually this means panic and problems.                                            | Fixing the server crash, firefighting a site outage, entering expenses before a deadline                      |
+| B. Important/Not urgent     | Activities in direct alignment to your goals. Typically these tasks involve planning ahead. Prevention rather than cure.                                   | Relationship building, researching your next API, learning a new coding language, taking time out to exercise |
+| C. Not important/Urgent     | Activities that seem important but in reality are not. It's thought these tasks will make you popular as you are responding to requests for your time.     | Going to a meeting, answering the phone, replying instantly on IMs or email                                   |
+| D. Not important/Not urgent | While it would seem pleasant enough to live here permentantly, in reality these activities are time wasters that should be eliminated as much as possible. | Playing video games, surfing the net, getting a tea or coffee, flicking through the magazine on your desk     |
 
 ## How does this help?
 

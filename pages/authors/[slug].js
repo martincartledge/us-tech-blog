@@ -1,5 +1,10 @@
 import ErrorPage from "next/error";
-import { getAuthors, getPostsByAuthor } from "libs/author";
+import {
+  getAuthor,
+  getPostsByAuthor,
+  getSlugs,
+  getLegacySlugRedirects,
+} from "libs/author";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import Container from "components/Container";
@@ -24,8 +29,20 @@ export default function AuthorPage({ author, posts }) {
   );
 }
 
-export async function getStaticProps({ params: { author } }) {
-  const posts = await getPostsByAuthor(author);
+export async function getStaticProps({ params: { slug } }) {
+  const redirects = await getLegacySlugRedirects();
+
+  if (redirects[slug]) {
+    return {
+      redirect: {
+        destination: `/authors/${redirects[slug]}`,
+        permanent: true,
+      },
+    };
+  }
+
+  const author = await getAuthor(slug);
+  const posts = await getPostsByAuthor(slug);
 
   return {
     props: {
@@ -36,12 +53,12 @@ export async function getStaticProps({ params: { author } }) {
 }
 
 export async function getStaticPaths() {
-  const authors = await getAuthors();
+  const slugs = await getSlugs();
 
   return {
-    paths: authors.map((author) => ({
+    paths: slugs.map((slug) => ({
       params: {
-        author,
+        slug,
       },
     })),
     fallback: false,

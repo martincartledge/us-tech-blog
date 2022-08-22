@@ -6,8 +6,6 @@ twitter: liamjbennett
 category: events
 ---
 
-![The start of PuppetConf 2014](/images/posts/puppetconf2014.jpg)
-
 It has been one week since our attendance at this years PuppetConf and we have just now caught up on all the great talks that were
 given and the projects demonstrated over the 3 day period. Here's our summary of the event (split into 3 parts), hopefully you will
 find as much inspiration in the content as we have.
@@ -156,5 +154,7 @@ of questions a little easier in the future.
 
 The contributor summit was personally one of the most useful days of the conference. Being able to see the lastest tooling and discuss the latest problems is always
 very useful to module authors like ourselves. Hopefully you'll find this summary as useful as we do.
+
+![The start of PuppetConf 2014](/images/posts/puppetconf2014.jpg)
 
 Next up Day 1 - PuppetConf proper..

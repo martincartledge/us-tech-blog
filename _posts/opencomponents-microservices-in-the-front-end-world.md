@@ -6,7 +6,7 @@ twitter: matteofigus
 category: engineering
 ---
 
-Many engineers work every day on opentable.com from our offices located in Europe, America, and Asia, pushing changes to production multiple times a day. Usually, this is very hard to achieve, in fact it took years for us to get to this point. [I described in a previous article][1] how we dismantled our monolith in favour of a Microsites architecture. Since the publication of that blog post we have been working on something I believe to be quite unique, called **OpenComponents**.
+Many engineers work every day on opentable.com from our offices located in Europe, America, and Asia, pushing changes to production multiple times a day. Usually, this is very hard to achieve, in fact it took years for us to get to this point. [I described in a previous article](/blog/2015/02/09/dismantling-the-monolith-microsites-at-opentable/) how we dismantled our monolith in favour of a Microsites architecture. Since the publication of that blog post we have been working on something I believe to be quite unique, called **OpenComponents**.
 
 ### Another front-end framework?
 
@@ -14,7 +14,7 @@ OpenComponents is a system to facilitate code sharing, reduce dependencies, and 
 
 OpenComponents is not _another SPA JS framework_; it is a set of conventions, patterns and tools to develop and quickly deploy fragments of front-end. In this perspective, it plays nicely with any existing architecture and framework in terms of front-end and back-end. Its purpose is to **serve as delivery mechanism for a more modularised end-result in the front-end**.
 
-OC is been in production for more than a year at OpenTable and it is [fully open-sourced][2].
+OC is been in production for more than a year at OpenTable and it is [fully open-sourced](https://github.com/opentable/oc).
 
 ## Overview
 
@@ -59,32 +59,13 @@ $ oc init my-component
 
 Components are folders containing the following files:
 
-<table style="margin-bottom:16px;">
-    <tr>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">File</th>
-        <th style="font-weight:bold;padding:5px 10px;border-bottom:1px solid #ccc;">Description</th>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">package.json</td>
-        <td style="padding:5px 10px;font-weight: inherit;">A common <a href="https://docs.npmjs.com/files/package.json" target="_blank">node's package.json</a>. An "oc" property contains some additional configuration.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">view.html</td>
-        <td style="padding:5px 10px;font-weight: inherit;">The view containing the markup. Currently Handlebars and Jade view engines are supported. It can contain some CSS under the &lt;style&gt; tag and client-side Javascript under the &lt;script&gt; tag.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">server.js (optional)</td>
-        <td style="padding:5px 10px;font-weight: inherit;">If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">static files (optional)</td>
-        <td style="padding:5px 10px;font-weight: inherit;">Images, Javascript, and files that will be referenced in the HTML markup.</td>
-    </tr>
-    <tr>
-        <td style="padding:5px 10px;font-weight:bold;">*</td>
-        <td style="padding:5px 10px;font-weight: inherit;">Any other files that will be useful for the development such as tests, docs, etc.</td>
-    </tr>
-</table>
+| File                    | Description                                                                                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| package.json            | A common node's package.json. An "oc" property contains some additional configuration.                                                                                                                 |
+| view.html               | The view containing the markup. Currently Handlebars and Jade view engines are supported. It can contain some CSS under the &lt;style&gt; tag and client-side Javascript under the &lt;script&gt; tag. |
+| server.js (optional)    | If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.                                                                |
+| static files (optional) | Images, Javascript, and files that will be referenced in the HTML markup.                                                                                                                              |
+| \*                      | Any other files that will be useful for the development such as tests, docs, etc.                                                                                                                      |
 
 ## Editing, debugging, testing
 
@@ -102,14 +83,10 @@ $ oc preview http://localhost:3030/hello-world
 
 As soon as you make changes on the component, you will be able to refresh this page and see how it looks. This an example for a component that handles some minimal logic:
 
-{% raw %}
-
 ```
 <!-- view.html -->
 <div>Hello {{ name }}</div>
 ```
-
-{% endraw %}
 
 ```js
 // server.js
@@ -259,10 +236,4 @@ After more than a year in production, OC is still evolving. These are some of th
 - Semver and auto-generated documentation **enforce clear contracts**. Consumers can pick the version they want and component owners can keep clear what the contract is.
 - A more componentised front-end leads to write **more easily destroyable code**. As opposite of writing highly maintainable code, this approach promotes small iterations on very small, easily readable and testable units of code. In this perspective, recreating something from scratch is perfectly acceptable and recommended, as there is almost zero cost for a developer to start a new project and the infrastructure in place makes maintainance and deprecation as easy as a couple of clicks.
 
-If you wish to try or know more about OpenComponents, visit [OC's github page][2] or have a look at [some component examples][3]. If you would give us some feedback, asks us question, or contribute to the project get in touch via the [gitter chat][4] or via [e-mail][5]. We would love to hear your thoughts about this project.
-
-[1]: /blog/2015/02/09/dismantling-the-monolith-microsites-at-opentable/
-[2]: https://github.com/opentable/oc
-[3]: https://github.com/matteofigus/oc-components-examples
-[4]: https://gitter.im/opentable/oc
-[5]: mailto:oc@opentable.com
+If you wish to try or know more about OpenComponents, visit [OC's github page](https://github.com/opentable/oc) or have a look at [some component examples](https://github.com/matteofigus/oc-components-examples). If you would give us some feedback, asks us question, or contribute to the project get in touch via the [gitter chat](https://gitter.im/opentable/oc) or via [e-mail](mailto:oc@opentable.com). We would love to hear your thoughts about this project.

@@ -1,9 +1,9 @@
-import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import OTLogo from "statics/OT_logo.png";
 import Container from "components/Container";
 import { SITE_TITLE, SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
+import OTLogo from "statics/OT_logo.png";
+import styles from "components/Footer/styles.module.css";
 
 const Footer = () => (
   <footer className={styles.footer}>

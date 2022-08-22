@@ -1,10 +1,10 @@
 .gridContainer {
-    display: grid;
-    gap: 1em;
+  display: grid;
+  gap: 1em;
 }
 
 .gridItem {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .postCategory {
@@ -13,25 +13,32 @@
 }
 
 .postTitle {
-    font-size: var(--size-4);
-    font-weight: var(--weight-bold);
-    margin-bottom: 15px;
+  font-size: var(--size-4);
+  font-weight: var(--weight-bold);
+  margin-bottom: 15px;
 }
 
-.postDateAndReadingTime { 
-    font-size: var(--small-font-size);
-    font-weight: var(--weight-medium);
-    display: flex;
-    margin-bottom: 15px;
+.postDateAndReadingTime {
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-medium);
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .postDate {
-    margin-right: 20px;
+  margin-right: 20px;
+}
+
+.postExcerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* tablet */
 @media screen and (min-width: 769px) {
-    .gridContainer {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -6,21 +6,21 @@ twitter: aroyle
 category: engineering
 ---
 
-We've been using [Grunt][1] as a build tool for our nodejs apps, and it's brilliant. It lints, it configures, it minifies, it tests and it packages.
+We've been using [Grunt](http://www.gruntjs.com) as a build tool for our nodejs apps, and it's brilliant. It lints, it configures, it minifies, it tests and it packages.
 
-As we move towards getting our first node app into production, we were looking at ways to deploy it. First we thought of [Capistrano][2].
+As we move towards getting our first node app into production, we were looking at ways to deploy it. First we thought of [Capistrano](http://www.capistranorb.com).
 
-**_Capistrano_** is a fully featured deployment framework written in ruby and levering rake style tasks. It's extremely powerful and very robust, plus there is a [gem for node deployments][3]. Alas, it was not to be. After half a day of tail chasing and hoop jumping, it occurred to me that there must be an easier way. Capistrano was encouraging me to make my project fit their template, rather than allowing me to configure the deployment to match my project. When I dug down into the Capistrano source, I found that it was just using ssh and sftp to run remote commands and copy files. But we can simplify this process.
+**_Capistrano_** is a fully featured deployment framework written in ruby and levering rake style tasks. It's extremely powerful and very robust, plus there is a [gem for node deployments](https://github.com/loopj/capistrano-node-deploy). Alas, it was not to be. After half a day of tail chasing and hoop jumping, it occurred to me that there must be an easier way. Capistrano was encouraging me to make my project fit their template, rather than allowing me to configure the deployment to match my project. When I dug down into the Capistrano source, I found that it was just using ssh and sftp to run remote commands and copy files. But we can simplify this process.
 
 **_Grunt_** has been great so far, so I started looking at deploying directly through grunt. We would be deploying to Ubuntu server boxes, so the only tools necessary are ssh and sftp.
 
-There are Grunt modules for nearly [everything][4] (linting, minifying, testing, waiting, packaging, shell-exec'ing, tagging, etc.), and rather predictably, sshing (with sftp).
+There are Grunt modules for nearly [everything](https://npmjs.org/search?q=grunt) (linting, minifying, testing, waiting, packaging, shell-exec'ing, tagging, etc.), and rather predictably, sshing (with sftp).
 
-[Grunt-ssh][5] provides tasks for executing remote ssh commands, and for copying files using ssh. Let's dive into some code.
+[Grunt-ssh](https://github.com/andrewrjones/grunt-ssh) provides tasks for executing remote ssh commands, and for copying files using ssh. Let's dive into some code.
 
 **_SSH commands_**
 
-This is going to go over some old ground (available on the Grunt-ssh [readme][5]), but we can build up the commands pretty quick.
+This is going to go over some old ground (available on the Grunt-ssh [readme](https://github.com/andrewrjones/grunt-ssh)), but we can build up the commands pretty quick.
 
 This is the basic config for executing ssh commands from your Gruntfile:
 
@@ -142,7 +142,7 @@ files: {
 }
 ```
 
-This will copy all files from the "package/" folder locally. If you want to specify only certain types of files, you can use grunt's standard [file globbing][6].
+This will copy all files from the "package/" folder locally. If you want to specify only certain types of files, you can use grunt's standard [file globbing](https://github.com/gruntjs/grunt/wiki/grunt.file#globbing-patterns).
 
 ```
 srcBasePath: "package/"
@@ -153,13 +153,13 @@ Optionally strip off an initial part of the path (without it, files would upload
 **_Putting it all together_**
 We've got all the component parts, now lets put it together (plus a few other cool bits).
 
-_Note: at the time of writing, there is a bug in Grunt-ssh where the sftp task does not use the shared sshconfig, so if you want the fixed code, use [my fork][7] (there is a pull request outstanding)_
+_Note: at the time of writing, there is a bug in Grunt-ssh where the sftp task does not use the shared sshconfig, so if you want the fixed code, use [my fork](https://github.com/andyroyle/grunt-ssh) (there is a pull request outstanding)_
 
 This snippet assumes that:
 
 - You can connect to your deployment server using ssh
 - You are deploying to /var/www/myapp
-- You are using [forever][8] to run your app
+- You are using [forever](https://github.com/nodejitsu/forever) to run your app
 - Your application files are copied to ./package/
 
 (but, since we're just using bash commands, this is easily configurable)
@@ -277,12 +277,3 @@ Basically any task you can think of is scriptable using grunt (and some combinat
 - Rollback from a single command
 
 **Oink, Oink .....**
-
-[1]: http://www.gruntjs.com
-[2]: http://www.capistranorb.com
-[3]: https://github.com/loopj/capistrano-node-deploy
-[4]: https://npmjs.org/search?q=grunt
-[5]: https://github.com/andrewrjones/grunt-ssh
-[6]: https://github.com/gruntjs/grunt/wiki/grunt.file#globbing-patterns
-[7]: https://github.com/andyroyle/grunt-ssh
-[8]: https://github.com/nodejitsu/forever

@@ -1,24 +1,33 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { POSTS_DIRECTORY, readFileNames, readMetadata } from "./post";
-
-const readCategory = (fileName) => {
-  const filePath = path.join(POSTS_DIRECTORY, fileName);
-  const file = fs.readFileSync(filePath, "utf8");
-  const { data } = matter(file);
-
-  return data.category.toLowerCase();
-};
+import { getPosts } from "libs/post";
+import { slugify } from "libs/string";
 
 export const getCategories = async () => {
-  const categories = readFileNames().map(readCategory).flat();
-  return [...new Set(categories)];
+  const posts = await getPosts();
+  const categories = posts.map((post) => post.category);
+  const uniqueCategories = [...new Set(categories)];
+
+  return uniqueCategories;
 };
 
-export const getPostsByCategory = async (category) => {
-  return readFileNames()
-    .map(readMetadata)
-    .filter((post) => post.category === category)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
+export const getSlugs = async () => {
+  const categories = await getCategories();
+  const slugs = categories.map(slugify);
+
+  return slugs;
+};
+
+export const getCategory = async (slug) => {
+  const categories = await getCategories();
+  const category = categories.find((category) => slugify(category) == slug);
+
+  return category;
+};
+
+export const getPostsByCategory = async (slug) => {
+  const posts = await getPosts();
+  const postsByCategory = posts.filter(
+    (post) => slugify(post.category) === slug
+  );
+
+  return postsByCategory;
 };

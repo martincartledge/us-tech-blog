@@ -1,7 +1,7 @@
 ---
 title: "Meetup: New Ideas for the New Year"
 date: "2017-12-07"
-author: nbalestra
+author: Nick Balestra
 category: events
 ---
 

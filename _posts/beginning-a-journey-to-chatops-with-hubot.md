@@ -6,9 +6,9 @@ twitter: ryantomlinson
 category: culture
 ---
 
-{% img center /images/posts/hubot_pug_me.png %}
-
 As a part of our 30% time a few of our team, [@ajroyle](https://twitter.com/ajroyle), [@stack72](https://twitter.com/stack72) and I ([@ryantomlinson](https://twitter.com/ryantomlinson)) decided to get together and look at [Hubot](http://hubot.github.com/) with [Hipchat](https://www.hipchat.com/) integration. There are several weird and wonderful scripts that ship with Hubot (see above) but the core concept of driving tooling via chat is one that we see value in.
+
+![](/images/posts/hubot_pug_me.png)
 
 ## What is Chatops?
 
@@ -27,7 +27,7 @@ I won’t re-write the readme because the getting started section [here](https:/
 ##How we want to use it and our first scripts
 Although the core scripts that shipped with Hubot are helpful…
 
-{% img center /images/posts/hubot_beer_me.png %}
+![](/images/posts/hubot_beer_me.png)
 
 …we started to focus on commands that would be most useful to how we work at [OpenTable](http://www.opentable.co.uk/) and the tools and technologies that we employ. Specifically we got together and decided the following would be a useful starting point:
 
@@ -39,11 +39,11 @@ Although the core scripts that shipped with Hubot are helpful…
 
 Within no time we had some useful scripts written:
 
-{% img center /images/posts/hubot_tube_status.png %}
+![](/images/posts/hubot_tube_status.png)
 
-{% img center /images/posts/hubot_jira.png %}
+![](/images/posts/hubot_jira.png)
 
-{% img center /images/posts/hubot_teamcity.png %}
+![](/images/posts/hubot_teamcity.png)
 
 Immediately as we were developing these scripts we realised the potential of what else we could automate into Hubot and we will continue to do so. Some of which are:
 

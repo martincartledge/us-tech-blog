@@ -6,7 +6,7 @@ twitter: jcatterfeld
 category: events
 ---
 
-This Thursday, June 13th, we are pleased to be able to partner with the _React GraphQL Academy_ to host **Design Systems in the Real World with React** at our Finsbury Square office, London.
+This Thursday, June 13th, we are pleased to be able to partner with the _React GraphQL Academy_ to host _Design Systems in the Real World with React_ at our Finsbury Square office, London.
 
 ## Agenda
 
