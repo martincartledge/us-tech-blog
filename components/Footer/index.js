@@ -2,62 +2,61 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import OTLogo from "statics/OT_logo.png";
-import GitHubLogo from "statics/github.png";
-import LinkedInLogo from "statics/linkedin.png";
-import TwitterLogo from "statics/twitter.png";
+import Container from "components/Container";
+import { SITE_TITLE, SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <div className={styles.OTLogo}>
-      <Link href="/">
-        <a>
-          <Image src={OTLogo} alt="OpenTable logo" />
-        </a>
-      </Link>
-    </div>
-    <div className={styles.socials}>
-      <div className={styles.socialLogos}>
-        <Link href="https://github.com/opentable">
-          <a>
-            <Image src={GitHubLogo} alt="GitHub logo" width={40} height={40} />
-          </a>
-        </Link>
-        <Link href="https://linkedin.com/company/opentable">
-          <a>
-            <Image
-              src={LinkedInLogo}
-              alt="LinkedIn logo"
-              width={40}
-              height={40}
-            />
-          </a>
-        </Link>
-        <Link href="https://twitter.com/opentabletechuk">
-          <a>
-            <Image
-              src={TwitterLogo}
-              alt="Twitter logo"
-              width={40}
-              height={40}
-            />
-          </a>
-        </Link>
+    <Container className={styles.container}>
+      <div className={styles.top}>
+        <div className={styles.OTLogo}>
+          <Link href="/">
+            <a>
+              <Image src={OTLogo} alt="OpenTable logo" />
+            </a>
+          </Link>
+        </div>
+        <div className={styles.socials}>
+          <ul className={styles.socialLogos}>
+            {SOCIAL_LINKS.map(({ name, href, image }) => (
+              <li className={styles.socialLogoLinkItem} key={href}>
+                <Link href={href}>
+                  <a target="_blank" rel="noreferrer noopener">
+                    <Image
+                      className={styles.socialLogo}
+                      src={image}
+                      alt={`${name} logo`}
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className={styles.moreLinks}>
+            <span className={styles.moreLinksHeader}>Learn more</span>
+            <ul>
+              {LEARN_MORE_LINKS.map(({ href, text }) => (
+                <li key={href}>
+                  <Link href={href} key={href}>
+                    <a className={styles.moreLink} target="_blank">
+                      <span>{text}</span>
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className={styles.moreLinks}>
-        <span className={styles.moreLinksHeader}>STAY CONNECTED</span>
-        <Link href="https://www.opentable.co.uk">
-          <a className={styles.moreLink}>
-            <span>OpenTable.co.uk</span>
-          </a>
-        </Link>
-        <Link href="https://www.opentable.com/careers/technology/">
-          <a className={styles.moreLink}>
-            <span>Technology careers at OpenTable</span>
-          </a>
-        </Link>
+      <div className={styles.bottom}>
+        <span className={styles.copyright}>
+          Copyright © {new Date().getFullYear()} {SITE_TITLE}. All rights
+          reserved.
+        </span>
       </div>
-    </div>
+    </Container>
   </footer>
 );
 
