@@ -28,13 +28,12 @@ I've been introduced to a framework that helped me to grab this idea of effectiv
 
 Stephen Covey, a sadly deceased educator, author and businessman, designed a matrix called The Focus Quadrant that categorises activities and helps us deal with the struggle of prioritisation by clearly outlining the conflicts involved.
 
-| File                    | Description                                                                                                                                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| package.json            | A common node's package.json. An "oc" property contains some additional configuration.                                                                                                                 |
-| view.html               | The view containing the markup. Currently Handlebars and Jade view engines are supported. It can contain some CSS under the &lt;style&gt; tag and client-side Javascript under the &lt;script&gt; tag. |
-| server.js (optional)    | If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.                                                                |
-| static files (optional) | Images, Javascript, and files that will be referenced in the HTML markup.                                                                                                                              |
-| \*                      | Any other files that will be useful for the development such as tests, docs, etc.                                                                                                                      |
+| Name                        | Description                                                                                                                                                | Examples                                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| A. Important/Urgent         | Tasks that are necessary usually deadline driven or time sensitive. This usually this means panic and problems.                                            | Fixing the server crash, firefighting a site outage, entering expenses before a deadline                      |
+| B. Important/Not urgent     | Activities in direct alignment to your goals. Typically these tasks involve planning ahead. Prevention rather than cure.                                   | Relationship building, researching your next API, learning a new coding language, taking time out to exercise |
+| C. Not important/Urgent     | Activities that seem important but in reality are not. It's thought these tasks will make you popular as you are responding to requests for your time.     | Going to a meeting, answering the phone, replying instantly on IMs or email                                   |
+| D. Not important/Not urgent | While it would seem pleasant enough to live here permentantly, in reality these activities are time wasters that should be eliminated as much as possible. | Playing video games, surfing the net, getting a tea or coffee, flicking through the magazine on your desk     |
 
 ## How does this help?
 
