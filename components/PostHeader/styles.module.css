@@ -9,11 +9,14 @@
     min-height: 600px;
 }
 
-.heroImage{
-    max-width: 295px;
-    max-height: 295px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+.heroImageContainer{
+    height: 290px;
+    width: 290px;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .headerContents{
@@ -87,11 +90,14 @@
         line-height: 58px;
         padding-top: 40px;
     }
-    .heroImage{
-        max-width: 368px;
-        max-height: 368px;
-        padding-top: 0;
-        margin-bottom: 0;
+    .heroImageContainer{
+        height: 360px;
+        width: 360px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        
     }
     .titleContainer{
         width: 50%;
