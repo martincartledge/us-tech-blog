@@ -4,7 +4,7 @@
     width: 100vw;
 }
 .header {
-    padding: 32px;
+    padding: var(--size-3);
     background-color:#EEF1FB;
     min-height: 600px;
 }
@@ -12,7 +12,7 @@
 .heroImageContainer{
     height: 290px;
     width: 290px;
-    margin-top: 20px;
+    margin-top: var(--size-5);
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -20,21 +20,19 @@
 }
 
 .headerContents{
-    font-family: BrandonText;
-    font-size: 40px;
+    font-size: var(--size-2);
     line-height: 42px;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding-top: var(--size-5);
     max-width: 100%;
 }
 
 .postDetails{
     font-size: 14px;
-    font-family: BrandonText;
-    font-weight: 500;
+    font-weight: var(--weight-medium);
     line-height: 28px;
     display: flex;
 }
@@ -44,10 +42,10 @@
 }
 
 .textContent{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #2d333f;
+    font-weight: var(--weight-medium);
+    font-size: var(--size-6);
+    line-height: var(--size-4);
+    color: var(--color-ash-dark);
 }
 
 .teamName{
@@ -59,7 +57,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: #2d333f;
+    color: var(--color-ash-dark);
 }
 
 .titleContainer > div:nth-child(2){
@@ -67,15 +65,14 @@
 }
 
 .titleContainer > div:first-child{
-    font-size: 16px;
-    font-weight: 500;
-    color: #da3743;
+    font-size: var(--size-6);
+    font-weight: var(--weight-medium);
+    color: var(--color-red);
 }
 
 .postLogoContainer{
     display: none;
 }
-
 
 /* desktop */
 @media screen and (min-width: 1024px) {
@@ -86,9 +83,9 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-size: 48px;
+        font-size: var(--size-1);
         line-height: 58px;
-        padding-top: 40px;
+        padding-top: var(--size-2);
     }
     .heroImageContainer{
         height: 360px;

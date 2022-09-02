@@ -1,8 +1,6 @@
-import Link from 'next/link';
 import Container from 'components/Container';
 import Image from 'next/image';
 
-import heroImage from 'statics/postHeroImage.png';
 import postLogo from 'statics/OpenTableLogo.svg';
 
 import { getCategoryImage } from 'components/PostsGrid/utils';
