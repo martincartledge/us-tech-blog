@@ -1,14 +1,14 @@
-import Container from 'components/Container';
-import Image from 'next/image';
+import Container from "components/Container";
+import Image from "next/image";
 
-import postLogo from 'statics/OpenTableLogo.svg';
+import postLogo from "statics/OpenTableLogo.svg";
 
-import { getCategoryImage } from 'components/PostsGrid/utils';
+import { getCategoryImage } from "components/PostsGrid/utils";
 
-import { longDate } from 'libs/date';
-import { capitalize } from 'libs/string';
+import { longDate } from "libs/date";
+import { capitalize } from "libs/string";
 
-import styles from 'components/PostHeader/styles.module.css';
+import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
   const dateOfPost = longDate(post.date);
