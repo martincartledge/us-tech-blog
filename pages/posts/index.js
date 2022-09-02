@@ -6,6 +6,7 @@ import PostListSection from "components/PostListSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
+
 export default function PostsPage({ posts }) {
   return (
     <Main>
