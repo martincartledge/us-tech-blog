@@ -1,25 +1,12 @@
 .headerContainer{
     margin: 0;
     max-width: 100%;
+    width: 100vw;
 }
 .header {
     padding: 32px;
     background-color:#EEF1FB;
     min-height: 600px;
-}
-
-.navLogo{
-    width: 48px;
-    height: 48px;
-    margin-right: 8px;
-}
-
-.navLogoText {
-    display: none;
-}
-
-.navLogo a {
-
 }
 
 .heroImage{
@@ -41,18 +28,16 @@
     max-width: 100%;
 }
 
-.navElements{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px
-}
-
-.postDate{
+.postDetails{
     font-size: 14px;
     font-family: BrandonText;
     font-weight: 500;
     line-height: 28px;
+    display: flex;
+}
+
+.postDetails > p:first-child{
+    margin-right: 8px;
 }
 
 .textContent{
@@ -66,18 +51,22 @@
     font-size: 14px;
 }
 
-.navLogoContainer{
-    display: flex;
-    align-items: center;
-
-}
-
 .titleContainer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     color: #2d333f;
+}
+
+.titleContainer > div:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.titleContainer > div:first-child{
+    font-size: 16px;
+    font-weight: 500;
+    color: #da3743;
 }
 
 .postLogoContainer{
@@ -96,9 +85,7 @@
         justify-content: space-around;
         font-size: 48px;
         line-height: 58px;
-    }
-    .navLogoText {
-        display: contents;
+        padding-top: 40px;
     }
     .heroImage{
         max-width: 368px;
