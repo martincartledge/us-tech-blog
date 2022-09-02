@@ -37,7 +37,7 @@ export default function PostHeader({ post }) {
               alt="heroImage"
               width={360}
               height={360}
-              layout="responsive"
+              objectFit="cover"
             />
           </div>
         </div>
