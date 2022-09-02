@@ -1,23 +1,14 @@
 import Section from "components/Section";
-import { filterJobs } from "libs/jobs";
+import { fetchJobs } from "libs/jobs";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 const JobSection = () => {
   const [jobs, setJobs] = useState([]);
 
-  useEffect(() => {
-    async function fetchJobs() {
-      let response = await fetch(
-        "https://boards-api.greenhouse.io/v1/boards/opentable/jobs"
-      );
-      response = await response.json();
-
-      const ukTechJobs = filterJobs(response.jobs);
-      setJobs(ukTechJobs);
-    }
-
-    fetchJobs();
+  useEffect(async () => {
+    const techJobs = await fetchJobs();
+    setJobs(techJobs);
   }, []);
 
   return (
