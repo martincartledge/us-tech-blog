@@ -1,10 +1,10 @@
 .section {
-  padding: 3rem 1.5rem;
+  padding: 3rem 2rem;
 }
 
 /* desktop */
 @media screen and (min-width: 1024px) {
   .section {
-    padding: 3rem 3rem;
+    padding: 3rem 10rem;
   }
 }

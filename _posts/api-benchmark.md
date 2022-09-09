@@ -104,7 +104,7 @@ $ npm install grunt-api-benchmark --save-dev
 
 The last thing to do is to create a task inside your Gruntfile.js. Create one if you already don’t have one, and then add the ‘api_benchmark’ task in order to have something like this:
 
-```js
+```javascript
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
