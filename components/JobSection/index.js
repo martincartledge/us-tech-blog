@@ -6,9 +6,13 @@ import styles from "./styles.module.css";
 const JobSection = () => {
   const [jobs, setJobs] = useState([]);
 
-  useEffect(async () => {
-    const techJobs = await fetchJobs();
-    setJobs(techJobs);
+  useEffect(() => {
+    async function fetchAndSetJobs() {
+      const techJobs = await fetchJobs();
+      setJobs(techJobs);
+    }
+
+    fetchAndSetJobs();
   }, []);
 
   return (

@@ -7,7 +7,10 @@ export default function PostContentSection({ post }) {
     <Section>
       <h1>{post.title}</h1>
       <p>{longDate(post.date)}</p>
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
     </Section>
   );
 }

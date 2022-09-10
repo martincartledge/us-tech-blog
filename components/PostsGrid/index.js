@@ -14,7 +14,12 @@ const PostsGrid = ({ posts }) => {
           passHref
         >
           <div className={styles.gridItem}>
-            <Image src={`/images/categories/${post.category}.png`} alt={`${post.category} thumbnail image`} width="1280" height="720" />
+            <Image
+              src={`/images/categories/${post.category}.png`}
+              alt={`${post.category} thumbnail image`}
+              width="1280"
+              height="720"
+            />
             <span className={styles.postCategory}>
               {capitalize(post.category)}
             </span>
