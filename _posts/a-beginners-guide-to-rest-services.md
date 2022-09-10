@@ -95,7 +95,6 @@ Ok, so now that a client knows where a resource is reachable, how is it going to
 
 HTTP provides a set of methods that allow the client to perform standard operations on the service:
 
-```
 | Method  | Operation performed                              | Quality                |
 | ------- | ------------------------------------------------ | ---------------------- |
 | GET     | Read a resource                                  | Safe                   |
@@ -104,7 +103,6 @@ HTTP provides a set of methods that allow the client to perform standard operati
 | DELETE  | Delete a resource                                | Idempotent             |
 | OPTIONS | List allowed operations on a resource            | Safe                   |
 | HEAD    | Return only the response header, no body         | Safe                   |
-```
 
 The key difference between _POST_ and _PUT_ is that no matter how many times a _PUT_ operation is performed, the result will be the same (this is what _idempotent_ means), whereas with a _POST_ operation a resource will be added or updated multiple times.
 
@@ -128,7 +126,6 @@ In the case of a resource that contains a list of resources, REST suggests to in
 
 Allows to store responses and return them if the same request is performed again. It has to be handled carefully to avoid returning stale results. The headers that allow us to perform controls over caching are:
 
-```
 | Header        | Application                                                     |
 | ------------- | --------------------------------------------------------------- |
 | Date          | Finding out when this representation was generated              |
@@ -136,7 +133,6 @@ Allows to store responses and return them if the same request is performed again
 | Cache-Control | HTTP 1.1 header used to control caching, can contain directives |
 | Expires       | Expiration date (supports HTTP 1.0)                             |
 | Age           | Duration since the resource was fetched from server             |
-```
 
 Cache-Control values can be tweaked to control if a cached result is still valid or stale. For example, the _max-age_ value indicates for how many seconds from the moment expressed by the Date header a cached result will be valid.
 

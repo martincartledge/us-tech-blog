@@ -50,7 +50,6 @@ export const getPost = async (slug) => {
     draft: metadata.draft ?? false,
     slug: slugify(fileName),
     readingTime: readingTime(markdown),
-    content: markdown,
     excerpt: generateExcerpt(html),
     html,
   };

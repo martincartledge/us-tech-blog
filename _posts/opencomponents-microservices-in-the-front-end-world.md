@@ -59,7 +59,6 @@ $ oc init my-component
 
 Components are folders containing the following files:
 
-```
 | File                    | Description                                                                                                                                                                                            |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | package.json            | A common node's package.json. An "oc" property contains some additional configuration.                                                                                                                 |
@@ -67,7 +66,6 @@ Components are folders containing the following files:
 | server.js (optional)    | If the component has some logic, including consuming services, this is the entity that will produce the view-model to compile the view.                                                                |
 | static files (optional) | Images, Javascript, and files that will be referenced in the HTML markup.                                                                                                                              |
 | \*                      | Any other files that will be useful for the development such as tests, docs, etc.                                                                                                                      |
-```
 
 ## Editing, debugging, testing
 

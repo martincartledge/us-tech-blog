@@ -1,50 +1,49 @@
-.markdown h2 {
+.content h2 {
     font-size: var(--size-4);
     font-weight: var(--weight-bold);
     margin: 20px 0;
 }
 
-.markdown h3 {
+.content h3 {
     font-size: var(--size-5);
     font-weight: var(--weight-medium);
     margin: 20px 0;
 }
 
-.markdown h5 {
+.content h5 {
     font-size: var(--size-6);
     font-weight: var(--weight-normal);
     margin: 20px 0;
 }
 
-.markdown p {
+.content p {
     font-size: var(--size-6);
     margin: 15px 0;
 }
 
-.markdown a {
+.content a {
     color: var(--color-red);
     font-weight: var(--weight-medium);
 }
 
 @media screen and (min-width: 1024px) {
-    .markdown h2 {
+    .content h2 {
         font-size: var(--size-2);
         line-height: 36px;
     }
 
-    .markdown h3 {
+    .content h3 {
         font-size: var(--size-4);
         line-height: 36px;
     }
 
-    .markdown h5 {
+    .content h5 {
         font-size: var(--size-5);
         line-height: 36px;
     }
 
-    .markdown p {
+    .content p {
         font-size: var(--size-5);
         line-height: 32px;
     }
 }
-  
