@@ -1,17 +1,13 @@
 import Container from "components/Container";
 import Image from "next/image";
-
-import postLogo from "statics/OpenTableLogo.svg";
-
-import { getCategoryImage } from "components/PostsGrid/utils";
-
 import { longDate } from "libs/date";
 import { capitalize } from "libs/string";
-
+import postLogo from "statics/OpenTableLogo.svg";
 import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
   const dateOfPost = longDate(post.date);
+
   return (
     <Container className={styles.headerContainer}>
       <header className={styles.header}>
@@ -32,13 +28,7 @@ export default function PostHeader({ post }) {
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <Image
-              src={getCategoryImage(post.category)}
-              alt="heroImage"
-              width={360}
-              height={360}
-              objectFit="cover"
-            />
+            <Image src={`/images/categories/${post.category}.png`} alt={`${post.category} hero image`} width="1280" height="720" objectFit="cover" />
           </div>
         </div>
       </header>

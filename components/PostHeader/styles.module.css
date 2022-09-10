@@ -9,17 +9,17 @@
     min-height: 600px;
 }
 
-.heroImageContainer{
+.heroImageContainer {
+    display: flex;
     height: 290px;
     width: 290px;
     margin-top: var(--size-5);
-    display: inline-block;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.headerContents{
+.headerContents {
     font-size: var(--size-2);
     line-height: 42px;
     font-weight: var(--weight-bold);
@@ -90,7 +90,6 @@
     .heroImageContainer{
         height: 360px;
         width: 360px;
-        display: inline-block;
         position: relative;
         overflow: hidden;
         border-radius: 50%;
