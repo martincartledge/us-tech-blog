@@ -27,6 +27,9 @@
   --color-teal: #247f9e;
   --color-violet: #7f5ce8;
   --color-yellow: #d99502;
+  --color-light-sky: #eef1fb;
+  --color-light-vanilla: #fff8eb;
+  --color-light-violet: #f8f0fa;
   --font-primary: "BrandonText", BlinkMacSystemFont, -apple-system, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -55,7 +58,7 @@
   --base-background-color: var(--color-white);
   --base-line-height: 1.5;
   --base-weight: var(--weight-normal);
-  --base-color: var(--text-dark);
+  --base-color: var(--color-ash-dark);
   --size-small: var(--size-7);
   --size-normal: var(--size-6);
   --size-medium: var(--size-5);

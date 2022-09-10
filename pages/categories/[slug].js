@@ -2,8 +2,8 @@ import ErrorPage from "next/error";
 import { getCategory, getPostsByCategory, getSlugs } from "libs/category";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
-import PostListSection from "components/PostListSection";
+import PostGridSection from "components/PostGridSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Main from "components/Main";
 import { capitalize } from "libs/string";
@@ -17,9 +17,11 @@ export default function CategoryPage({ category, posts }) {
     <Main>
       <DocumentHead title={`Posts in ${category}`} />
       <Navbar />
-      <Container>
-        <PostListSection title={capitalize(category)} posts={posts} />
-      </Container>
+      <Header
+        title={`Posts in ${capitalize(category)}`}
+        subtitle={`${posts.length} posts in total`}
+      />
+      <PostGridSection title={capitalize(category)} posts={posts} />
       <Footer />
     </Main>
   );

@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--color-light-vanilla);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--size-2);
+  font-weight: var(--weight-bold);
+  line-height: 1.125;
+}
+
+.subtitle {
+  font-size: var(--size-5);
+  font-weight: var(--weight-medium);
+  line-height: 1.25;
+  margin-top: 1rem;
+}

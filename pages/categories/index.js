@@ -1,8 +1,8 @@
 import { getCategories } from "libs/category";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
 import CategoryListSection from "components/CategoryListSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
@@ -11,9 +11,8 @@ export default function CategoriesPage({ categories }) {
     <Main>
       <DocumentHead title="Categories" />
       <Navbar />
-      <Container>
-        <CategoryListSection title="Categories" categories={categories} />
-      </Container>
+      <Header title={"All categories"} />
+      <CategoryListSection categories={categories} />
       <Footer />
     </Main>
   );

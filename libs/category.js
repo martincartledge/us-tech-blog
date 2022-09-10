@@ -1,8 +1,8 @@
-import { getPosts } from "libs/post";
+import { getPublicPosts } from "libs/post";
 import { slugify } from "libs/string";
 
 export const getCategories = async () => {
-  const posts = await getPosts();
+  const posts = await getPublicPosts();
   const categories = posts.map((post) => post.category);
   const uniqueCategories = [...new Set(categories)];
 
@@ -24,7 +24,7 @@ export const getCategory = async (slug) => {
 };
 
 export const getPostsByCategory = async (slug) => {
-  const posts = await getPosts();
+  const posts = await getPublicPosts();
   const postsByCategory = posts.filter(
     (post) => slugify(post.category) === slug
   );

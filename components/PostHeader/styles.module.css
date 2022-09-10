@@ -3,9 +3,10 @@
   max-width: 100%;
   width: 100vw;
 }
+
 .header {
   padding: var(--size-3);
-  background-color: #eef1fb;
+  background-color: var(--color-light-sky);
   min-height: 600px;
 }
 
@@ -79,6 +80,7 @@
   .header {
     padding: 2rem 3rem;
   }
+
   .headerContents {
     display: flex;
     align-items: center;
@@ -87,6 +89,7 @@
     line-height: 58px;
     padding-top: var(--size-2);
   }
+
   .heroImageContainer {
     height: 360px;
     width: 360px;
@@ -94,6 +97,7 @@
     overflow: hidden;
     border-radius: 50%;
   }
+
   .titleContainer {
     width: 50%;
   }

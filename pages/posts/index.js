@@ -1,8 +1,8 @@
 import { getPublicPosts } from "libs/post";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
-import PostListSection from "components/PostListSection";
+import PostGridSection from "components/PostGridSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
@@ -11,9 +11,8 @@ export default function PostsPage({ posts }) {
     <Main>
       <DocumentHead title="Posts" />
       <Navbar />
-      <Container>
-        <PostListSection title="Posts" posts={posts} />
-      </Container>
+      <Header title="All posts" />
+      <PostGridSection title="Posts" posts={posts} />
       <Footer />
     </Main>
   );
