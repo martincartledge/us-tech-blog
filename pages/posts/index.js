@@ -2,7 +2,7 @@ import { getPublicPosts } from "libs/post";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import Container from "components/Container";
-import PostListSection from "components/PostListSection";
+import PostGridSection from "components/PostGridSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
@@ -12,7 +12,7 @@ export default function PostsPage({ posts }) {
       <DocumentHead title="Posts" />
       <Navbar />
       <Container>
-        <PostListSection title="Posts" posts={posts} />
+        <PostGridSection title="Posts" posts={posts} />
       </Container>
       <Footer />
     </Main>

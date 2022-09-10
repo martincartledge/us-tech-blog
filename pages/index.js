@@ -1,6 +1,6 @@
 import Navbar from "components/Navbar";
 import Container from "components/Container";
-import PostListSection from "components/PostListSection";
+import PostGridSection from "components/PostGridSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
 import JobSection from "components/JobSection";
@@ -11,7 +11,7 @@ export default function HomePage({ posts }) {
     <Main>
       <Navbar />
       <Container>
-        <PostListSection title="Recent Posts" posts={posts} />
+        <PostGridSection title="Recent Posts" posts={posts} />
       </Container>
       <Container>
         <JobSection />
