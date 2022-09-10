@@ -41,15 +41,19 @@
     margin-right: 8px;
 }
 
-.textContent{
+.authorImageContainer {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.authorName {
     font-weight: var(--weight-medium);
     font-size: var(--size-6);
     line-height: var(--size-4);
     color: var(--color-ash-dark);
-}
-
-.teamName{
-    font-size: 14px;
 }
 
 .titleContainer{
@@ -68,10 +72,6 @@
     font-size: var(--size-6);
     font-weight: var(--weight-medium);
     color: var(--color-red);
-}
-
-.postLogoContainer{
-    display: none;
 }
 
 /* desktop */
@@ -99,11 +99,10 @@
         width: 50%;
     }
 
-    .postLogoContainer{
+    .authorContainer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 160px;
         margin-top: 6px;
     }
 }

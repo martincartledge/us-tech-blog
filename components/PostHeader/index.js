@@ -1,8 +1,8 @@
 import Container from "components/Container";
-import Image from "next/image";
+import AuthorImage from "components/AuthorImage";
+import CategoryImage from "components/CategoryImage";
 import { longDate } from "libs/date";
 import { capitalize } from "libs/string";
-import postLogo from "statics/OpenTableLogo.svg";
 import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
@@ -19,16 +19,15 @@ export default function PostHeader({ post }) {
               <p>{`${dateOfPost}`}</p>
               <p>{`${post.readingTime} min read`}</p>
             </div>
-            <div className={styles.postLogoContainer}>
-              <Image src={postLogo} alt="opentable logo" />
-              <div className={styles.textContent}>
-                <p>OpenTable</p>
-                <p className={styles.teamName}>Tech Team</p>
+            <div className={styles.authorContainer}>
+              <div className={styles.authorImageContainer}>
+                <AuthorImage name={post.author} className={styles.authorImage} />
               </div>
+              <p className={styles.authorName}>{post.author}</p>
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <Image src={`/images/categories/${post.category}.png`} alt={`${post.category} hero image`} width="1280" height="720" objectFit="cover" />
+            <CategoryImage category={post.category} />
           </div>
         </div>
       </header>
