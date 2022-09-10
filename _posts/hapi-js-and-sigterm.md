@@ -12,7 +12,7 @@ Whilst this is fine for most cases, if we want our apps to be good Linux citizen
 
 This makes our graceful shutdown code really simple:
 
-```javascript
+```js
 process.on("SIGTERM", function () {
   server.stop({ timeout: 5 * 1000 }, function () {
     process.exit(0);
@@ -43,7 +43,7 @@ The idea is that it allows us to run the 'unannounce' step, before `server.stop(
 
 ### How to use hapi-shutdown
 
-```javascript
+```js
 server.register(
   [
     {
@@ -76,7 +76,7 @@ Neat, huh?
 
 We now have a place to register our 'unannounce' task. Our service-discovery code is wrapped in another plugin, which means we can use `server.dependency(...)`.
 
-```javascript
+```js
 // inside the plugin's register function
 
 server.dependency("hapi-shutdown", function (_, cb) {

@@ -4,7 +4,7 @@
 }
 
 .jobListing {
-    padding: 0 1.5rem 3rem;
+    padding: 0 2rem 3rem;
 }
 
 .table {
@@ -37,7 +37,7 @@
 /* desktop */
 @media screen and (min-width: 1024px) {
     .jobListing {
-        padding: 0 3rem 3rem 3rem;
+        padding: 0 10rem 3rem 10rem;
     }    
 
     .table {

@@ -10,11 +10,11 @@ A monad is any type construct that follows a specific pattern; it works in the s
 
 Monads are hard to get our heads around because they are very generic. They are defined by having two methods: the `bind` method (also commonly called `fmap`), and the `unit` method (also commonly known as `pure` or `from`).
 
-## A `bind`/`fmap` method.
+## A bind/fmap method.
 
 The fmap method follows this signature:
 
-```typescript
+```ts
 // Given a monadic type TMonad with value type V1,
 // and a method that takes a value of type V1 and
 // returns the same monadic type TMonad but with
@@ -33,11 +33,11 @@ _The monadic type `TMonad` cannot change after a call to `f`; a `Maybe` monad ca
 
 _The value type `V1` is free to change as a result of calling `f`. This is why we denote the final result as `TMonad<V2>`; this doesn't prevent the value staying the same, in the same way that in a program, `x` can equal `1` and `y` can also equal `1`, `V1` could represent a `boolean` and `V2` could also represent a `boolean`._
 
-## A `unit`/`pure`/`from` method
+## A unit/pure/from method
 
 The from method follows this signature:
 
-```typescript
+```ts
 // Given a value of type T, return a monadic value TMonad
 // that holds the provided value.
 function (T value) => TMonad<T>

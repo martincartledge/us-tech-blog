@@ -61,7 +61,7 @@ npm install
 
 Now let’s go ahead and create an [index.js](https://github.com/federicomaffei/soul-compose/blob/78400f40606c032fb01542d35e579dc851d82fb3/index.js) file which will host our server. This is the only thing I will not test, it just comes out of the box with Hapi.js.
 
-```javascript
+```js
 const Hapi = require("hapi");
 
 const server = new Hapi.Server();
@@ -84,7 +84,7 @@ server.start((err) => {
 
 Now we can add something interesting: a failing test where we try to hit the / path of the app and expect to get a status code 200 and some text. Let’s write it using Mocha syntax:
 
-```javascript
+```js
 beforeEach((done) => {
   request.get(`http://localhost:3000`, (error, res, b) => {
     response = res;
@@ -101,7 +101,7 @@ it("returns a 200 and a message", () => {
 
 It obviously fails, because we have no handler for that route and the app is not running. Let’s add a little code to fix this:
 
-```javascript
+```js
 server.route({
   method: "GET",
   path: "/",
@@ -166,7 +166,7 @@ And (making sure we changed our tests to make requests to port 3001) our single 
 
 So the first acceptance test passes. Now, let’s test a route that allows us to create an entry for a new artist, and test that if we hit an endpoint called `/artist` with a payload, we get a 200 code from the route. It won’t actually create it for now, but it will give us a path to do the actual creation later.
 
-```javascript
+```js
 beforeEach((done) => {
   const options = {
     method: "POST",
@@ -190,7 +190,7 @@ it("returns a 200 and a message", () => {
 
 Let’s go ahead and make it green, but without actually creating the artist.
 
-```javascript
+```js
 server.route({
   method: "POST",
   path: "/artist",
@@ -202,7 +202,7 @@ server.route({
 
 In the next test we can dive into the thick of it: let’s say that we now want to get a nice, shiny page for the singer we just created, reading it from a data persistence system (we'll use MongoDB):
 
-```javascript
+```js
 beforeEach((done) => {
   request.get(`http://localhost:3001/artist/marvingaye`, (error, res, b) => {
     response = res;
@@ -251,7 +251,7 @@ soul-compose:
 
 This means we will also have to change the code in the app to take that into account. One way to do it is by exporting an environment variable in the application container using docker-compose (as you can see above), and set the MongoDB hostname depending on it [in our index.js file](https://github.com/federicomaffei/soul-compose/blob/2962d28e33366a92801f0ef2c18ef3dc7dd9f9db/index.js). A small but important change.
 
-```javascript
+```js
 const mongoHost = process.env.NODE_ENV === "test" ? "mongodb" : "localhost";
 ```
 
