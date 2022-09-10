@@ -21,7 +21,10 @@ export default function PostHeader({ post }) {
             </div>
             <div className={styles.authorContainer}>
               <div className={styles.authorImageContainer}>
-                <AuthorImage name={post.author} className={styles.authorImage} />
+                <AuthorImage
+                  name={post.author}
+                  className={styles.authorImage}
+                />
               </div>
               <p className={styles.authorName}>{post.author}</p>
             </div>
