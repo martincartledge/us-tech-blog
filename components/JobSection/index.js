@@ -1,3 +1,4 @@
+import Container from "components/Container";
 import Section from "components/Section";
 import { fetchJobs } from "libs/jobs";
 import { useEffect, useState } from "react";
@@ -16,7 +17,7 @@ const JobSection = () => {
   }, []);
 
   return (
-    <>
+    <Container>
       <Section>
         <h1 className={styles.title} id="careers">
           Join our team
@@ -62,7 +63,7 @@ const JobSection = () => {
           <p>There are currently no job openings. Please check back later.</p>
         )}
       </section>
-    </>
+    </Container>
   );
 };
 

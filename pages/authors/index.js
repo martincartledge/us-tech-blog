@@ -1,8 +1,8 @@
 import { getAuthors } from "libs/author";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
 import AuthorListSection from "components/AuthorListSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
@@ -11,9 +11,11 @@ export default function AuthorsPage({ authors }) {
     <Main>
       <DocumentHead title="Authors" />
       <Navbar />
-      <Container>
-        <AuthorListSection title="Authors" authors={authors} />
-      </Container>
+      <Header
+        title={`All authors`}
+        subtitle={`${authors.length} authors in total`}
+      />
+      <AuthorListSection authors={authors} />
       <Footer />
     </Main>
   );

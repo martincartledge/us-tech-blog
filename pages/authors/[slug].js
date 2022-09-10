@@ -7,8 +7,8 @@ import {
 } from "libs/author";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
 import PostGridSection from "components/PostGridSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Main from "components/Main";
 
@@ -21,9 +21,11 @@ export default function AuthorPage({ author, posts }) {
     <Main>
       <DocumentHead title={`Posts by ${author}`} />
       <Navbar />
-      <Container>
-        <PostGridSection title={author} posts={posts} />
-      </Container>
+      <Header
+        title={`Posts by ${author}`}
+        subtitle={`${posts.length} posts in total`}
+      />
+      <PostGridSection title={author} posts={posts} />
       <Footer />
     </Main>
   );

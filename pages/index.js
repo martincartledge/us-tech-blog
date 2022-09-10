@@ -1,5 +1,4 @@
 import Navbar from "components/Navbar";
-import Container from "components/Container";
 import PostGridSection from "components/PostGridSection";
 import Footer from "components/Footer";
 import Main from "components/Main";
@@ -10,12 +9,8 @@ export default function HomePage({ posts }) {
   return (
     <Main>
       <Navbar />
-      <Container>
-        <PostGridSection title="Recent Posts" posts={posts} />
-      </Container>
-      <Container>
-        <JobSection />
-      </Container>
+      <PostGridSection title="Recent Posts" posts={posts} />
+      <JobSection />
       <Footer />
     </Main>
   );
