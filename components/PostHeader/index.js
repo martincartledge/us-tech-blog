@@ -1,17 +1,13 @@
 import Container from "components/Container";
-import Image from "next/image";
-
-import postLogo from "statics/OpenTableLogo.svg";
-
-import { getCategoryImage } from "components/PostsGrid/utils";
-
+import AuthorImage from "components/AuthorImage";
+import CategoryImage from "components/CategoryImage";
 import { longDate } from "libs/date";
 import { capitalize } from "libs/string";
-
 import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
   const dateOfPost = longDate(post.date);
+
   return (
     <Container className={styles.headerContainer}>
       <header className={styles.header}>
@@ -23,22 +19,15 @@ export default function PostHeader({ post }) {
               <p>{`${dateOfPost}`}</p>
               <p>{`${post.readingTime} min read`}</p>
             </div>
-            <div className={styles.postLogoContainer}>
-              <Image src={postLogo} alt="opentable logo" />
-              <div className={styles.textContent}>
-                <p>OpenTable</p>
-                <p className={styles.teamName}>Tech Team</p>
+            <div className={styles.authorContainer}>
+              <div className={styles.authorImageContainer}>
+                <AuthorImage name={post.author} className={styles.authorImage} />
               </div>
+              <p className={styles.authorName}>{post.author}</p>
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <Image
-              src={getCategoryImage(post.category)}
-              alt="heroImage"
-              width={360}
-              height={360}
-              objectFit="cover"
-            />
+            <CategoryImage category={post.category} />
           </div>
         </div>
       </header>
