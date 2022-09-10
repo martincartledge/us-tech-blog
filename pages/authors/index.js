@@ -11,10 +11,7 @@ export default function AuthorsPage({ authors }) {
     <Main>
       <DocumentHead title="Authors" />
       <Navbar />
-      <Header
-        title={`All authors`}
-        subtitle={`${authors.length} authors in total`}
-      />
+      <Header title={"All authors"} />
       <AuthorListSection authors={authors} />
       <Footer />
     </Main>

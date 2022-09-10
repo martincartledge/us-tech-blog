@@ -11,7 +11,7 @@ export default function PostsPage({ posts }) {
     <Main>
       <DocumentHead title="Posts" />
       <Navbar />
-      <Header title="All posts" subtitle={`${posts.length} posts in total`} />
+      <Header title="All posts" />
       <PostGridSection title="Posts" posts={posts} />
       <Footer />
     </Main>

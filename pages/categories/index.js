@@ -11,10 +11,7 @@ export default function CategoriesPage({ categories }) {
     <Main>
       <DocumentHead title="Categories" />
       <Navbar />
-      <Header
-        title={`All categories`}
-        subtitle={`${categories.length} categories in total`}
-      />
+      <Header title={"All categories"} />
       <CategoryListSection categories={categories} />
       <Footer />
     </Main>
