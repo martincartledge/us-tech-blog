@@ -40,7 +40,7 @@ Let's start by going through the uni-directional flow above and at the same time
 
 When the game is first loaded the view fires an action to get the next situation. This is then fired off to the dispatcher, as are all actions.
 
-```javascript
+```js
 receiveSituations: function(data) {
 	AppDispatcher.handleViewAction({
    		actionType: MacgyverConstants.RECEIVE_SITUATIONS_DATA,
@@ -52,7 +52,7 @@ receiveSituations: function(data) {
 
 The store registers to listen for events from the dispatcher with a registered callback. It has the job of loading the situation data and emitting an event when this data is changed. In this case the SituationStore.js has the job of setting the current situation for the view to render.
 
-```javascript
+```js
 AppDispatcher.register(function (payload) {
   var action = payload.action;
 
@@ -75,7 +75,7 @@ AppDispatcher.register(function (payload) {
 
 The React view (in this case Game.jsx) registers an event listener for these changes in the SituationStore using the React "componentDidMount" function. When the situation is received by the component it rebinds to the data by loading the sitution and the possible answers.
 
-```javascript
+```js
 var Game = React.createClass({
 
 	componentDidMount: function () {

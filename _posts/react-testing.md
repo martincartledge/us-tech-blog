@@ -44,7 +44,7 @@ I like to call this the “Full DOM” approach because you take a component and
 
 Below is our test scenario written in this approach.
 
-```javascript
+```js
 import React from 'react/addons';
 ...
 import jsdom from 'jsdom';
@@ -65,7 +65,7 @@ describe('Container', function () {
 
 If you run the above test it passes but how does it work?
 
-```javascript
+```js
 import jsdom from "jsdom";
 
 global.document = jsdom.jsdom("<!doctype html><html><body></body></html>");
@@ -74,13 +74,13 @@ global.window = document.parentWindow;
 
 This sets up our DOM which is a requirement of _[TestUtils.renderIntoDocument](https://facebook.github.io/react/docs/test-utils.html#renderintodocument)_.
 
-```javascript
+```js
 let container = TestUtils.renderIntoDocument(<Container />);
 ```
 
 _[TestUtils.renderIntoDocument](https://facebook.github.io/react/docs/test-utils.html#renderintodocument)_ then takes the React syntax and renders it into the DOM as HTML.
 
-```javascript
+```js
 let result = TestUtils.scryRenderedDOMComponentsWithClass(
   container,
   "menu-bar-container"
@@ -97,7 +97,7 @@ From my point of view no, as this approach makes our tests brittle. We are expos
 
 With the release of React 0.13 Facebook provided the ability to “shallow render” a component. This allows you to instantiate a component and get the result of its render function, a ReactElement, without a DOM. It also only renders the component one level deep so you can keep your tests more focused.
 
-```javascript
+```js
 import React, { addons } from "react/addons";
 import Container from "../../src/Container";
 import MenuBar from "../../src/MenuBar";
@@ -116,19 +116,19 @@ describe("Container", function () {
 
 Again like the previous example this passes but how does it work?
 
-```javascript
+```js
 let shallowRenderer = React.addons.TestUtils.createRenderer();
 ```
 
 We first create the _[shallowRender](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering)_ which handles the rendering of the React components.
 
-```javascript
+```js
 shallowRenderer.render(<Container />);
 ```
 
 Then we pass in the component we have under test to the _[shallowRender](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering)_.
 
-```javascript
+```js
 let result = shallowRenderer.getRenderOutput();
 assert.deepEqual(result.props.children, [<MenuBar />]);
 ```

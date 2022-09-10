@@ -90,7 +90,7 @@ As soon as you make changes on the component, you will be able to refresh this p
 <div>Hello {{ name }}</div>
 ```
 
-```javascript
+```js
 // server.js
 module.exports.data = function (context, callback) {
   callback(null, {
@@ -194,7 +194,7 @@ $ touch index.js
 
 This is how `index.js` will look like:
 
-```javascript
+```js
 var oc = require("oc");
 
 var configuration = {

@@ -28,7 +28,7 @@ The first two options are pretty icky, and frankly the third isn't all that grea
 
 Hapi.js has the concept of a 'proxy' handler, which can transparently proxy requests to a different server.
 
-```javascript
+```js
 server.route([
   {
     method: "GET",

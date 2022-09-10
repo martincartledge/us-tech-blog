@@ -18,7 +18,7 @@ import styles from "./styles.module.css";
 SyntaxHighlighter.registerLanguage("csharp", csharp);
 SyntaxHighlighter.registerLanguage("json", json);
 SyntaxHighlighter.registerLanguage("sh", powershell);
-SyntaxHighlighter.registerLanguage("javascript", javascript);
+SyntaxHighlighter.registerLanguage("js", javascript);
 SyntaxHighlighter.registerLanguage("ts", typescript);
 SyntaxHighlighter.registerLanguage("html", cshtml);
 SyntaxHighlighter.registerLanguage("graphql", graphql);

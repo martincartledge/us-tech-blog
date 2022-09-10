@@ -66,7 +66,7 @@ New toggles are initially set to OFF. The toggle can be switched in the usual wa
 
 All of the Hobknob [clients](https://github.com/opentable/hobknob#hobknob-clients) now support getting non-simple features toggles. The only requirement is to pass the name of the toggle, so for example in node:
 
-```javascript
+```js
 var nonSimpleFeatureInCom = hobknobClient.getOrDefault(
   "feature-name",
   "com",
@@ -78,6 +78,6 @@ It is highly reccommended that you use the get or default methods when accessing
 
 The behaviour for simple features has not changed, and is backwards compatible in all client libraries.
 
-```javascript
+```js
 var simpleFeature = hobknobClient.getOrDefault("simple-feature", true);
 ```
