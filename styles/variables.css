@@ -57,6 +57,8 @@
   --base-min-width: 300px;
   --base-background-color: var(--color-white);
   --base-line-height: 1.5;
+  --title-line-height: 1.125;
+  --subtitle-line-height: 1.25;
   --base-weight: var(--weight-normal);
   --base-color: var(--color-ash-dark);
   --size-small: var(--size-7);
