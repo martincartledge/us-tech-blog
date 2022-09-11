@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Container from "components/Container";
 import { COMPANY_NAME, TEAM_NAME, NAVBAR_LINKS } from "constants/app";
-import OTLogo from "statics/OT_logo.png";
+import Container from "components/Container";
+import opentableLogo from "statics/opentable.png";
 import styles from "components/Navbar/styles.module.css";
 
 export default function Navbar() {
@@ -13,7 +13,7 @@ export default function Navbar() {
           <a className={styles.logo}>
             <Image
               className={styles.logomark}
-              src={OTLogo}
+              src={opentableLogo}
               alt="OpenTable logomark"
               width="50"
               height="50"
