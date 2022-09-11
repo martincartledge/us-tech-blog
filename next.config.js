@@ -10,6 +10,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/about",
+        destination: "/posts/about-this-blog",
+        permanent: true,
+      },
+      {
         source: "/archives",
         destination: "/posts",
         permanent: true,
