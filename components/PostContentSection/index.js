@@ -1,13 +1,16 @@
+import Container from "components/Container";
 import Section from "components/Section";
 import styles from "components/PostContentSection/styles.module.css";
 
 export default function PostContentSection({ post }) {
   return (
-    <Section>
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-    </Section>
+    <Container>
+      <Section>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </Section>
+    </Container>
   );
 }
