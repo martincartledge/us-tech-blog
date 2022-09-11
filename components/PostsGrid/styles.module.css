@@ -8,6 +8,10 @@
   margin-bottom: 2rem;
 }
 
+.gridItem:last-child {
+  margin-bottom: 0;
+}
+
 .postImage {
   border-radius: 10px;
 }
