@@ -1,14 +1,12 @@
 .title {
   font-size: var(--size-2);
   font-weight: var(--weight-bold);
-}
-
-.jobListing {
-  padding: 0 2rem 3rem;
+  margin-bottom: 1rem;
 }
 
 .table {
   width: 100%;
+  margin-top: 1rem;
 }
 
 .table tr {
@@ -36,10 +34,6 @@
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-  .jobListing {
-    padding: 0 10rem 3rem 10rem;
-  }
-
   .table {
     border-spacing: 20px;
   }

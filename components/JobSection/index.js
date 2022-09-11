@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Container from "components/Container";
 import Section from "components/Section";
-import styles from "components/JobSection/styles.module.css";
 import { fetchJobs } from "libs/jobs";
+import styles from "components/JobSection/styles.module.css";
 
 const JobSection = () => {
   const [jobs, setJobs] = useState([]);
@@ -28,9 +28,7 @@ const JobSection = () => {
           software design and believe that velocity comes from a commitment to
           clean code and solid engineering principles.
         </p>
-      </Section>
 
-      <section className={styles.jobListing}>
         {jobs.length ? (
           <table className={styles.table}>
             <thead>
@@ -62,7 +60,7 @@ const JobSection = () => {
         ) : (
           <p>There are currently no job openings. Please check back later.</p>
         )}
-      </section>
+      </Section>
     </Container>
   );
 };
