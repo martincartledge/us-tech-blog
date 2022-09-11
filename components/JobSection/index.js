@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react";
 import Container from "components/Container";
 import Section from "components/Section";
+import styles from "components/JobSection/styles.module.css";
 import { fetchJobs } from "libs/jobs";
-import { useEffect, useState } from "react";
-import styles from "./styles.module.css";
 
 const JobSection = () => {
   const [jobs, setJobs] = useState([]);

@@ -1,5 +1,5 @@
 import Section from "components/Section";
-import styles from "./styles.module.css";
+import styles from "components/PostContentSection/styles.module.css";
 
 export default function PostContentSection({ post }) {
   return (
