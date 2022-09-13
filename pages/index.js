@@ -1,5 +1,6 @@
 import Navbar from "components/Navbar";
 import PostGridSection from "components/PostGridSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
 import Page from "components/Page";
 import JobSection from "components/JobSection";
@@ -10,6 +11,10 @@ export default function HomePage({ posts }) {
   return (
     <Page>
       <Navbar />
+      <Header
+        title="Welcome to the OpenTable UK technology blog"
+        subtitle="At the intersection of food, culture and technology"
+      />
       <Main>
         <PostGridSection title="Recent Posts" posts={posts} />
         <JobSection />
