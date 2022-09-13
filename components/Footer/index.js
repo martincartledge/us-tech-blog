@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "components/Container";
 import { SITE_TITLE, SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
-import OTLogo from "statics/OT_logo.png";
+import Container from "components/Container";
+import opentableLogo from "statics/opentable.png";
 import styles from "components/Footer/styles.module.css";
 
 const Footer = () => (
@@ -12,7 +12,7 @@ const Footer = () => (
         <div className={styles.OTLogo}>
           <Link href="/">
             <a>
-              <Image src={OTLogo} alt="OpenTable logo" />
+              <Image src={opentableLogo} alt="OpenTable logo" />
             </a>
           </Link>
         </div>

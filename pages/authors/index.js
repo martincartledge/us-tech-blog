@@ -4,17 +4,20 @@ import Navbar from "components/Navbar";
 import AuthorListSection from "components/AuthorListSection";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import Page from "components/Page";
 import Main from "components/Main";
 
 export default function AuthorsPage({ authors }) {
   return (
-    <Main>
+    <Page>
       <DocumentHead title="Authors" />
       <Navbar />
       <Header title={"All authors"} />
-      <AuthorListSection authors={authors} />
+      <Main>
+        <AuthorListSection authors={authors} />
+      </Main>
       <Footer />
-    </Main>
+    </Page>
   );
 }
 

@@ -1,16 +1,16 @@
-import { longDate } from "libs/date";
+import Container from "components/Container";
 import Section from "components/Section";
-import styles from "./styles.module.css";
+import styles from "components/PostContentSection/styles.module.css";
 
 export default function PostContentSection({ post }) {
   return (
-    <Section>
-      <h1>{post.title}</h1>
-      <p>{longDate(post.date)}</p>
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-    </Section>
+    <Container>
+      <Section>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </Section>
+    </Container>
   );
 }

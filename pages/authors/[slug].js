@@ -10,6 +10,7 @@ import Navbar from "components/Navbar";
 import PostGridSection from "components/PostGridSection";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import Page from "components/Page";
 import Main from "components/Main";
 
 export default function AuthorPage({ author, posts }) {
@@ -18,16 +19,18 @@ export default function AuthorPage({ author, posts }) {
   }
 
   return (
-    <Main>
+    <Page>
       <DocumentHead title={`Posts by ${author}`} />
       <Navbar />
       <Header
         title={`Posts by ${author}`}
         subtitle={`${posts.length} posts in total`}
       />
-      <PostGridSection title={author} posts={posts} />
+      <Main>
+        <PostGridSection title={author} posts={posts} />
+      </Main>
       <Footer />
-    </Main>
+    </Page>
   );
 }
 

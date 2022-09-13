@@ -2,10 +2,10 @@ import ErrorPage from "next/error";
 import { getPost, getSlugs } from "libs/post";
 import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
-import Container from "components/Container";
 import PostContentSection from "components/PostContentSection";
 import Footer from "components/Footer";
 import PostHeader from "../../components/PostHeader";
+import Page from "components/Page";
 import Main from "components/Main";
 
 export default function PostPage({ post }) {
@@ -14,15 +14,15 @@ export default function PostPage({ post }) {
   }
 
   return (
-    <Main>
+    <Page>
       <DocumentHead title={post.title} />
       <Navbar />
       <PostHeader post={post} />
-      <Container>
+      <Main>
         <PostContentSection post={post} />
-      </Container>
+      </Main>
       <Footer />
-    </Main>
+    </Page>
   );
 }
 

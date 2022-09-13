@@ -15,6 +15,7 @@ const PostsGrid = ({ posts }) => {
         >
           <div className={styles.gridItem}>
             <Image
+              className={styles.postImage}
               src={`/images/categories/${post.category}.png`}
               alt={`${post.category} thumbnail image`}
               width="1280"

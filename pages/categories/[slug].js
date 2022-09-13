@@ -5,6 +5,7 @@ import Navbar from "components/Navbar";
 import PostGridSection from "components/PostGridSection";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import Page from "components/Page";
 import Main from "components/Main";
 import { capitalize } from "libs/string";
 
@@ -14,16 +15,18 @@ export default function CategoryPage({ category, posts }) {
   }
 
   return (
-    <Main>
+    <Page>
       <DocumentHead title={`Posts in ${category}`} />
       <Navbar />
       <Header
         title={`Posts in ${capitalize(category)}`}
         subtitle={`${posts.length} posts in total`}
       />
-      <PostGridSection title={capitalize(category)} posts={posts} />
+      <Main>
+        <PostGridSection title={capitalize(category)} posts={posts} />
+      </Main>
       <Footer />
-    </Main>
+    </Page>
   );
 }
 

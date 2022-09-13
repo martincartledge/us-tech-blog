@@ -1,18 +1,26 @@
 import Navbar from "components/Navbar";
 import PostGridSection from "components/PostGridSection";
+import Header from "components/Header";
 import Footer from "components/Footer";
-import Main from "components/Main";
+import Page from "components/Page";
 import JobSection from "components/JobSection";
 import { getPublicPosts } from "libs/post";
+import Main from "components/Main";
 
 export default function HomePage({ posts }) {
   return (
-    <Main>
+    <Page>
       <Navbar />
-      <PostGridSection title="Recent Posts" posts={posts} />
-      <JobSection />
+      <Header
+        title="Welcome to the OpenTable UK technology blog"
+        subtitle="At the intersection of food, culture and technology"
+      />
+      <Main>
+        <PostGridSection title="Recent Posts" posts={posts} />
+        <JobSection />
+      </Main>
       <Footer />
-    </Main>
+    </Page>
   );
 }
 
