@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Container from "components/Container";
 import Section from "components/Section";
 import { fetchJobs } from "libs/jobs";
+import Title from "components/Title";
 import styles from "components/JobSection/styles.module.css";
 
 const JobSection = () => {
@@ -19,10 +20,8 @@ const JobSection = () => {
   return (
     <Container>
       <Section>
-        <h1 className={styles.title} id="careers">
-          Join our team
-        </h1>
-        <p>
+        <Title value="Join our team" id="careers" />
+        <p className={styles.description}>
           The Technology Team delivers innovative products through rapid,
           continuous development. You’ll be with people who take pleasure in
           software design and believe that velocity comes from a commitment to
