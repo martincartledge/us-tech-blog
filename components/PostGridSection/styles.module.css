@@ -1,0 +1,27 @@
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.link {
+  padding: 0.5rem 2rem;
+  border: solid 2px var(--color-grey-lightest);
+  border-radius: 5px;
+  color: var(--color-ash-dark);
+  font-size: var(--size-6);
+  font-weight: var(--weight-medium);
+  line-height: var(--subtitle-line-height);
+}
+
+.link:hover,
+.link:active {
+  border-color: var(--color-red);
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+  .linkContainer {
+    margin-top: 1rem;
+  }
+}
