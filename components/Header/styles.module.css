@@ -6,16 +6,3 @@
   background: var(--color-light-vanilla);
   text-align: center;
 }
-
-.title {
-  font-size: var(--size-2);
-  font-weight: var(--weight-bold);
-  line-height: var(--title-line-height);
-}
-
-.subtitle {
-  font-size: var(--size-5);
-  font-weight: var(--weight-medium);
-  line-height: var(--subtitle-line-height);
-  margin-top: 1rem;
-}
