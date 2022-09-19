@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Container from "components/Container";
 import Section from "components/Section";
 import PostsGrid from "components/PostsGrid";
+import LinkButton from "components/LinkButton";
 import styles from "components/PostGridSection/styles.module.css";
 
 export default function PostGridSection({ posts, viewMoreLink = false }) {
@@ -11,9 +11,7 @@ export default function PostGridSection({ posts, viewMoreLink = false }) {
         <PostsGrid posts={posts} />
         {viewMoreLink && (
           <div className={styles.linkContainer}>
-            <Link href="/posts">
-              <a className={styles.link}>View more posts</a>
-            </Link>
+            <LinkButton href="/posts" text="View more posts" />
           </div>
         )}
       </Section>
