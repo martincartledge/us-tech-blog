@@ -54,7 +54,7 @@ Get active in the developer community. There are hundreds of free and inexpensiv
 
 You’ll hopefully love the company you work for, but only stay with them if you’re genuinely still learning. Job hunting is hard and it’s easy to pretend your current job is just fine – especially if you like your colleagues – but be honest with yourself about your situation to keep progressing.
 
-Don’t feel like you have to go into management. I'm a manager now and describe my job as "talking to people" – but if this isn’t for you then find a company that nurtures individual contributors. You can still become very senior in the industry as a Principle Engineer or Architect, with little or no people management required.
+Don’t feel like you have to go into management. I'm a manager now and describe my job as "talking to people" – but if this isn’t for you then find a company that nurtures individual contributors. You can still become very senior in the industry as a Principal Engineer or Architect, with little or no people management required.
 
 Finally do your best to build a good relationship with your manager. This starts with being reliable and prepared, but take it to the next level by understanding what are your manager’s biggest problems and frustrations, and do what you can to solve them. If you struggle to communicate with your manager then identify someone with whom they have a good relationship, analyse why and emulate this. Try to understand the business strategy and identify opportunities and threats.
 
