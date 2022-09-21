@@ -16,7 +16,7 @@ export default function HomePage({ posts }) {
         subtitle="At the intersection of food, culture and technology"
       />
       <Main>
-        <PostGridSection title="Recent Posts" posts={posts} />
+        <PostGridSection posts={posts} viewMoreLink />
         <JobSection />
       </Main>
       <Footer />

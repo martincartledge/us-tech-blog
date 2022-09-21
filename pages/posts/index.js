@@ -14,7 +14,7 @@ export default function PostsPage({ posts }) {
       <Navbar />
       <Header title="All posts" />
       <Main>
-        <PostGridSection title="Posts" posts={posts} />
+        <PostGridSection title="Posts" posts={posts} backToTopLink />
       </Main>
       <Footer />
     </Page>

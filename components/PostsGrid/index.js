@@ -29,7 +29,6 @@ const PostsGrid = ({ posts }) => {
               <div className={styles.postDate}>{longDate(post.date)}</div>
               <div>{`${post.readingTime} min read`}</div>
             </span>
-
             <p
               className={styles.postExcerpt}
               dangerouslySetInnerHTML={{ __html: post.excerpt }}
