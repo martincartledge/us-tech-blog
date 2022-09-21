@@ -11,7 +11,7 @@
     "lint": "next lint",
     "prettier": "prettier --write .",
     "new": "./scripts/new",
-    "push": "gh-pages -b public -d out",
+    "push": "gh-pages -b public -d out --dotfiles true",
     "deploy": "npm run build && npm run push"
   },
   "dependencies": {
