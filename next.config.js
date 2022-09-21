@@ -1,6 +1,9 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 
   async redirects() {
     return [
