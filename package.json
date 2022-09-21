@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "cname": "echo tech.opentable.co.uk > out/CNAME",
-    "build": "next build && next export && npm run cname",
+    "nojekyll": "touch out/.nojekyll",
+    "build": "next build && next export && npm run cname && npm run nojekyll",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
