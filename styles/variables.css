@@ -55,7 +55,6 @@
   --width-fullhd: calc(1344px + 2 * var(--width-gap));
   --base-font-size: 16px;
   --base-min-width: 300px;
-  --base-background-color: var(--color-white);
   --base-line-height: 1.5;
   --title-line-height: 1.125;
   --subtitle-line-height: 1.25;

@@ -33,5 +33,4 @@ Alex is the Founder and Head Coach of ReactJS Academy, Europe’s first React tr
 Please use either of the links below to register your attendance, we have only 75 spaces.
 
 - Meetup.com - https://www.meetup.com/JavaScript-London/events/262068618/
-
 - React GraphQL Academy - https://reactgraphql.academy/community/meetups/5cf8b0ce0445b114d036fd4d/

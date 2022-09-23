@@ -1,8 +1,5 @@
-/* vendor styles */
-@import "node_modules/prismjs/themes/prism.css";
-
-/* app styles */
 @import "../styles/reset.css";
+@import "../styles/vendor.css";
 @import "../styles/fonts.css";
 @import "../styles/base.css";
 @import "../styles/variables.css";

@@ -1,5 +1,5 @@
 html {
-  background-color: var(--base-background-color);
+  background-color: var(--color-white);
   font-size: var(--base-font-size);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -59,15 +59,15 @@ a:hover {
 }
 
 code {
-  background-color: var(--base-background-color);
-  color: var(--color-grey);
+  background-color: var(--color-white-ter);
+  color: var(--color-grey-dark);
   font-size: var(--base-font-size);
   font-weight: var(--base-weight);
   padding: 0.25em 0.5em 0.25em;
 }
 
 hr {
-  background-color: var(--base-background-color);
+  background-color: var(--color-grey-lightest);
   border: none;
   display: block;
   height: 2px;
@@ -103,13 +103,18 @@ fieldset {
 }
 
 pre {
-  background-color: var(--base-background-color);
+  background-color: var(--color-white-ter);
   color: pre;
   font-size: var(--small-font-size);
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
   white-space: pre;
   word-wrap: normal;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--color-white-ter);
 }
 
 pre code {
