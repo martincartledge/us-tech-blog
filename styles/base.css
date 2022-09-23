@@ -59,7 +59,7 @@ a:hover {
 }
 
 code {
-  background-color: var(--base-background-color);
+  background-color: var(--color-grey-lightest);
   color: var(--color-grey);
   font-size: var(--base-font-size);
   font-weight: var(--base-weight);
@@ -67,7 +67,7 @@ code {
 }
 
 hr {
-  background-color: var(--base-background-color);
+  background-color: var(--color-grey-lightest);
   border: none;
   display: block;
   height: 2px;
@@ -103,7 +103,7 @@ fieldset {
 }
 
 pre {
-  background-color: var(--base-background-color);
+  background-color: var(--color-grey-lightest);
   color: pre;
   font-size: var(--small-font-size);
   overflow-x: auto;
