@@ -86,10 +86,6 @@
   margin-top: 1em;
 }
 
-.content ul:not([type]) {
-  list-style-type: decimal;
-}
-
 .content ul ul {
   list-style-type: circle;
   margin-top: 0.5em;
