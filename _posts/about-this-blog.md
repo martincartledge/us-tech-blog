@@ -18,4 +18,4 @@ Finally I want you to get a sense of the enjoyment we have as we build OpenTable
 Thanks for reading.
 
 John Catterfeld
-- Senior Director of Engineering
+— Senior Director of Engineering
