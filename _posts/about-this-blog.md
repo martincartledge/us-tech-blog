@@ -24,4 +24,5 @@ I'm proud of the team we have in Europe, their appetite to create great things a
 Thanks for reading.
 
 John Catterfeld
-- Senior Director of Engineering
+
+Senior Director of Engineering
