@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { COMPANY_NAME, TEAM_NAME, NAVBAR_LINKS } from "constants/app";
+import { COMPANY_NAME, DEPARTMENT_NAME, NAVBAR_LINKS } from "constants/app";
 import Container from "components/Container";
 import opentableLogo from "statics/opentable.png";
 import styles from "components/Navbar/styles.module.css";
@@ -20,7 +20,7 @@ export default function Navbar() {
             />
             <div className={styles.logotype}>
               <span className={styles.companyName}>{COMPANY_NAME}&nbsp;</span>
-              <span className={styles.teamName}>{TEAM_NAME}</span>
+              <span className={styles.departmentName}>{DEPARTMENT_NAME}</span>
             </div>
           </a>
         </Link>

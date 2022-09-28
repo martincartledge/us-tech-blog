@@ -4,9 +4,9 @@ import TwitterLogo from "statics/twitter.png";
 
 export const COMPANY_NAME = "OpenTable";
 
-export const TEAM_NAME = "Tech Europe";
+export const DEPARTMENT_NAME = "Tech Europe";
 
-export const SITE_TITLE = `${COMPANY_NAME} ${TEAM_NAME}`;
+export const SITE_NAME = `${COMPANY_NAME} ${DEPARTMENT_NAME} Blog`;
 
 export const NAVBAR_LINKS = [
   {

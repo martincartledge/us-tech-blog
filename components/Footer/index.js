@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SITE_TITLE, SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
+import { SITE_NAME, SOCIAL_LINKS, LEARN_MORE_LINKS } from "constants/app";
 import Container from "components/Container";
 import opentableLogo from "statics/opentable.png";
 import styles from "components/Footer/styles.module.css";
@@ -52,7 +52,7 @@ const Footer = () => (
       </div>
       <div className={styles.bottom}>
         <span className={styles.copyright}>
-          Copyright © {new Date().getFullYear()} {SITE_TITLE}. All rights
+          Copyright © {new Date().getFullYear()} {SITE_NAME}. All rights
           reserved.
         </span>
       </div>

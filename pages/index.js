@@ -7,6 +7,7 @@ import Page from "components/Page";
 import JobSection from "components/JobSection";
 import { getPublicPosts } from "libs/post";
 import Main from "components/Main";
+import { SITE_NAME } from "constants/app";
 
 export default function HomePage({ posts }) {
   return (
@@ -14,8 +15,8 @@ export default function HomePage({ posts }) {
       <DocumentHead description="At the intersection of food, culture and technology. A place where we like to share our passions and introduce you to a whole new world of fabulous dining and amazing technology." />
       <Navbar />
       <Header
-        title="Welcome to the OpenTable Europe technology blog"
-        subtitle="At the intersection of food, culture and technology"
+        title={`Welcome to the ${SITE_NAME}`}
+        subtitle="At the intersection of food, culture and technology within Europe"
       />
       <Main>
         <PostGridSection posts={posts} viewMoreLink />
