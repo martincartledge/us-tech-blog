@@ -7,17 +7,18 @@ import Page from "components/Page";
 import JobSection from "components/JobSection";
 import { getPublicPosts } from "libs/post";
 import Main from "components/Main";
-import { SITE_NAME } from "constants/app";
+import {
+  HOME_TITLE,
+  HOME_SUBTITLE,
+  HOME_META_DESCRIPTION,
+} from "constants/app";
 
 export default function HomePage({ posts }) {
   return (
     <Page>
-      <DocumentHead description="At the intersection of food, culture and technology. A place where we like to share our passions and introduce you to a whole new world of fabulous dining and amazing technology." />
+      <DocumentHead description={HOME_META_DESCRIPTION} />
       <Navbar />
-      <Header
-        title={`Welcome to the ${SITE_NAME}`}
-        subtitle="At the intersection of food, culture and technology within Europe"
-      />
+      <Header title={HOME_TITLE} subtitle={HOME_SUBTITLE} />
       <Main>
         <PostGridSection posts={posts} viewMoreLink />
         <JobSection />
