@@ -15,7 +15,7 @@ export default function PostPage({ post }) {
 
   return (
     <Page>
-      <DocumentHead title={post.title} />
+      <DocumentHead title={post.title} description={post.excerpt} />
       <Navbar />
       <PostHeader post={post} />
       <Main>
