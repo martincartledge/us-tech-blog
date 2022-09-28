@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+const fs = require("fs");
+const path = require("path");
+
+const args = process.argv.slice(2);
+
+if (args.length !== 1) {
+  console.error("Expected title as only argument");
+  process.exit(1);
+}
+
+const title = args[0];
+const now = new Date();
+
+try {
+  const slug = title.toLowerCase().replace(/ /g, "-");
+  const filePath = path.join(__dirname, "../_posts", `${slug}.md`);
+  const date = now.toISOString().split("T")[0];
+
+  const content = [
+    "---",
+    `title: "${title}"`,
+    `date: "${date}"`,
+    `author: opentable`,
+    `category: engineering`,
+    "---",
+  ].join("\n");
+
+  fs.writeFileSync(filePath, content);
+} catch (err) {
+  console.error(err);
+}

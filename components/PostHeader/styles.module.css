@@ -1,0 +1,121 @@
+.headerContainer {
+  margin: 0;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.header {
+  padding: var(--size-3);
+  background-color: var(--color-light-sky);
+  min-height: 600px;
+}
+
+.heroImageContainer {
+  display: flex;
+  height: 290px;
+  width: 290px;
+  margin-top: var(--size-5);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.headerContents {
+  font-size: var(--size-2);
+  line-height: 42px;
+  font-weight: var(--weight-bold);
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: var(--size-5);
+  max-width: 100%;
+}
+
+.postDetails {
+  font-size: 14px;
+  font-weight: var(--weight-medium);
+  line-height: 28px;
+  display: flex;
+}
+
+.postDetails > p:first-child {
+  margin-right: 8px;
+}
+
+.authorImageContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.authorName {
+  font-weight: var(--weight-medium);
+  font-size: var(--size-6);
+  line-height: var(--size-4);
+  color: var(--color-ash-dark);
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--color-ash-dark);
+}
+
+.titleContainer > div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.titleContainer > div:first-child {
+  font-size: var(--size-6);
+  font-weight: var(--weight-medium);
+  color: var(--color-red);
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+
+  .headerContents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: var(--size-1);
+    line-height: 58px;
+    padding-top: var(--size-2);
+  }
+
+  .heroImageContainer {
+    height: 360px;
+    width: 360px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .titleContainer {
+    width: 50%;
+  }
+
+  .authorContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline-block;
+  margin-right: 1rem;
+}

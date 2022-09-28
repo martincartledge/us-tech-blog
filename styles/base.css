@@ -1,0 +1,139 @@
+html {
+  background-color: var(--color-white);
+  font-size: var(--base-font-size);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: var(--base-min-width);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: var(--font-primary);
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: var(--font-code);
+}
+
+body {
+  color: var(--base-color);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-weight);
+  line-height: var(--base-line-height);
+}
+
+a {
+  color: var(--link);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a strong {
+  color: currentColor;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+code {
+  background-color: var(--color-white-ter);
+  color: var(--color-grey-dark);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-weight);
+  padding: 0.25em 0.5em 0.25em;
+}
+
+hr {
+  background-color: var(--color-grey-lightest);
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1.5rem 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+small {
+  font-size: var(--small-font-size);
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  color: var(--color-grey-darker);
+  font-weight: var(--weight-bold);
+}
+
+fieldset {
+  border: none;
+}
+
+pre {
+  background-color: var(--color-white-ter);
+  color: pre;
+  font-size: var(--small-font-size);
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--color-white-ter);
+}
+
+pre code {
+  background-color: transparent;
+  color: currentColor;
+  font-size: 1em;
+  padding: 0;
+}
+
+table td,
+table th {
+  vertical-align: top;
+}
+
+table td:not([align]),
+table th:not([align]) {
+  text-align: inherit;
+}
+
+table th {
+  color: var(--color-grey-darker);
+}

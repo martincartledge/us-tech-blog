@@ -1,0 +1,60 @@
+.gridContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+.gridItem {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.gridItem:last-child {
+  margin-bottom: 0;
+}
+
+.postImage {
+  border-radius: 10px;
+}
+
+.postCategory {
+  display: block;
+  color: var(--color-red);
+  font-weight: var(--weight-medium);
+  margin-top: 1rem;
+  line-height: 1;
+}
+
+.postTitle {
+  font-size: var(--size-4);
+  font-weight: var(--weight-bold);
+  line-height: var(--subtitle-line-height);
+  margin-top: 0.75rem;
+}
+
+.postDateAndReadingTime {
+  display: block;
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-medium);
+  display: flex;
+  margin-top: 1rem;
+  line-height: 1;
+}
+
+.postDate {
+  margin-right: 1rem;
+}
+
+.postExcerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 1rem;
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

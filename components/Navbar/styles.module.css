@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--color-ash-darker);
+  color: var(--color-white);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo:hover {
+  color: var(--color-white);
+}
+
+.logotype {
+  display: none;
+}
+
+.companyName {
+  font-size: var(--size-5);
+  font-weight: var(--weight-bold);
+}
+
+.teamName {
+  font-size: var(--size-5);
+  font-weight: var(--weight-medium);
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+}
+
+.linkItem {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.linkItem:first-item {
+  margin-left: 0;
+}
+
+.link {
+  font-size: var(--size-5);
+  font-weight: var(--weight-medium);
+  color: var(--color-white);
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-red);
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+  .logotype {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 2rem 3rem;
+  }
+}

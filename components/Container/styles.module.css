@@ -1,0 +1,30 @@
+.container {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: calc(var(--width-desktop) - 2 * var(--width-gap));
+    margin: 0 85px;
+  }
+}
+
+/* widescreen */
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: calc(var(--width-widescreen) - 2 * var(--width-gap));
+    margin: 0 85px;
+  }
+}
+
+/* fullhd */
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: calc(var(--width-fullhd) - 2 * var(--width-gap));
+    margin: 0 85px;
+  }
+}

@@ -1,0 +1,100 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  color: var(--color-white);
+  background-color: var(--color-ash-darker);
+}
+
+.top {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 40px;
+}
+
+.copyright {
+  color: var(--color-grey-lighter);
+}
+
+.OTLogo {
+  max-width: 64px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreLinksHeader {
+  font-size: var(--size-6);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.moreLink {
+  color: var(--color-grey-lighter);
+}
+
+.moreLink:hover,
+.moreLink:active {
+  color: var(--color-white);
+}
+
+.socialLogos {
+  margin: 40px 0;
+}
+
+.socialLogoLinkItem {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialLogoLinkItem:first-child {
+  margin-left: 0;
+}
+
+.socialLogo {
+  opacity: 0.5;
+}
+
+.socialLogo:hover,
+.socialLogo:active {
+  opacity: 1;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 3rem;
+  }
+
+  .top {
+    flex-direction: row;
+  }
+
+  .bottom {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .socials {
+    margin-top: 6px;
+    flex-direction: row;
+  }
+
+  .socialLogos {
+    margin: 0 80px;
+  }
+}
