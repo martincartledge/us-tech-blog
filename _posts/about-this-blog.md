@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the OpenTable UK technology blog"
+title: "Welcome to the OpenTable Europe technology blog"
 date: "2022-09-20"
 author: John Catterfeld
 category: culture

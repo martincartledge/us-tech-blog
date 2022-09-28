@@ -12,7 +12,7 @@ export default function HomePage({ posts }) {
     <Page>
       <Navbar />
       <Header
-        title="Welcome to the OpenTable UK technology blog"
+        title="Welcome to the OpenTable Europe technology blog"
         subtitle="At the intersection of food, culture and technology"
       />
       <Main>

@@ -4,7 +4,7 @@ import TwitterLogo from "statics/twitter.png";
 
 export const COMPANY_NAME = "OpenTable";
 
-export const TEAM_NAME = "Tech UK";
+export const TEAM_NAME = "Tech Europe";
 
 export const SITE_TITLE = `${COMPANY_NAME} ${TEAM_NAME}`;
 
