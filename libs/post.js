@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { JSDOM } from "jsdom";
 import { slugify } from "libs/string";
 import { readingTime } from "libs/time";
 import { parseMarkdownFile } from "libs/markdown";
@@ -27,11 +28,9 @@ const validateMetadata = (fileName, metadata) => {
 };
 
 const generateExcerpt = (html) => {
-  const matchResult = html.match(/<p>(.+)<\/p>/);
-  const textContent = matchResult ? matchResult[1] : null;
+  const firstParagraph = new JSDOM(html).window.document.querySelector("p");
 
-  // do not trim because there might be unclosed html tags
-  return textContent;
+  return firstParagraph?.textContent ?? null;
 };
 
 export const getPost = async (slug) => {
