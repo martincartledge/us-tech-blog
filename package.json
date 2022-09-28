@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "cname": "echo tech.opentable.co.uk > out/CNAME",
-    "nojekyll": "touch out/.nojekyll",
-    "build": "next build && next export && npm run cname && npm run nojekyll",
+    "github": "echo tech.opentable.co.uk > out/CNAME && touch out/.nojekyll",
+    "build": "next build && next export && npm run github",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
