@@ -3,6 +3,7 @@ import path from "path";
 import { JSDOM } from "jsdom";
 import { slugify } from "libs/string";
 import { readingTime } from "libs/time";
+import { splitDate } from "libs/date";
 import { parseMarkdownFile } from "libs/markdown";
 
 export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
@@ -75,4 +76,17 @@ export const getSlugs = async () => {
   const slugs = posts.map((post) => post.slug);
 
   return slugs;
+};
+
+export const getLegacyParams = async () => {
+  const slugs = await getSlugs();
+  const params = await Promise.all(
+    slugs.map(async (slug) => {
+      const post = await getPost(slug);
+      const { year, month, day } = splitDate(post.date);
+      return { year, month, day, slug };
+    })
+  );
+
+  return params;
 };

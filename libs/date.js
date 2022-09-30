@@ -18,3 +18,13 @@ export const longDate = (str) => {
 
   return `${date.getDate()} ${MONTHS[date.getMonth()]} ${date.getFullYear()}`;
 };
+
+export const splitDate = (str) => {
+  const parts = str.split("-");
+
+  return {
+    year: parts[0],
+    month: parts[1],
+    day: parts[2],
+  };
+};
