@@ -1,17 +1,12 @@
-.container {
-  padding: 0 1rem;
-}
-
-.main {
-  min-height: 100vh;
-  flex: 1;
+.wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
 }
 
-.title {
-  margin: 0;
-  text-align: center;
+.linkContainer {
+  margin-top: 3rem;
 }

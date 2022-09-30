@@ -4,9 +4,9 @@ import TwitterLogo from "statics/twitter.png";
 
 export const COMPANY_NAME = "OpenTable";
 
-export const TEAM_NAME = "Tech UK";
+export const DEPARTMENT_NAME = "Tech Europe";
 
-export const SITE_TITLE = `${COMPANY_NAME} ${TEAM_NAME}`;
+export const SITE_NAME = `${COMPANY_NAME} ${DEPARTMENT_NAME} Blog`;
 
 export const NAVBAR_LINKS = [
   {
@@ -55,3 +55,11 @@ export const LEARN_MORE_LINKS = [
     text: "Diner website",
   },
 ];
+
+export const HOME_TITLE = `Welcome to the ${SITE_NAME}`;
+
+export const HOME_SUBTITLE =
+  "At the intersection of food, culture and technology within Europe";
+
+export const HOME_META_DESCRIPTION =
+  "At the intersection of food, culture and technology. A place where we like to share our passions and introduce you to a whole new world of fabulous dining and amazing technology.";

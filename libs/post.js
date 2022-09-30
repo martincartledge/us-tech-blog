@@ -1,7 +1,9 @@
 import fs from "fs";
 import path from "path";
+import { JSDOM } from "jsdom";
 import { slugify } from "libs/string";
 import { readingTime } from "libs/time";
+import { splitDate } from "libs/date";
 import { parseMarkdownFile } from "libs/markdown";
 
 export const POSTS_DIRECTORY = path.join(process.cwd(), "_posts");
@@ -27,11 +29,9 @@ const validateMetadata = (fileName, metadata) => {
 };
 
 const generateExcerpt = (html) => {
-  const matchResult = html.match(/<p>(.+)<\/p>/);
-  const textContent = matchResult ? matchResult[1] : null;
+  const firstParagraph = new JSDOM(html).window.document.querySelector("p");
 
-  // do not trim because there might be unclosed html tags
-  return textContent;
+  return firstParagraph?.textContent ?? null;
 };
 
 export const getPost = async (slug) => {
@@ -76,4 +76,17 @@ export const getSlugs = async () => {
   const slugs = posts.map((post) => post.slug);
 
   return slugs;
+};
+
+export const getLegacyParams = async () => {
+  const slugs = await getSlugs();
+  const params = await Promise.all(
+    slugs.map(async (slug) => {
+      const post = await getPost(slug);
+      const { year, month, day } = splitDate(post.date);
+      return { year, month, day, slug };
+    })
+  );
+
+  return params;
 };

@@ -1,3 +1,4 @@
+import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import PostGridSection from "components/PostGridSection";
 import Header from "components/Header";
@@ -6,15 +7,18 @@ import Page from "components/Page";
 import JobSection from "components/JobSection";
 import { getPublicPosts } from "libs/post";
 import Main from "components/Main";
+import {
+  HOME_TITLE,
+  HOME_SUBTITLE,
+  HOME_META_DESCRIPTION,
+} from "constants/app";
 
 export default function HomePage({ posts }) {
   return (
     <Page>
+      <DocumentHead description={HOME_META_DESCRIPTION} />
       <Navbar />
-      <Header
-        title="Welcome to the OpenTable UK technology blog"
-        subtitle="At the intersection of food, culture and technology"
-      />
+      <Header title={HOME_TITLE} subtitle={HOME_SUBTITLE} />
       <Main>
         <PostGridSection posts={posts} viewMoreLink />
         <JobSection />
