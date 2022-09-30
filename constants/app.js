@@ -10,7 +10,7 @@ export const SITE_NAME = `${COMPANY_NAME} ${DEPARTMENT_NAME} Blog`;
 
 export const NAVBAR_LINKS = [
   {
-    href: "/posts/about",
+    href: "/posts/about-this-blog",
     text: "About",
   },
   {
