@@ -1,5 +1,5 @@
 const LOCATIONS = ["London", "Kaunas", "Berlin"];
-const DEPARTMENTS = ["Technology", "Product Management"];
+const DEPARTMENTS = ["Technology", "Product Management", "Engineering"];
 
 const isLocation = (job) =>
   LOCATIONS.some((location) => job.location.name.includes(location));
