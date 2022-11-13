@@ -14,7 +14,11 @@ export default function PostHeader({ post }) {
       <header className={styles.header}>
         <div className={styles.headerContents}>
           <div className={styles.titleContainer}>
-            <div>{capitalize(post.category)}</div>
+            <div>
+              <Link href={`/categories/${slugify(post.category)}`}>
+                <a>{capitalize(post.category)}</a>
+              </Link>
+            </div>
             <div>{post.title}</div>
             <div className={styles.postDetails}>
               <p>{`${dateOfPost}`}</p>
