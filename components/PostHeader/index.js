@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "components/Container";
+import Section from "components/Section";
 import AuthorImage from "components/AuthorImage";
 import CategoryImage from "components/CategoryImage";
 import { longDate } from "libs/date";
@@ -7,40 +8,37 @@ import { capitalize, slugify } from "libs/string";
 import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
-  const dateOfPost = longDate(post.date);
-
   return (
-    <Container className={styles.headerContainer}>
-      <header className={styles.header}>
-        <div className={styles.headerContents}>
-          <div className={styles.titleContainer}>
-            <div>
+    <header className={styles.header}>
+      <Container>
+        <Section>
+          <div className={styles.container}>
+            <div className={styles.details}>
               <Link href={`/categories/${slugify(post.category)}`}>
-                <a>{capitalize(post.category)}</a>
+                <a className={styles.postCategory}>
+                  {capitalize(post.category)}
+                </a>
               </Link>
-            </div>
-            <div>{post.title}</div>
-            <div className={styles.postDetails}>
-              <p>{`${dateOfPost}`}</p>
-              <p>{`${post.readingTime} min read`}</p>
-            </div>
-            <div className={styles.authorContainer}>
-              <div className={styles.authorImageContainer}>
-                <AuthorImage
-                  name={post.author}
-                  className={styles.authorImage}
-                />
+              <h1 className={styles.postTitle}>{post.title}</h1>
+              <span className={styles.postDateAndReadingTime}>
+                <div className={styles.postDate}>{longDate(post.date)}</div>
+                <div>{`${post.readingTime} min read`}</div>
+              </span>
+              <div className={styles.author}>
+                <div className={styles.authorImage}>
+                  <AuthorImage name={post.author} />
+                </div>
+                <Link href={`/authors/${slugify(post.author)}`}>
+                  <a className={styles.authorName}>{post.author}</a>
+                </Link>
               </div>
-              <Link href={`/authors/${slugify(post.author)}`}>
-                <a className={styles.authorName}>{post.author}</a>
-              </Link>
+            </div>
+            <div className={styles.postImage}>
+              <CategoryImage category={post.category} />
             </div>
           </div>
-          <div className={styles.heroImageContainer}>
-            <CategoryImage category={post.category} />
-          </div>
-        </div>
-      </header>
-    </Container>
+        </Section>
+      </Container>
+    </header>
   );
 }
