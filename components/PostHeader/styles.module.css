@@ -1,121 +1,89 @@
-.headerContainer {
-  margin: 0;
-  max-width: 100%;
-  width: 100vw;
-}
-
 .header {
-  padding: var(--size-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
   background-color: var(--color-light-sky);
-  min-height: 600px;
 }
 
-.heroImageContainer {
+.container {
   display: flex;
-  height: 290px;
-  width: 290px;
-  margin-top: var(--size-5);
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+  align-items: center;
 }
 
-.headerContents {
-  font-size: var(--size-2);
-  line-height: 42px;
-  font-weight: var(--weight-bold);
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: var(--size-5);
-  max-width: 100%;
+.details {
+  flex: 1;
 }
 
-.postDetails {
-  font-size: 14px;
+.postCategory {
+  display: block;
+  color: var(--color-red);
+  font-size: var(--size-6);
   font-weight: var(--weight-medium);
-  line-height: 28px;
+  line-height: 1;
+}
+
+.postTitle {
+  font-size: var(--size-2);
+  font-weight: var(--weight-bold);
+  line-height: var(--subtitle-line-height);
+  margin-top: 0.75rem;
+}
+
+.postDateAndReadingTime {
+  display: block;
+  font-weight: var(--weight-medium);
   display: flex;
+  margin-top: 1rem;
+  line-height: 1;
 }
 
-.postDetails > p:first-child {
-  margin-right: 8px;
+.postDate {
+  margin-right: 1rem;
 }
 
-.authorImageContainer {
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.authorImage {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 10px;
 }
 
 .authorName {
-  font-weight: var(--weight-medium);
-  font-size: var(--size-6);
-  line-height: var(--size-4);
   color: var(--color-ash-dark);
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  color: var(--color-ash-dark);
-}
-
-.titleContainer > div:nth-child(2) {
-  margin-bottom: 10px;
-}
-
-.titleContainer > div:first-child {
   font-size: var(--size-6);
   font-weight: var(--weight-medium);
-  color: var(--color-red);
+  line-height: 1;
+  margin-left: 1rem;
 }
 
-/* desktop */
-@media screen and (min-width: 1024px) {
-  .header {
-    padding: 2rem 3rem;
-  }
+.postImage {
+  display: none;
+}
 
-  .headerContents {
+/* tablet */
+@media screen and (min-width: 769px) {
+  .postImage {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: var(--size-1);
-    line-height: 58px;
-    padding-top: var(--size-2);
-  }
-
-  .heroImageContainer {
-    height: 360px;
-    width: 360px;
-    position: relative;
+    flex: 0 0 auto;
+    width: 280px;
+    height: 280px;
     overflow: hidden;
     border-radius: 50%;
-  }
-
-  .titleContainer {
-    width: 50%;
-  }
-
-  .authorContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 6px;
+    margin-left: 2rem;
   }
 }
 
-.links {
-  margin: 0;
-  padding: 0;
-}
-
-.link {
-  display: inline-block;
-  margin-right: 1rem;
+/* widescreen */
+@media screen and (min-width: 1216px) {
+  .postImage {
+    width: 320px;
+    height: 320px;
+  }
 }
