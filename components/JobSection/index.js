@@ -5,7 +5,7 @@ import { fetchJobs } from "libs/jobs";
 import Title from "components/Title";
 import styles from "components/JobSection/styles.module.css";
 
-const JobSection = () => {
+export default function JobSection() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -64,6 +64,4 @@ const JobSection = () => {
       </Section>
     </Container>
   );
-};
-
-export default JobSection;
+}
