@@ -60,11 +60,8 @@ It is very important to note that the system's DNS setting can be also overridde
 Resolving an address via DNS is also called **lookup**, and it is a recursive process. Now that we know the purpose of DNS, and the concepts involved in the process, we can dig a little deeper into its basic mechanism, which is roughly:
 
 1. The resolver has knowledge of the addresses of root name servers, from where the search can start.
-
 2. The root name server will return a name server which is authoritative for the top-level domain.
-
 3. This server will give the address of the name server authoritative for the second level domain.
-
 4. If the hostname is resolved, an IP address is returned. Otherwise step 3) is repeated for all the labels of the domain name in sequence, until a result is reached.
 
 I made a diagram that shows that.
