@@ -33,15 +33,10 @@ Even if they are unaware themselves, individuals we coach don't want a solution 
 And how can we start doing that? I have started to adopt Samantha's principles and have been staggered by how effective they are in practice:
 
 1. [Know your triggers](http://outsmartyourbrain.com/find-your-emotional-triggers-on-this-list/) - what words and situations make you race to help a colleague in distress? Are there patterns you can spot and say 'Hang on I've been here before'?
-
 2. [Maintain engaged detachment](http://www.successrockets.com/Blog-Professional-Personal-Development/bid/51210/Leadership-Development-Skill-Detached-Involvement) - this is tough and requires us to build and nurture a certain skill set; if all else fails remember ['Not my circus, not my monkeys'](http://www.huffingtonpost.com/karen-ann-kennedy/not-my-circus-not-my-monk_b_5390455.html).
-
 3. [Appreciative Inquiry](http://www.mindtools.com/pages/article/newTMC_85.htm) - there are lots of models and frameworks out there but in essence Appreciative Inquiry boils down to asking someone lots of questions and listening intently to their response, however difficult!
-
 4. [Challenge them to reflect on what happened](http://centerx.gseis.ucla.edu/xchange/teacher-leadership/teacher-workroom/reflecting-conversation) - before an individual can see past the problem, they need to acknowledge the problem and the events that lead them there.
-
 5. [Ask them to articulate what they want to happen next](http://www.reallifecoaching.net/tips-on-committing-to-your-goals/) - coach them through how this problem can be solved and what steps they might take to resolve it. This commitment helps to clarify any misunderstanding and sets a clear path forward for coach and coachee.
-
 6. [Celebrate their success](http://www.myinternalgps.com/?p=1149) - a pat on the back (mentally or physically) can go a long way. Why should individuals receive feedback when there is a problem? Loop back with people and celebrate the small wins as much as possible.
 
 ## Leaders are not lifeguards!

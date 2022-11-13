@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Container from "components/Container";
 import AuthorImage from "components/AuthorImage";
 import CategoryImage from "components/CategoryImage";
 import { longDate } from "libs/date";
-import { capitalize } from "libs/string";
+import { capitalize, slugify } from "libs/string";
 import styles from "components/PostHeader/styles.module.css";
 
 export default function PostHeader({ post }) {
@@ -13,7 +14,11 @@ export default function PostHeader({ post }) {
       <header className={styles.header}>
         <div className={styles.headerContents}>
           <div className={styles.titleContainer}>
-            <div>{capitalize(post.category)}</div>
+            <div>
+              <Link href={`/categories/${slugify(post.category)}`}>
+                <a>{capitalize(post.category)}</a>
+              </Link>
+            </div>
             <div>{post.title}</div>
             <div className={styles.postDetails}>
               <p>{`${dateOfPost}`}</p>
@@ -26,7 +31,9 @@ export default function PostHeader({ post }) {
                   className={styles.authorImage}
                 />
               </div>
-              <p className={styles.authorName}>{post.author}</p>
+              <Link href={`/authors/${slugify(post.author)}`}>
+                <a className={styles.authorName}>{post.author}</a>
+              </Link>
             </div>
           </div>
           <div className={styles.heroImageContainer}>

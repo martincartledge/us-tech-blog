@@ -4,7 +4,7 @@ import DocumentHead from "components/DocumentHead";
 import Navbar from "components/Navbar";
 import PostContentSection from "components/PostContentSection";
 import Footer from "components/Footer";
-import PostHeader from "../../components/PostHeader";
+import PostHeader from "components/PostHeader";
 import Page from "components/Page";
 import Main from "components/Main";
 

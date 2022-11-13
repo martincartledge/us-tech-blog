@@ -4,7 +4,7 @@ import { longDate } from "libs/date";
 import { slugify, capitalize } from "libs/string";
 import styles from "components/PostsGrid/styles.module.css";
 
-const PostsGrid = ({ posts }) => {
+export default function PostsGrid({ posts }) {
   return (
     <div className={styles.gridContainer}>
       {posts.map((post) => (
@@ -38,6 +38,4 @@ const PostsGrid = ({ posts }) => {
       ))}
     </div>
   );
-};
-
-export default PostsGrid;
+}

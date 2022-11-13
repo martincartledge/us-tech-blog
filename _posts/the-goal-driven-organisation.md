@@ -131,21 +131,15 @@ When setting goals for the first time a good place to start for any team is to c
 As an example, here is a possible mission statement for a team responsible for transactional communications:
 
 1. Maintain transactional communications systems in production so that the business has a reliable and performant transactional communications system, and customers receive timely and relevant communications.
-
 2. Build transactional communications capabilities that increase value for our customers and help the business meet its objectives.
-
 3. Evolve transactional communications systems in line with the company’s technical vision for the platform to position the business to best meet the evolving needs of its customers.
-
 4. Foster a supportive and welcoming team culture that values innovation, collaboration and continuous learning.
 
 Quarterly goals can then map back to elements of the mission statement:
 
 1. Maintain transactional communications systems in production so that the business has a reliable and performant transactional communications system, and customers receive timely and relevant communications. **Reduce the level of noise from alerts so that the team can more effectively respond to production incidents.**
-
 2. Build transactional communications capabilities that increase value for our customers and helps the business meet its objectives. **Launch a thank you email to reinforce the benefits of booking with OpenTable.**
-
 3. Evolve transactional communications systems in line with the company’s technical vision for the platform to position the business to best meet the evolving needs of its customers. **Migrate transactional communications systems to Apache Mesos.**
-
 4. Foster a supportive and welcoming team culture that values innovation, collaboration and continuous learning. **Create an engineer on-boarding playbook to ensure that new team members have a great first experience of the team and OpenTable.**
 
 Everything that a team does should relate to a team goal and the mission statement.

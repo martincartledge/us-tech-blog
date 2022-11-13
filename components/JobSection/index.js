@@ -5,7 +5,7 @@ import { fetchJobs } from "libs/jobs";
 import Title from "components/Title";
 import styles from "components/JobSection/styles.module.css";
 
-const JobSection = () => {
+export default function JobSection() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const JobSection = () => {
     <Container>
       <Section>
         <Title value="Join our team" id="careers" />
-        <p className={styles.description}>
+        <p className={styles.paragraph}>
           The Technology Team delivers innovative products through rapid,
           continuous development. You’ll be with people who take pleasure in
           software design and believe that velocity comes from a commitment to
@@ -57,11 +57,11 @@ const JobSection = () => {
             </tbody>
           </table>
         ) : (
-          <p>There are currently no job openings. Please check back later.</p>
+          <p className={styles.paragraph}>
+            There are currently no job openings. Please check back later.
+          </p>
         )}
       </Section>
     </Container>
   );
-};
-
-export default JobSection;
+}

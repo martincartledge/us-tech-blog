@@ -213,9 +213,9 @@ The nuclear option. If we couldn’t get anything to work we could not use Beake
 
 So we went down all these avenues and decided that the best option for us was to use Bitvise. It fixed the problem we were facing but it meant that we had some work ahead of us:
 
-1. We had to rebuild all our Windows images with Bitvise rather than Cygwin ([vagrantcloud.com/opentable](https://vagrantcloud.com/opentable) - version 2.x images now have this)
-2. We had to make some changes to Beaker to support using a standard Windows command shell rather than a Unix shell:
+(1) We had to rebuild all our Windows images with Bitvise rather than Cygwin ([vagrantcloud.com/opentable](https://vagrantcloud.com/opentable) - version 2.x images now have this)
 
+(2) We had to make some changes to Beaker to support using a standard Windows command shell rather than a Unix shell:
    - [https://github.com/puppetlabs/beaker/pull/419](https://github.com/puppetlabs/beaker/pull/419) – configure_puppet method
    - [https://github.com/puppetlabs/beaker/pull/419](https://github.com/puppetlabs/beaker/pull/420) – host_entry method
    - [https://github.com/puppetlabs/beaker/pull/419](https://github.com/puppetlabs/beaker/pull/418) – Vagrant box_version
@@ -223,7 +223,7 @@ So we went down all these avenues and decided that the best option for us was to
 
 With it finally working we had something that looked like this:
 
-##Second Example
+## Second Example
 
 Well with all the changes we implemented there were actually very few changes that we needed to make to our actual tests code.
 
@@ -261,12 +261,11 @@ Most modern versions of Windows server have WinRM enabled by default but if you 
 that this is enabled on your boxes. This is still the direction that we would like to go long-term as it is the most Windows-friendly approach but there are few road blocks in
 the way of doing so right now:
 
-1. Packer doesn’t set support WinRM as a communication method. This is being actively worked on and you can follow the work here:
-
+(1) Packer doesn’t set support WinRM as a communication method. This is being actively worked on and you can follow the work here:
    - [https://github.com/mitchellh/packer/issues/451](https://github.com/mitchellh/packer/issues/451)
    - [https://github.com/dylanmei/packer-communicator-winrm](https://github.com/dylanmei/packer-communicator-winrm)
 
-2. Beaker doesn’t yet support WinRM as a communication protocol. This is currently being discussed internally after we raised the idea. The work that we have completed for
+(2) Beaker doesn’t yet support WinRM as a communication protocol. This is currently being discussed internally after we raised the idea. The work that we have completed for
    Bitvise support will go some way it allowing other providers, such as wirm going forward and therefore WinRM support should be coming in the near future.
 
 ## Summary

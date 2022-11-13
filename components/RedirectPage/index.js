@@ -2,7 +2,7 @@ import redirect from "nextjs-redirect";
 import DocumentHead from "components/DocumentHead";
 import ErrorMessage from "components/ErrorMessage";
 
-const RedirectPage = ({ destination }) => {
+export default function RedirectPage({ destination }) {
   const Redirect = redirect(destination);
 
   return (
@@ -16,6 +16,4 @@ const RedirectPage = ({ destination }) => {
       />
     </Redirect>
   );
-};
-
-export default RedirectPage;
+}
