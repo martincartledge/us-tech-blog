@@ -23,6 +23,10 @@
   line-height: 1;
 }
 
+.postCategory:hover {
+  color: var(--color-red);
+}
+
 .postTitle {
   font-size: var(--size-2);
   font-weight: var(--weight-bold);
