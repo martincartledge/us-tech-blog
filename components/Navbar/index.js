@@ -7,7 +7,7 @@ import styles from "components/Navbar/styles.module.css";
 
 export default function Navbar() {
   return (
-    <header className={styles.navbar}>
+    <nav className={styles.navbar}>
       <Container className={styles.container}>
         <Link href="/">
           <a className={styles.logo}>
@@ -34,6 +34,6 @@ export default function Navbar() {
           ))}
         </ul>
       </Container>
-    </header>
+    </nav>
   );
 }
