@@ -3,6 +3,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import remarkGfm from "remark-gfm";
+import rehypeExternalLinks from "rehype-external-links";
 import rehypePrism from "rehype-prism-plus";
 import rehypeStringify from "rehype-stringify";
 
@@ -11,6 +12,10 @@ const generateHtml = async (content) => {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
+    .use(rehypeExternalLinks, {
+      target: "_blank",
+      rel: ["noreferrer", "noopener"],
+    })
     .use(rehypePrism)
     .use(rehypeStringify)
     .process(content);
