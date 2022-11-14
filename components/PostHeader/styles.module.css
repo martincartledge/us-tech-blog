@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
   background-color: var(--color-light-sky);
 }
 
@@ -49,7 +48,7 @@
 .author {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .authorImage {
@@ -61,7 +60,7 @@
 
 .authorName {
   color: var(--color-ash-dark);
-  font-size: var(--size-6);
+  font-size: var(--size-5);
   font-weight: var(--weight-medium);
   line-height: 1;
   margin-left: 1rem;
