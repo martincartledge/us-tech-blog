@@ -15,7 +15,7 @@
 
 .bottom {
   display: flex;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .copyright {
@@ -40,7 +40,7 @@
   font-size: var(--size-6);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .moreLink {
@@ -53,12 +53,12 @@
 }
 
 .socialLogos {
-  margin: 40px 0;
+  margin: 2rem 0;
 }
 
 .socialLogoLinkItem {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
 .socialLogoLinkItem:first-child {
@@ -86,7 +86,7 @@
 
   .bottom {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 
   .socials {
