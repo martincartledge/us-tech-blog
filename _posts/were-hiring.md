@@ -17,7 +17,9 @@ Finally, allow me to list out all the roles we are currently looking to fill and
 
 ## Engineering manager
 * [Payments](https://boards.greenhouse.io/opentable/jobs/6413874002) (previous payments experience required)
-* Communications/Hospitality – coming soon (we're happy to talk to a manager at any level)## Full stack / Front-end
+* Communications/Hospitality – coming soon (we're happy to talk to a manager at any level)
+
+## Full stack / Front-end
 * [Full-stack Engineer](https://boards.greenhouse.io/opentable/jobs/6431715002) (a decent knowledge of React/Redux, but happy to dabble in C# or Java)
 * [React Engineer](https://boards.greenhouse.io/opentable/jobs/6419485002) (we expect our new Payments platform to have significant pieces of React/Redux architecture)
 
