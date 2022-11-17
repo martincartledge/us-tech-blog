@@ -17,7 +17,7 @@ This Sunday we have a stand at Silicon Milkroundabout.  If you saw us I hope you
 
 Finally, allow me to list out all the roles we are currently looking to fill and I hope you will take the time to read more and apply.  Thanks for reading.
 
-### Engineering managers {#eng-mgr}
+<h3 id="eng-mgr">Engineering managers</h3>
 * [Payments](https://boards.greenhouse.io/opentable/jobs/6413874002) (previous payments experience required)
 * Communications/Hospitality – coming soon (we're happy to talk to a manager at any level)
 
