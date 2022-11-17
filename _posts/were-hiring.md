@@ -9,26 +9,26 @@ It is a very exciting time for us at OpenTable, and specifically at OpenTable En
 
 But in May of this year our executive team announced a significant strategic shift and focus on new lines of business, with accompanying investment in Engineering, Product and Design.  I was thrilled that our strong performance and culture in Europe was recognised, and many of these new roles are being filled in our European hubs in London (UK), Berlin (Germany) and Kaunas (Lithuania).
 
-We're building three new teams; a **Hospitality** team (an offshoot from our existing Communications team), a **Payments** team (brand new green field work at OpenTable) and an **iOS** team (our first diner app team outside of California).
+We're building three new teams; a **Hospitality** team (an offshoot from our existing Communications team), a **Payments** team (brand new greenfield work) and an **iOS** team (our first diner app team outside of California).
 
-This Sunday we have a stand at Silicon Milkroundabout.  If you saw us thank you for visiting this page. I hope you got to speak to one of our engineers about our exciting projects and why OpenTable is a great place to work.  I'm always confident that you'll have a genuine and positive conversation with any of our team taking about OT.
+This Sunday we have a stand at Silicon Milkroundabout.  If you saw us I hope you got to speak to one of our engineers about our exciting projects and why OpenTable is a great place to work.  I'm always confident that you'll have a genuine and positive conversation with any of our team when talking about OT.
 
 Finally, allow me to list out all the roles we are currently looking to fill and I hope you will take the time to read more and apply.  Thanks for reading.
 
-## Engineering manager
+### Engineering managers
 * [Payments](https://boards.greenhouse.io/opentable/jobs/6413874002) (previous payments experience required)
 * Communications/Hospitality – coming soon (we're happy to talk to a manager at any level)
 
-## Full stack / Front-end
+### Full stack / Front-end
 * [Full-stack Engineer](https://boards.greenhouse.io/opentable/jobs/6431715002) (a decent knowledge of React/Redux, but happy to dabble in C# or Java)
 * [React Engineer](https://boards.greenhouse.io/opentable/jobs/6419485002) (we expect our new Payments platform to have significant pieces of React/Redux architecture)
 
-## Back-end
+### Back-end
 * [.Net engineer](https://boards.greenhouse.io/opentable/jobs/6433791002) (Comms)
 * [Java engineer](https://boards.greenhouse.io/opentable/jobs/6432302002) (Comms)
 * [Java engineer](https://boards.greenhouse.io/opentable/jobs/6413867002) (we expect our new Payments platform to have significant pieces of Java architecture)
 
-## iOS
+### iOS
 Our new iOS team, working on the OpenTable diner app, is recruiting engineers at multiple levels
 * [Principal iOS engineer](https://boards.greenhouse.io/opentable/jobs/6413863002)
 * Senior iOS engineer – coming soon
