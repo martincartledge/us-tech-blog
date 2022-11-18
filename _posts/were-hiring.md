@@ -7,7 +7,7 @@ category: events
 
 It is a very exciting time for us at OpenTable, and specifically at OpenTable Engineering in Europe.
 
-&#187; [Jump to the jobs](#eng-mgr)
+&#187; [Jump to the jobs](#engineering-managers)
 
 I've been with OT for 10+ years and apart from one other significant project in 2015 we have always invested in and grown our teams steadily.  We have low churn and great career progression, so typically we look for new engineers just two or three times a year.
 
