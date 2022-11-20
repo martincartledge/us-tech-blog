@@ -15,11 +15,9 @@ But in May of this year our executive team announced a significant strategic shi
 
 We're building three new teams; a **Hospitality** team (an offshoot from our existing Communications team), a **Payments** team (brand new greenfield work) and an **iOS** team (our first diner app team outside of California).
 
-This Sunday we have a stand at Silicon Milkroundabout.  If you saw us I hope you got to speak to one of our engineers about our exciting projects and why OpenTable is a great place to work.  I'm always confident that you'll have a genuine and positive conversation with any of our team when talking about OT.
+On Sunday we had a stand at Silicon Milkroundabout.  If you saw us I hope you got to speak to one of our engineers about our exciting projects and why OpenTable is a great place to work.  I'm always confident that you'll have a genuine and positive conversation with any of our team when talking about OT.
 
 Finally, allow me to list out all the roles we are currently looking to fill and I hope you will take the time to read more and apply.  Thanks for reading.
-
-<div id="eng-mgr"></div>
 
 ### Engineering managers
 * [Payments](https://boards.greenhouse.io/opentable/jobs/6413874002) (previous payments experience required)
