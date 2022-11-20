@@ -30,7 +30,7 @@ Finally, allow me to list out all the roles we are currently looking to fill and
 * [React Engineer](https://boards.greenhouse.io/opentable/jobs/6419485002) (we expect our new Payments platform to have significant pieces of React/Redux architecture)
 
 ### Back-end
-* [.Net engineer](https://boards.greenhouse.io/opentable/jobs/6433791002) (Comms)
+* .Net engineer (Comms – coming soon)
 * [Java engineer](https://boards.greenhouse.io/opentable/jobs/6432302002) (Comms)
 * [Java engineer](https://boards.greenhouse.io/opentable/jobs/6413867002) (we expect our new Payments platform to have significant pieces of Java architecture)
 
