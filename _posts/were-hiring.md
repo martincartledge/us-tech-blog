@@ -35,5 +35,4 @@ Finally, allow me to list out all the roles we are currently looking to fill and
 ### iOS
 Our new iOS team, working on the OpenTable diner app, is recruiting engineers at multiple levels
 * [Principal iOS engineer](https://boards.greenhouse.io/opentable/jobs/6413863002)
-* [Senior iOS engineer](https://boards.greenhouse.io/opentable/jobs/6472464002)
-* Mid-level iOS engineer (coming soon)
+* [Senior iOS engineer](https://boards.greenhouse.io/opentable/jobs/6472464002) (We're flexible for mid-level instead)
