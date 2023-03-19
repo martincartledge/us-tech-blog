@@ -4,7 +4,7 @@ import TwitterLogo from "statics/twitter.png";
 
 export const COMPANY_NAME = "OpenTable";
 
-export const DEPARTMENT_NAME = "Tech Europe";
+export const DEPARTMENT_NAME = "Tech US";
 
 export const SITE_NAME = `${COMPANY_NAME} ${DEPARTMENT_NAME} Blog`;
 
@@ -43,7 +43,7 @@ export const SOCIAL_LINKS = [
 
 export const LEARN_MORE_LINKS = [
   {
-    href: "https://www.opentable.co.uk/about/",
+    href: "https://www.opentable.com/about/",
     text: "About OpenTable",
   },
   {
@@ -51,7 +51,7 @@ export const LEARN_MORE_LINKS = [
     text: "Technology careers",
   },
   {
-    href: "https://www.opentable.co.uk",
+    href: "https://www.opentable.com",
     text: "Diner website",
   },
 ];
@@ -59,7 +59,7 @@ export const LEARN_MORE_LINKS = [
 export const HOME_TITLE = `Welcome to the ${SITE_NAME}`;
 
 export const HOME_SUBTITLE =
-  "At the intersection of food, culture and technology within Europe";
+  "At the intersection of food, culture and technology within the US";
 
 export const HOME_META_DESCRIPTION =
   "At the intersection of food, culture and technology. A place where we like to share our passions and introduce you to a whole new world of fabulous dining and amazing technology.";
