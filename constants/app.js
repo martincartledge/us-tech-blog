@@ -36,7 +36,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/opentabletechuk",
+    href: "https://twitter.com/opentabletech",
     image: TwitterLogo,
   },
 ];
